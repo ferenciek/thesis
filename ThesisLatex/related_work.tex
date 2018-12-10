@@ -1,6 +1,6 @@
-Nowadays,the need of the visualization of software quality metrics have been rapidly increased. Software metrics help developers and companies to check and analyze information about the performance, quality of code and cost of software data.
+Nowadays,the need of the visualization of software quality metrics have been rapidly increased. Software metrics help developers and companies to check and analyze information about the performance, quality of code and cost of software data. it helps to find out and fix errors in the early stages of development.
 
-In this chapter will be described some tools for visualization of software quality metrics.
+In this chapter will be described some tools for visualization of software quality metrics and tool for code analyzis.
 
 \section{Open Source tool "METRIX"}
 
@@ -127,3 +127,12 @@ The tree structure used in NDepend treemap is the usual code hierarchy:
 \section{PVS-Studio}
 
 PVS-Studio is a tool for detecting bugs and security weaknesses in the source code of programs, written in C, C++, and C\#. It works in Windows, Linux, and macOS environment~\cite{pvs}.
+
+This tool executes static code analysis and after that createsa report for helping a developers to find and fix bugs. PVS-Studio has a wide range check methods. It helps to find misprints and Copy-Paste errors.
+The main value of static analysis is in its regular use, so that errors are identified and fixed at the earliest stages~\cite{pvs}. 
+
+PVS-Studio runs from the command line. The analysis results can be save as HTML with full source code navigation. It is possible to not include files from the analysis by name, folder or mask; to run the analysis on the files modified during the last N days. Error statistics can be viewed in Excel~\cite{pvs}. 
+
+This tool has an online reference guide concerning all the diagnostics available in the program, on the web site and documentation. 
+
+PVS-Studio ha an integration with open source platform SonarQube designed for continuous analysis and measurement of code quality.

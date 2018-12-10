@@ -21,8 +21,8 @@
 \contentsline {section}{\numberline {3.1}An introductory glimpse at the Erlang programming language}{17}{section.3.1}
 \contentsline {section}{\numberline {3.2}The RefactorErl static analysis framework}{19}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Metrics in the RefactorErl}{19}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}Metric visualisation module for WEB2 interface of RefactorErl}{24}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Description of the software}{24}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.3}Metric visualisation module for WEB2 interface of RefactorErl}{23}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Description of the software}{23}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Used tools}{24}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}The typical workflow}{25}{subsection.3.3.3}
 \contentsline {chapter}{\numberline {4}Measurements and findings}{29}{chapter.4}

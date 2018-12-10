@@ -11,7 +11,7 @@ Too many commas in name 1 of "WANG Yu-ying, LI Qing-shan, CHEN Ping, REN Chun-de
 while executing---line 944 of file unsrt.bst
 You've used 13 entries,
             1791 wiz_defined-function locations,
-            506 strings with 5725 characters,
+            506 strings with 5733 characters,
 and the built_in function-call counts, 1951 in all, are:
 = -- 163
 > -- 69

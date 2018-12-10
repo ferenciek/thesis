@@ -69,7 +69,7 @@ wrong. So we need to use the first element of the list as a starting point.
 
 RefactorErl~\cite{refactorerl1, refactorerl2} is an open-source static source code analyzer and transformer tool for Erlang,developed by the Department of Programming Languages and Compilers at the Faculty of Informatics, Eötvös Loránd University, Budapest, Hungary. The phrase "refactoring" means a preserving source code transformation, so while you change the programstructure you do not alter its behaviour. RefactorErl was built to refactor Erlang programs.
 
-The main focus of RefactorErl is to support daily code comprehension tasks of Erlang developers. It can analyse the structure of the refactored program - based on the syntactic rules of the underlying programming language - and it can also collect and use semantical information about the source code.
+The main focus of RefactorErl is to support daily code comprehension tasks of Erlang developers~\cite{refactorerl}. It can analyse the structure of the refactored program - based on the syntactic rules of the underlying programming language - and it can also collect and use semantical information about the source code.
 
 \subsection{Metrics in the RefactorErl}
 
@@ -211,129 +211,127 @@ Table \ref{tab:metrics_ref} shows all the implemented metrics in RefactorErl too
 
 \textbf{module\_sum}
 
-The domain of the query is a module. The sum of the chosen complexity structure metrics measured on the modules functions. The proper metrics adjusted in a list can be implemented in the desired number and order~\cite{refactorerl}.
+The sum of the chosen complexity structure metrics measured on the modules functions. The proper metrics adjusted in a list can be implemented in the desired number and order~\cite{refactorerlm}.
 
 \textbf{line\_of\_code}
 
-The domain of the query is a module or a function. The number of the lines of part of the text, function, or module. The number of empty lines is not included in the sum. As the number of lines can be measured on more functions, or modules and the system is capable of returning the sum of these, the number of lines of the whole loaded program text can be enquired~\cite{refactorerl}.
+The number of the lines of part of the text, function, or module. The number of empty lines is not included in the sum. As the number of lines can be measured on more functions, or modules and the system is capable of returning the sum of these, the number of lines of the whole loaded program text can be enquired~\cite{refactorerlm}.
 
 \textbf{char\_of\_code}
 
-The domain of the query is a module or a function. The number of characters in a program script. This metric is capable of measuring both the codes of functions and modules and with the help of aggregating functions we can enquire the total and average number of characters in a cluster, or in the whole source text~\cite{refactorerl}.
+The number of characters in a program script. This metric is capable of measuring both the codes of functions and modules and with the help of aggregating functions we can enquire the total and average number of characters in a cluster, or in the whole source text~\cite{refactorerlm}.
 
 \textbf{number\_of\_fun}
 
-The domain of the query is a module. This metric gives the number of functions
-implemented in the concrete module, but it does not contain the number of non-defined functions in the module~\cite{refactorerl}.
+This metric gives the number of functions implemented in the concrete module, but it does not contain the number of non-defined functions in the module~\cite{refactorerlm}.
 
 \textbf{number\_of\_macros}
 
-The domain of the query is a module. This metric gives the number of defined macros in the concrete module, or modules. It is also possible to enquire the number of implemented macros in a module~\cite{refactorerl}.
+This metric gives the number of defined macros in the concrete module, or modules. It is also possible to enquire the number of implemented macros in a module~\cite{refactorerlm}.
 
 \textbf{number\_of\_records}
 
-The domain of the query is a module. This metric gives the number of defined records in a module. It is also possible to enquire the number of implemented records in a module~\cite{refactorerl}.
+ This metric gives the number of defined records in a module. It is also possible to enquire the number of implemented records in a module~\cite{refactorerlm}.
 
 \textbf{included\_files}
 
-The domain of the query is a module. This metric gives the number of visible header files in a module~\cite{refactorerl}.
+This metric gives the number of visible header files in a module~\cite{refactorerlm}.
 
 \textbf{imported\_modules}
 
-The domain of the query is a module. This metric gives the number of imported modules used in a concrete module. The metric does not contain the number of qualified calls (calls that have the following form: module:function)~\cite{refactorerl}.
+This metric gives the number of imported modules used in a concrete module. The metric does not contain the number of qualified calls (calls that have the following form: module:function)~\cite{refactorerlm}.
 
 \textbf{number\_of\_funpath}
 
-The domain of the query is a module. The total number of function paths in a module.The metric, besides the number of internal function links, also contains the number of external paths, or the number of paths that lead outward from the module. It is very similar to the metric called cohesion~\cite{refactorerl}.
+The total number of function paths in a module.The metric, besides the number of internal function links, also contains the number of external paths, or the number of paths that lead outward from the module. It is very similar to the metric called cohesion~\cite{refactorerlm}.
 
 \textbf{function\_calls\_in}
 
-The domain of the query is a module. Gives the number of function calls into a module from other modules. It can not be implemented to measure a concrete function. For that we use the calls\_for/1 function~\cite{refactorerl}.
+Gives the number of function calls into a module from other modules. It can not be implemented to measure a concrete function. For that we use the calls\_for/1 function~\cite{refactorerlm}.
 
 \textbf{function\_calls\_out}
 
-The domain of the query is a module. Gives the number of every function call from a module towards other modules. It can not be implemented to measure a concrete function. For that we use the calls\_from/1 function~\cite{refactorerl}.
+Gives the number of every function call from a module towards other modules. It can not be implemented to measure a concrete function. For that we use the calls\_from/1 function~\cite{refactorerlm}.
 
 \textbf{cohesion}
 
-The domain of the query is a module. The number of call-paths of functions that call eachother. By call-path we mean that an f1 function calls f2 (e.g. f1()->f2().). If f2 also calls f1, then the two calls still count as one call-path~\cite{refactorerl}.
+The number of call-paths of functions that call eachother. By call-path we mean that an f1 function calls f2 (e.g. f1()->f2().). If f2 also calls f1, then the two calls still count as one call-path~\cite{refactorerlm}.
 
 \textbf{function\_sum}
 
-The domain of the query is a function. The sum calculated from the functions complexity metrics that characterizes the complexity of the function. It can be calculated using various metrics together~\cite{refactorerl}.
+The sum calculated from the functions complexity metrics that characterizes the complexity of the function. It can be calculated using various metrics together~\cite{refactorerlm}.
 	 
 \textbf{max\_depth\_of\_calling}
 
-The domain of the query is a module or a function. The length of function call-chains, namely the chain with the maximum depth~\cite{refactorerl}.
+The length of function call-chains, namely the chain with the maximum depth~\cite{refactorerlm}.
 	 
 \textbf{max\_depth\_of\_cases}
 
-The domain of the query is a module or a function. Gives the maximum of case control structures embedded in case of a concrete function (how deeply are the case control structures embedded). In case of a module it measures the same regarding all the functions in the module. Measuring does not break in case of case expressions, namely when the case is not embedd~\cite{refactorerl}.
+ Gives the maximum of case control structures embedded in case of a concrete function (how deeply are the case control structures embedded). In case of a module it measures the same regarding all the functions in the module. Measuring does not break in case of case expressions, namely when the case is not embedd~\cite{refactorerlm}.
 
 \textbf{min\_depth\_of\_cases}
 
-The domain of the query is a module or a function. Gives the minimum of the maximums of case control structures embedded in case of a concrete function (how deeply are the case control structures embedded). In case of a module it measures the same regarding all the functions in the module. Measuring does not break in case of case expressions, namely when the case is not embedded into a case structure. However, the following embedding does not increase the sum~\cite{refactorerl}.
+ Gives the minimum of the maximums of case control structures embedded in case of a concrete function (how deeply are the case control structures embedded). In case of a module it measures the same regarding all the functions in the module. Measuring does not break in case of case expressions, namely when the case is not embedded into a case structure. However, the following embedding does not increase the sum~\cite{refactorerlm}.
 
 \textbf{max\_depth\_of\_structs}
 
-The domain of the query is a module or a function. Gives the maximum of structures embedded in function (how deeply are the block, case, fun, if, receive, try control structures embedded). In case of a module it measures the same regarding all the functions in the module~\cite{refactorerl}.
+ Gives the maximum of structures embedded in function (how deeply are the block, case, fun, if, receive, try control structures embedded). In case of a module it measures the same regarding all the functions in the module~\cite{refactorerlm}.
 
 \textbf{number\_of\_funclauses}
 
-The domain of the query is a module or a function. Gives the number of a functions clauses. Counts all distinct branches, but does not add the functions having the same name, but different arity, to the sum~\cite{refactorerl}.
+Gives the number of a functions clauses. Counts all distinct branches, but does not add the functions having the same name, but different arity, to the sum~\cite{refactorerlm}.
 
 \textbf{branches\_of\_recursion}
 
-The domain of the query is a module or a function. Gives the number of a certain function's branches, how many times a function calls itself, and not the number of clauses it has besides definition~\cite{refactorerl}.
+Gives the number of a certain function's branches, how many times a function calls itself, and not the number of clauses it has besides definition~\cite{refactorerlm}.
 
 \textbf{calls\_for\_function}
 
-The domain of the query is a function. This metric gives the number of calls for a concrete function. It is not equivalent with the number of other functions calling the function, because all of these other functions can refer to the measured one more than once~\cite{refactorerl}.
+This metric gives the number of calls for a concrete function. It is not equivalent with the number of other functions calling the function, because all of these other functions can refer to the measured one more than once~\cite{refactorerlm}.
 
 \textbf{calls\_from\_function}
 
-The domain of the query is a function. This metric gives the number of calls from a certain function, namely how many times does a function refer to another one (the result includes recursive calls as well)~\cite{refactorerl}.
+This metric gives the number of calls from a certain function, namely how many times does a function refer to another one (the result includes recursive calls as well)~\cite{refactorerlm}.
 
 \textbf{number\_of\_funexpr}
 
-The domain of the query is a module or a function. Gives the number of function expressions in a module. It does not measure the call of function expressions, only their initiation~\cite{refactorerl}.
+Gives the number of function expressions in a module. It does not measure the call of function expressions, only their initiation~\cite{refactorerlm}.
 
 \textbf{number\_of\_messpass}
 
-The domain of the query is a module or a function. In case of functions it measures the number of code snippets implementing messages from a function, while in case of modules it measures the total number of messages in all of the modules functions~\cite{refactorerl}.
+In case of functions it measures the number of code snippets implementing messages from a function, while in case of modules it measures the total number of messages in all of the modules functions~\cite{refactorerlm}.
 
 \textbf{fun\_return\_points}
 
-The domain of the query is a module or a function. The metric gives the number of the functions possible return points (or the functions of the given module)~\cite{refactorerl}.
+The metric gives the number of the functions possible return points (or the functions of the given module)~\cite{refactorerlm}.
 
 \textbf{average\_size}
 
-The domain of the query is a module or a function. The average value of the given complexity metrics (e.g. Average branches\_of\_recursion calculated from the functions of the given module)~\cite{refactorerl}.
+The average value of the given complexity metrics (e.g. Average branches\_of\_recursion calculated from the functions of the given module)~\cite{refactorerlm}.
 
 \textbf{max\_length\_of\_line}
 
-The domain of the query is a module or a function. It gives the length of the longest line of the given module or function~\cite{refactorerl}.
+It gives the length of the longest line of the given module or function~\cite{refactorerlm}.
 
 \textbf{average\_length\_of\_line}
 
-The domain of the query is a module or a function. It gives the average length of the lines within the given module or function~\cite{refactorerl}.
+It gives the average length of the lines within the given module or function~\cite{refactorerlm}.
 
 \textbf{no\_space\_afte\r\_comma}
 
-The domain of the query is a module or a function. It gives the number of cases when there are not any whitespaces after a comma or a semicolon in the given module's or function's text~\cite{refactorerl}.
+It gives the number of cases when there are not any whitespaces after a comma or a semicolon in the given module's or function's text~\cite{refactorerlm}.
 
 \textbf{is\_tail\_recursive}
 
-The domain of the query is a function. It returns with 1, if the given function is tail recursive; with 0, if it is recursive, but not tail recursive; and -1 if it is not a recursive function (direct and indirect recursions are also examined). If we use this metric from the
-semanctic query language, the result is converted to tail\_rec, non\_tail\_rec or non\_rec atom~\cite{refactorerl}.
+It returns with 1, if the given function is tail recursive; with 0, if it is recursive, but not tail recursive; and -1 if it is not a recursive function (direct and indirect recursions are also examined). If we use this metric from the semanctic query language, the result is converted to tail\_rec, non\_tail\_rec or non\_rec atom~\cite{refactorerlm}.
 
 \textbf{mcCabe}
 
-McCabe cyclomatic complexity metric. Available for modules and functions. We define it based on the control flow graph of the functions with the number of different execution paths of a function, namely the number of different outputs of the function~\cite{refactorerl}.
+McCabe cyclomatic complexity metric. We define it based on the control flow graph of the functions with the number of different execution paths of a function, namely the number of different outputs of the function~\cite{refactorerlm}.
 
 \textbf{otp\_used}
 
-Gives the number of OTP callback modules used in modules~\cite{refactorerl}.
+Gives the number of OTP callback modules used in modules~\cite{refactorerlm}.
 
 \section{Metric visualisation module for WEB2 interface of RefactorErl}
 
