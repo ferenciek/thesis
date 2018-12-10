@@ -1,0 +1,343 @@
+This chapter presents the introduction to the software metrics as the key point for evaluation of productivity and quality of the software development product. There is also classification of the software metrics, description the different measurements of software metrics in general and the most popular software metrics tools.
+
+
+\section{Definition of Software Metrics}
+
+Software metrics are the attributes of the software systems that deals with the measurements of the software product and process by which it is developed~\cite{metrix}.
+ 
+A software metric is a measure of software characteristics which are quantifiable or countable. Software metrics are important for many reasons, including measuring software performance, planning work items, measuring productivity, and many other uses.
+
+Software developers must recognize the principles of software metrics that involve cost,schedule find quality goals, quantitative goals, comparison of plans with actual performance throughout development, monitoring data trends for indication of likely problems, metrics presentation, and investigation of data values.
+
+Within the software development process, there are many metrics that are all related to each other. Metrics are related to the four functions of management:
+
+\begin{itemize}
+	\item Planning.
+	\item Organising.
+	\item Controlling.
+	\item Improving.
+\end{itemize}
+
+The goal of tracking and analyzing software metrics is to determine the quality of the current product or process, improve that quality and predict the quality once the software development project is complete. On a more granular level, software development managers are trying to:
+
+\begin{itemize}
+	\item Increase return on investment (ROI).
+	\item Identify areas of improvement.
+	\item Manage workloads.
+	\item Reduce overtime.
+	\item Reduce costs.
+\end{itemize}
+
+These goals can be achieved by providing information and clarity throughout the organization about complex software development projects. Metrics are an important component of quality assurance, management, debugging, performance, and estimating costs,and they’re valuable for both developers and development team leaders:
+
+\begin{itemize}
+	\item Managers can use software metrics to identify, prioritize, track and communicate any
+	issues to foster better team productivity. This enables effective management and allows
+	assessment and prioritization of problems within software development projects. The
+	sooner managers can detect software problems, the easier and less-expensive the
+	troubleshooting process..
+	\item Software development teams can use software metrics to communicate the status of
+	software development projects, pinpoint and address issues, and monitor, improve on,
+	and better manage their workflow.
+\end{itemize}
+
+Software metrics offer an assessment of the impact of decisions made during software development projects. This helps managers assess and prioritize objectives and performance goals.
+
+\section{Classification of software metrics}
+
+Software metrics are broadly classified as product metrics and process metrics as shown in Figure \ref{fig:classification} ~\cite{metrics2}.
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=55mm]{figures/classification.png}
+	\caption{Classification of software metrics.}
+	\label{fig:classification}
+\end{figure}
+
+Process metrics are numerical values that depict a software process such as the amount of time require to debug a module~\cite{metrics2}. They are measures of the software development process, such as: overall development time and type of methodology used. Process metrics are collected across all projects and over long periods of time. Their intent is to provide indicators that lead to longterm software process improvement.
+
+Product metrics are measures of software project and are used to monitor and control the project. These metrics measures the complexity of the software design size of the final program number of pages of documentation produced. They enable a software project manager to:
+
+\begin{itemize}
+	\item[--] minimize the development time by making the adjustments necessary to avoid delays
+	and potential problems and risks.
+	\item[--] assess product quality on an ongoing basis and modify the technical approach to improve
+	quality.
+\end{itemize}
+
+Product metrics are measures of the software product of any stage of its development,from requirements to installed system. Product metrics may measure: the complexity of the software design, the size of the final program, the number of pages of documentation prodused.
+Product metrics can be internal or external. External attributes of an entity can be measured only with respect to how the entity relates with the environment and therefore can be measured only indirectly. For example, reliability, an external attribute of a program, does not depend only on the program itself but also on the compiler, machine and user. Productivity, an external attribute of a person, clearly depends on many factors such as the kind of process and the quality of the software delivered. Internal product metrics can be measured only based on the entity and therefore the measures are direct. For example, size is an internal attribute of any software document.
+
+Internal product metrics are subdivided in two categories: cognitive
+complexity metrics and structural complexity metrics. Cognitive complexity metrics measure the effort required by developers to understand a system. They aim at discovering the cause of the complexity, which requires understanding human mental processes and details of the software system under development. Structural complexity metrics use the interactions within and among modules to measure a system’s complexity. One of the oldest and most commonly used structural complexity metrics is the number of source lines of code.
+
+Another classification of software metrics is as follows:
+
+\begin{enumerate}
+	\item Objective metrics.
+	\item Subjective metrics
+\end{enumerate}
+
+Objective metrics always results in identical values for a given metric as measured by two or more qualified observers. Whereas subjective metrics are those that even qualified observers may measure different values for a given metric since their subjective judgment is involved in arriving at the measured value.
+%%____________________________________________________________________________
+
+\section{Types Of Software Metrics}
+It is now apparent that software metrics are important in software
+engineering. Symons stated that "a reliable and credible method
+for measuring the software development cycle is needed that has a reasonable
+theoretica1 basis and that produces results that practitioners can trus" Hence,software metrics have been used to measure a wide range of software
+engineering activities.
+
+\textbf{Lines of Code (LOC)}
+
+Lines Of Code (also known as Source Lines of Code - SLOC) is a metric generally used to
+evaluate a software program or codebase according to its size. It shows how many lines of source
+code there is in the application, namespace, class or method. LoC can be used to: check the size
+of code units and estimate the size of project. LOC is the popular and simplest one.
+There are two major types of SLOC measures: 
+
+\begin{description}
+	\item[Physical SLOC (LOC)] Physical SLOC is a count of lines in the text of the program's source code including comment.
+	\item[Logical SLOC(LLOC)] Logical LOC attempts to measure the number of "statements", but their specific definitions are tied to specific computer languages.
+\end{description}
+
+Physical SLOC measures are sensitive to logically irrelevant formatting and style conventions, while logical LOC is less sensitive to formatting and style conventions. Unfortunately, SLOC measures are often stated without giving their definition, and logical LOC can often be significantly different from physical SLOC.
+
+\textbf{Number Of Methods (NOM)}
+
+The Number Of Methods metric is used to calculate the average count of all class operations per
+class. A class must have some, but not an excessive number of operations.This information is useful when identifying a lack of primitiveness in class operations (inhibiting
+re-use), and in classes which are little more than data types.
+
+\textbf{Weighted Methods per Class (WMC)}
+
+This metric is the sum of complexities of methods defined in a class. It therefore represents the
+complexity of a class as a whole and this measure can be used to indicate the development and
+maintenance effort for the class. Classes with a large Weighted Methods Per Class value can often be refactored into two or more classes.
+
+\textbf{McCabe's Cyclomatic Complexity (MVG)}
+
+McCabe's cyclomatic complexity is a software quality metric that quantifies the complexity of a software program. Complexity is inferred by measuring the number of linearly independent paths through the program. The higher the number the more complex the code.
+
+A pragmatic approximation to this can be found by counting language keywords and operators which introduce extra decision outcomes.
+
+\textbf{Fan-In and Fan-Out metrics(FIN and FOUT)}
+
+It's a structural metrics which measures inter-module complexities. 
+\begin{description}
+	\item[Fan-in] Is the number of modules that call a given module.
+	\item[Fan-out] Is the number of modules that are called by a given module.
+\end{description}
+
+
+This metrics can be applied both at module level and function level. This metrics just puts a number on how complex is interlinking of different modules or functions. Unlike Cyclomatic complexity you cannot put a number and say it cannot go beyond this number. This is used just to size up how
+difficult it will be to replace a function or module in your application and how changes to a function or module can impact other functions or modules. Sometimes you can put restriction on number of Fan-Out a function has to avoid cluttering your function but is not a widely accepted practice.
+
+
+\textbf{Depth of Inheritance Tree (DIT)}
+
+Depth of Inheritance Tree (DIT) is the maximum length of a path from a class to a root class in the inheritance structure of a system. DIT measures how many super-classes can affect a class. DIT is only applicable to object-oriented systems.
+
+The deeper a class is in the hierarchy, the more methods and variables it is likely to inherit, making it more complex. Deep trees as such indicate greater design complexity. Inheritance is a tool to manage complexity, really, not to not increase it. As a positive factor, deep trees promote reuse because of method inheritance.
+
+C\&K suggested the following consequences based on the depth of inheritance:
+\begin{itemize}
+	\item The deeper a class is in the hierarchy, the greater the number of methods it is likely to inherit, making it more complex to predict its behavior
+	\item Deeper trees constitute greater design complexity, since more methods and classes are involved
+	\item The deeper a particular class is in the hierarchy, the greater the potential reuse of inherited methods 
+\end{itemize}
+
+\textbf{Coupling Between Object classes (CBO)}
+
+CBO classes metric represents the number of classes coupled to a given class. This coupling can happen throuhg:
+\begin{itemize}
+	\item Method call. 
+	\item Class extends.
+	\item Properties or parameters. 
+	\item Method arguments or return types.
+	\item Variables in methods
+\end{itemize}
+
+Coupling between classes is required for a system to do useful work, but excessive coupling makes the system more difficult to maitain and reuse.At project or package level, this metric provides the average number of classes used per class.
+
+\textbf{Number Of Children (NOC)}
+
+NOC is a number of immediate subclasses subordinated to a class in the class hierarchy. NOC counts the number of subclasses belonging to a class.
+
+NOC measures the breadth of a class hierarchy, where maximum DIT measures the depth. Depth is generally better than breadth, since it promotes reuse of methods through inheritance. NOC and DIT are closely related. Inheritance levels can be added to increase the depth and reduce the breadth.
+
+A high NOC, a large number of child classes, can indicate several things: 
+\begin{itemize}
+	\item High reuse of base class. Inheritance is a form of reuse.
+	\item Base class may require more testing.
+	\item Improper abstraction of the parent class. 
+	\item Misuse of sub-classing. In such a case, it may be necessary to group related classes and introduce another level of inheritance.
+\end{itemize}
+
+A class with a high NOC and a high WMC indicates complexity at the top of the class hierarchy. The class is potentially influencing a large number of descendant classes. This can be a sign of poor design. A redesign may be required.
+
+Not all classes should have the same number of sub-classes. Classes higher up in the hierarchy should have more sub-classes then those lower down.
+
+\textbf{Response For a Class (RFC)} 
+The Response for Class (RFC) metric is the total number of methods that can potentially be executed in response to a message received by an object of a class. This number is the sum of the methods of the class, and all distinct methods are invoked directly within the class methods. Additionally, inherited
+methods are counted, but overridden methods are not, because only one method of a particular signature will always be available to an object of a given class.
+
+A large RFC has been found to indicate more faults. Classes with a high RFC are more complex and harder to understand. Testing and debugging is complicated. A worst case value for possible responses will assist in appropriate allocation of testing time.
+
+\textbf{Tight and Loose Class Cohesion (TCC and LCC)}
+
+TCC(Tight Class Cohesion) and LCC(Loose Class Cohesion) metrics measure  the  relative number of directly-connected pairs of methods and the   relative   number of directly- or indirectly- connected pairs of methods.
+The Tight Class Cohesion metric measures the cohesion between the public methods of a class. That is the relative number of directly connected public methods in the class. Classes having a low cohesion indicate errors in the design.
+
+TCC considers two methods to be connected if they share the  use  of  at  least  one  attribute.  A  method  uses  an  attribute if the attribute appears in the method’s body or  the  method  invokes  directly  or  indirectly  another method   that   has   the   attribute   in   its   body.   
+The higher TCC and LCC, the more cohesive and thus better the class.
+
+\textbf{Lack of Cohesion in Methods (LCOM)}
+
+LCOM measures the amount of cohesiveness present, how well a system has been designed and how complex a class is. LCOM is a count of the number of method pairs whose similarity is zero,minus the count of method pairs whose similarity is not zero. LCOM is probably the most controversial and argued over of the C\&K metrics.
+
+C\&K's rationale for the LCOM method was as follows:
+\begin{itemize}
+	\item Cohesiveness of methods within a class is desirable, since it promotes encapsulation.
+	\item Lack of cohesion implies classes should probably be split into two or more subclasses.
+	\item Any measure of disparateness of methods helps identify flaws in the design of classes. 
+	\item Low cohesion increases complexity, thereby increasing the likelihood of errors during the development process.
+\end{itemize}
+
+Although there is a fair amount of debate about how to calculate LCOM and it features in a lot of metrics sets an increasing number of researchers suggest that it is not a particularly useful metric. Perhaps this is also reflected in there being a fair amount of debate about how to calculate LCOM but very little on how to interpret it and how it fits in with other metrics. 
+%%______________________________________________________________________
+
+\section{Software Metric Tools}
+There are number of software metrics have been developed and numerous tools exist to collect the metrics from program representations. This large variety of tools allows a user to select the tool best suited as per the use requirements for example it's handling, tool support ,cost etc. This is assumed that the metrics computed by the metric tools are same for all the metric tools. One can think of a software metric tool as a program which implements a set of software metrics definitions. It allows to access a software system according to the metrics by extracting the required entities from the software ad providing the corresponding metric values. There are
+some criteria for selecting the proper metric tools as the availability of the software tools can make confusion. One such criterion is that the tools must have to calculate any form of software metrics. Majority metric tools are available for Java programs. Many tools are just code counting
+tool, they basically count the variants of the lines of code(LOC) metric. The specific criteria areas follows language: Java(source or byte code), metrics: well known object oriented metrics on class level, license: freely available.
+
+\subsection{CCCC}
+
+It is a little command-line tool that generates metrics from the source code of a C or C++ project. The output of the tool is a simple HTML website with information about all your sources. It generates reports on various metrics including lines of code (LOC) and metrics proposed by Chidamber\&Kemererand Henry\&Kafura. CCCC has been developed as freeware, and is released in source code form. Users are encouraged to compile the program themselves, and to modify the source to reflect their preferences and interests.
+
+CCCC will process each of the files specified on the command line (using standard wildcard processing were appropriate. For each file, named, CCCC will examine the extension of the filename, and if the extension is recognized as indicating a supported language, the appropriate parser will run on the file. As each file is parsed, recognition of certain constructs will cause records to be written into an internal database. When all files have been processed, a report on the contents of the internal database
+will be generated in HTML format. By default the main summary HTML report is generated to the file cccc.htm in a subdirectory called .cccc of the the current working directory, with detailed reports on each module (i.e. C++ or Java class) identified by the analysis run).
+
+In addition to the summary and detailed HTML reports, the run will cause generation of corresponding summary and detailed reports in XML format, and a further file called cccc.db to be created. cccc.db will contain a dump of the internal database of the program in a format delimited with the character '@' (chosen because it is one of the few characters which cannot legally appear in C/C++ non -comment source code).
+
+The report contains a number of tables identifying the modules in the files submitted and covering:
+\begin{enumerate}
+	\item Measures of the procedural volume and complexity of each module and its functions;. 
+	\item Measures of the number and type of the relationships each module is a party to either as a client or a supplier.
+	\item Identification of any parts of the source code submitted which the program failed to parse.
+	\item A summary report over the whole body of code processed of the measures identified above.
+\end{enumerate}
+
+This tool can measure the following metrics:
+\begin{itemize}
+	\item Lines of Code (LOC). 
+	\item Weighted Methods per Class(WMC).
+	\item Fan-In Fan-Out()FIN and FOUT).
+	\item Numbe r Of Children(NOC).
+	\item Number Of Methods (NOM).
+	\item McCabe's Cyclomatic Complexity(MVG).
+\end{itemize}
+
+\subsection{Chidamber\&Kemerer}
+
+The program calculates Chidamber and Kemerer object-oriented metrics by processing the bytecode of compiled Java files.It is open source command line tool. The program calculates for each class the following six metrics, and displays them on its standard output, following the class's name.
+
+This tool can measure the following metrics:
+
+\begin{itemize}
+	\item Weighted Methods per Class(WMC).
+	\item Depth of Inheritance Tree (DIT).
+	\item Coupling Between Object classes (CBO).
+	\item Numbe r Of Children(NOC).
+	\item Response For a Class (RFC).
+	\item Lack of Cohesion in Methods (LCOM).
+\end{itemize}
+
+\subsection{Analyst4j}
+It is based on the Eclipse platform and available as a standalone Rich Client Applications or as an Eclipse
+IDE plug in. It features search, metrics,analyzing quality,report generating for Java programming.
+Analyst4j tool are most popular to findout the quality related metrics. This tool is based on Chidamber\&Kemerer metrics.
+
+This tool can measure the following metrics:
+\begin{itemize}
+	\item Lines of Code (LOC). 
+	\item Weighted Methods per Class(WMC).
+	\item Depth of Inheritance Tree (DIT).
+	\item Coupling Between Object classes (CBO).
+	\item Numbe r Of Children(NOC).
+	\item Response For a Class (RFC).
+	\item Number Of Methods (NOM).
+	\item Lack of Cohesion in Methods (LCOM).
+\end{itemize}
+
+\subsection{OOMeter}
+
+OOMeter is a software metric tool for measuring the quality attributes of Java and C\# source code and UML models, stored in XMI format. OOMeter has a rich collection of object-oriented software metrics. It is an Eclipse plug in. It provides an SQL like querying language for object-oriented code which
+allows to search for bugs, measure code metrics etc.
+
+OOMeter provides an interface for users to define custom metrics through java classes that implement a certain interface. It supports export of metric results to a number of formats, including XML, HTML, delimited text, Microsoft Excel, etc.
+
+This tool can measure the following metrics:
+
+\begin{itemize}
+	\item Lines of Code (LOC). 
+	\item Weighted Methods per Class(WMC).
+	\item Depth of Inheritance Tree (DIT).
+	\item Coupling Between Object classes (CBO).
+	\item Numbe r Of Children(NOC).
+	\item Response For a Class (RFC).
+	\item Lack of Cohesion in Methods (LCOM).
+	\item Tight Class Cohesion (TCC).
+\end{itemize}
+
+
+
+\subsection{Eclipse Metrics plugin 1.3.6}
+
+This  is an open source metrics calculation and dependency analyzer a  metrics plugin for Eclipse IDE. The plugin is also provided 
+integrated  as  an  EasyEclipse  package.  The  plugin computes   the  various metrics and displays it in the integrated view.
+
+
+This tool can measure the following metrics:
+
+\begin{itemize}
+	\item Lines of Code (LOC). 
+	\item Weighted Methods per Class(WMC).
+	\item Depth of Inheritance Tree (DIT).
+ 	\item Numbe r Of Children(NOC).
+    \item Number Of Methods (NOM).
+\end{itemize}
+
+\subsection{Eclipse Metrics plugin 3.4}
+The  eclipse  plugin  3.4 developed  by  Lance  Walton  is  also  integrated  with Eclipse   and   is   available   for   all   Java   projects 
+developed using the ID.E It is a open source tool. It calculates various metrics during build cycles and warns via the problem view of metrics range violations.
+
+This tool can measure the following metrics:
+\begin{itemize}
+	\item Lines of Code (LOC). 
+	\item Weighted Methods per Class(WMC).
+	\item Depth of Inheritance Tree (DIT).
+    \item Lack of Cohesion in Methods (LCOM).
+\end{itemize}
+
+\subsection{Semmle}
+
+Semmle is an analysis platform that produces detailed analyses of the code base for one or more software projects. For each project that it analyzes, it measures artifacts against rules that check for good practice. Analysis is scheduled to occur on a regular basis. As part of this process a copy of the source code is checked out of the repository for analysis. The code, and related artifacts, is checked against rules, defined using queries, to identify any alerts. In addition, metrics are calculated and data may be imported from third-party systems used by your company. A database is created, containing detailed information about the artifacts and each alert.
+
+This tool can measure the following metrics:
+\begin{itemize}
+	\item Depth of Inheritance Tree (DIT).
+	\item Lack of Cohesion in Methods (LCOM).
+	\item Numbe r Of Children(NOC).
+	\item Number Of Methods (NOM).
+	\item Response For a Class (RFC).
+\end{itemize}
+
+\section{Measuring functional languages}
+
+Software metrics developed for imperative and object-oriented languages can also be used for measuring in functional programming languages like Erlang and Haskell. We can use the same metrics because several constructs as a class,  a module and a library are similar. All of this structures can be consider like collections of functions. If the chosen metric does not take the distinctive properties of these constructs into account (variables, method overrides, dynamic binding, visibility etc.), then it can be applied to these apparently diverse constructs ~\cite{metrics3}.
+
+
+
+.
+

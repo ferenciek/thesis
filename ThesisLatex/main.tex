@@ -1,0 +1,282 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Header section of Latex document %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[runningheads,a4paper]{report}
+%% @author Daniel Lukacs, dlukacs@caesar.elte.hu, 2017
+
+\usepackage[a4paper]{geometry}
+\usepackage{t1enc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+
+\usepackage[title,titletoc]{appendix}
+\usepackage[section]{placeins}
+\usepackage{relsize}
+
+\usepackage[normalem]{ulem} %% Provides underlining.
+\usepackage{caption} %% Provides captions.
+\usepackage{mdframed} %% Provides frames around text and equations.
+\usepackage{tikz-cd} %% Provides diagram drawing environment.
+\usepackage{adjustbox} %% Provides additional tools to resize content.
+% \usepackage[magyar]{babel} %% Provides foreign language support.
+
+%%%%
+%% Provides math related environments and directives.
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{latexsym}
+
+%% See http://tex.stackexchange.com/questions/43835/conflict-between-amsthm-and-some-other-package
+\let\proof\relax 
+\let\endproof\relax
+
+%%%%
+%% Provides table environments and related directives.
+\usepackage{array}
+\usepackage{tabulary}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{hhline}
+
+%%%%
+%% Provides figure environments and related directives.
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth#1{\ifdim\Gin@nat@width>#1 #1\else\Gin@nat@width\fi}
+\def\maxheight#1{\ifdim\Gin@nat@height>#1 #1\else\Gin@nat@height\fi}
+\makeatother
+
+\usepackage{fancyvrb}
+\usepackage{rotating}
+
+%%%%
+%% Provides environment to display source code.
+\usepackage{listings} 
+\lstset{ 
+    literate=%
+        {á}{{\'a}}1
+        {é}{{\'e}}1
+        {í}{{\'i}}1
+        {ó}{{\'o}}1
+        {ö}{{\"o}}1
+        {ő}{{\H{o}}}1
+        {ú}{{\'u}}1
+        {ü}{{\"u}}1
+        {ű}{{\H{u}}}1
+        {Á}{{\'A}}1
+        {É}{{\'E}}1
+        {Í}{{\'I}}1
+        {Ó}{{\'O}}1
+        {Ö}{{\"O}}1
+        {Ő}{{\H{O}}}1
+        {Ú}{{\'U}}1
+        {Ü}{{\"U}}1
+        {Ű}{{\H{U}}}1
+    } %% Customization of listings env., to enable non-English accents.
+
+\lstset{
+   frame=single,
+   basicstyle=\small,
+   language=Erlang,
+   numbers=left,
+   firstnumber=1,
+   numberfirstline=true,
+%  basicstyle=\ttfamily,
+%  columns=fullflexible,
+%   keepspaces=true,
+} %% Customization of listings environment
+
+
+%%%%
+%% Provides environment to display pseudocode.
+\usepackage{algorithm}% http://ctan.org/pkg/algorithms
+\usepackage{algpseudocode}% http://ctan.org/pkg/algorithmicx
+
+\newcommand{\repeatcaption}[2]{%
+  \addtocounter{figure}{-1}%
+  \renewcommand{\thefigure}{\ref{#1}}%
+  \captionsetup{list=no, labelformat=simple, labelsep=colon}%
+  \captionof{figure}{#2}%
+} %% Customization: Using the same figure twice with no new number. See http://tex.stackexchange.com/a/200229
+
+%%%%
+%% Provides directives to display followable URL references.
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{
+  hidelinks,
+  linkbordercolor = {0 0 1},
+}
+
+%% Customization: Followable links to appendix references.
+\makeatletter
+\appto{\appendices}{\def\Hy@chapapp{Appendix}}
+\makeatother
+
+
+%%%%
+%% Custom document formatting.
+
+% \renewcommand{\abstract}{ \begin{center}\textbf{Abstract}\end{center}}
+
+\setcounter{tocdepth}{2}
+
+\setlength{\parskip}{\baselineskip}%
+\setlength{\parindent}{0pt}%
+
+\makeatletter
+\renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+                       {-18\p@ \@plus -4\p@ \@minus -4\p@}%
+                       {4\p@ \@plus 2\p@ \@minus 2\p@}%
+                       {\normalfont\normalsize\bfseries\boldmath
+                        \rightskip=\z@ \@plus 8em\pretolerance=10000 }}
+\makeatother
+
+
+%%%%
+%% Custom theorem environments.
+\newtheorem{mydef}{Definition}
+\newtheorem{myexamp}{Example}
+
+%%%%
+%% Custom symbol definitions and abbreviations.
+\makeatletter
+\providecommand{\leadsfrom}{%
+  \mathrel{\mathpalette\reflect@squig\relax}%
+}
+\newcommand{\reflect@squig}[2]{%
+  \reflectbox{$\m@th#1\leadsto$}%
+}
+\makeatother
+
+\renewcommand{\labelitemi}{$\circ$}
+\newcommand{\edge}[1]{\stackrel{\bf{#1}}{\rightarrow}}
+\newcommand{\ledge}[1]{\stackrel{\bf{#1}}{\leftarrow}}
+\newcommand{\rel}[1]{\stackrel{\bf{#1}}{\leadsto}}
+\newcommand{\trel}[1]{\stackrel{\bf{#1}}{\leadsto^*}}
+\newcommand{\lrel}[1]{\stackrel{\bf{#1}}{\leadsfrom}}
+
+\newcommand{\eqname}[1]{\tag*{#1}}% Tag equation with name
+
+\newcommand{\nv}[0]{node(v)}
+\newcommand{\ruleref}[1]{(\S\ref{#1})}
+\newcommand{\apxref}[1]{(Appendix \ref{#1}.)}
+\newcommand{\apxrefm}[3]{(Appendix \ref{#1}., \ref{#2}. és \ref{#3}.)}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Body section of Latex document %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+% \title{The title of your thesis}
+% \thispagestyle{empty}
+% \begin{center}
+% {\Huge TDK dolgozat}\\[0.5cm]
+% {\bf Név} \\[1cm]
+% \end{center}
+
+
+\begin{titlepage}
+  \noindent
+  \begin{minipage}{0.25 \textwidth}
+    \includegraphics[height=40mm]{figures/cimer.png}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.67 \textwidth}
+    \large
+    Eötvös Loránd University \\
+    Faculty of Informatics \\
+    Department of Programming Languages and Compilers \\
+    
+  \end{minipage}
+
+  \vfill
+
+  \begin{center}
+    {\LARGE \bfseries Analysing the changes of software metric values with RefactorErl}
+    %% \\[1.5cm]
+    %% {\Large TDK dolgozat}
+    %% \\[3cm]
+    \\[6cm]
+    \begin{minipage}[t]{0.45 \textwidth}
+      \emph{Supervisor:} \\[0.25 \baselineskip]
+      {\large Melinda Tóth} \\[0.5 \baselineskip]
+      Assistant lecturer
+    \end{minipage}
+    \begin{minipage}[t]{0.45 \textwidth}
+      \begin{flushright}
+        \emph{Author:} \\[0.25 \baselineskip]
+        {\large Marina Konoreva} \\[0.5 \baselineskip]
+        Computer Science MSc \\ %% The name of your program
+        2. year
+      \end{flushright}
+    \end{minipage}
+  \end{center}
+
+  \vfill
+
+  \begin{center}
+    \large Budapest, 2019
+  \end{center}
+\end{titlepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Content sections start here %%
+
+\begin{abstract}
+%% While you can write all your content here in the main file, it's recommended
+%%   to keep your content into separate files. The \input directive simply
+%%   copies here the text of the pointed line.
+\input{abstract.tex}
+
+\end{abstract}
+
+\tableofcontents
+
+\chapter{Introduction}
+\input{introduction.tex}
+
+\chapter{Software metrics}
+\input{software_metrics.tex}
+
+\chapter{Sofrware metrics in erlang}
+\input{sofrware_metrics_in_erlang.tex}
+
+\chapter{Measurements and findings}
+\input{measurements_and_findings.tex}
+
+\chapter{Related work}
+\input{related_work.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Bibliography starts here %%
+
+\addcontentsline{toc}{chapter}{Bibliography}
+
+%% There's more than one way to keep track of your citations.
+
+%% For simply listing the citations by text you can use the thebibliography 
+%% environment. See biblio.tex for an example. Comment out the following line
+%% to use this style.
+  
+% \input{biblio.tex}
+
+
+%% Another way is to use bibtex. The following command will process and 
+%% include the citations listed in biblio.bib. The advantage of bibtex is that
+%% you can simply copy-paste citations if the authors provided a bib-citation. 
+%% For examples of such bib-citations, click the small "bib" link beside the 
+%% articles at  https://plc.inf.elte.hu/erlang/refactorerl-academic-results.html
+
+\bibliography{biblio.bib}{}
+\bibliographystyle{unsrt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Appendices starts here %%
+
+\addtocontents{toc}{\setcounter{tocdepth}{0}}
+\end{document}

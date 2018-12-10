@@ -1,0 +1,89 @@
+Nowadays,the need of the visualization of software quality metrics have been rapidly increased. Software metrics help developers and companies to check and analyze information about the performance, quality of code and cost of software data.
+
+In this chapter will be described some tools for visualization of software quality metrics.
+
+\section{Open Source tool "METRIX"}
+
+This tool can can compute different software quality 
+metrics. METRIX is  able  to  evaluate  software  written  in  C  and  ADA  languages  and  many  metrics  can  be  considered  for  software evaluation (the different metrics will be described in detail in the next section~\cite{metrix}. 
+
+Different  diagrams  enable  the  user  to  visualize  numeric  data.  Graphics  like  line  charts,  scatter  plots  and  
+histograms are common. 
+There are two less-common classes of diagrams: 
+\begin{itemize}
+	\item The radar plots, also called Kiviat diagrams.
+	\item The city map diagram, mostly used to represent the cartography of 
+	cities.
+\end{itemize}
+One specific feature of METRIX is to use those two types of visualization for constructing signature and cartography ofsource codes.
+ 
+\textbf{Kiviat diagrams}
+The Kiviat diagram visualizes information through polar coordinates. The  distance between the  point and  the origin is associated to the value user want to represent, while the angle between two points is constant, this constant is uninformative  and  calculated  to  uniformly  distribute  the  different  points.  Moreover, all metric points are linked  
+together, making a plain polygon, which shapes the specificity of the data that user wants to represent. Of  course, this diagram is not adequate to represent only one or two metrics, it requires at least three values to be pertinent. Values may be of the same metrics, representing the metric measured on different parts of the source code. Values may be 
+of  very  different  metrics,  computed  with  heterogeneous  units.  That  enables  the  user  to  merge  multivariate  data  on  the same diagram. On Kiviat diagrams, values must be strictly positive. 
+
+\textbf{City map diagrams}
+This  diagram  is mainly  used  in  urbanism,  to  represent  cities  and  their  buildings  in  three  dimensions.  As  a  software  project  can  
+contain  a  very  large  number  of  source  files,  code  functions  and  code  variables, but this visualization diagram adequately suits for complexity visualization issue. 
+
+The  treemap  diagram  is  used  in  computing  to represent  in  two  dimensions  source  code  metrics  with  rectangles.  Some  authors  used  variants  of  this  class  of  visualization  diagrams  to  represent  values  with  esthetic  considerations. City  map  diagrams  are  indeed  multi-parameters  diagrams:  each  “building”  is  associated  with  a  n–tuple of numeric values.  
+
+This tool also has a graphical user interface with a single Window containing three tabs.
+
+The first tab called “Calc” and enables the user to indicate the source file(s) to evaluate and to parameterize the metrics to compute. It avoids using hand-start scripts with a prompt, but the open source aspect 
+of our tool  allows  advanced  users  to (re)use  our measuring scripts  manually  and/or to  integrate them into other software.
+
+The second tab called “Csv” presents the numeric values as a list, with a tab per function and per file. The  user  may  export  these  values  to  a  spreadsheet  application,  in  order  to  represent  the  values  with  common visualization graphs, like scatter plots, line plots, etc.
+
+The third tab called “Plots” and provides a way to visualize the city map diagrams for the source code, the signatures of functions and the comparisons between functions through radar/Kiviat plots. This tab enables the user to change the default behavior of the tool, for example to modify the ceiling and floor to insert color into the data, to adapt the placement of the buildings in the city map, etc. 
+
+This tool  may  generate  a report  in  the  form  of  a  LaTeX  file,  so  the  user  can  use  it to produce  a  PDF  file.  This  
+report summarizes all the values measured on the project. Each function and each file make a section of this report. In  each  section,  numerical  values  are  coupled  with  the  signature  of  the  function  (as  a  Kiviat  diagram).  Each  file  produces  three  views  of  the  associated  city  map  diagram,  as  well  as  different  Kiviat  diagrams  for  the  different metrics measured on the functions of the file. 
+
+\section{Sextant}
+
+Sextant is a Java source-code analysis tool under development at the University of Nebraska at Omaha (UNO)~\cite{sextant}. Sextant represents a non-trivial extension of the TL system (a general-purpose program
+transformation system) specialized to the domain of the Java
+programming language.
+
+One of the primary design goals of Sextant is to provide a tool facilitating specification and visualization of custom analyzis rules (e.g.,domain specific or even application specific analyzis rules).
+
+Sextant analysis rules are based on information drawn from several software models. There are two models of central importance. The first model, a syntactic model,is the parse tree of the source code. Parse trees correspond
+to compilation units (i.e., Java files) and are generated using GLR parser technology provided by the TL system. Parse trees are well-suited to analysis and manipulation through standard primitives provided by program transformation systems such as matching and generic traversal.
+
+The second model, a compound attributed graph (CAG), is a semantic model capturing structural, subtype, and reference dependencies among the fields, methods, constructors, types, and packages. The CAG also associates an attribute list with each node and edge.
+
+Information in the CAG is made accessible to Sextant’s transformation-based analysis rules through two mechanisms.The first mechanism is a positional system that establishes a relation between parse (sub)trees and corresponding contexts within the CAG. It is this relation that makes it possible to
+correctly resolve references to types, fields, local variables, methods, and constructors during the course of generic traversals which are a key enabling mechanism within program transformation systems.
+
+The second mechanism is a library of semantic queries which, thanks to the positioning system, can be accessed during the course of transformation. Functionality presently provided by this library includes things like:
+\begin{itemize}
+	\item Resolving a reference.
+	\item Determining the type of a reference.
+	\item Determining whether one type is a subtype of another.
+	\item Determining whether one declaration shadows or overrides.
+\end{itemize}
+ 
+Sextant provides table and set datatypes for collecting information associated with analysis rules. These constructs are suitable for storing information related to a wide variety of custom metrics.
+
+Sextant is open-ended with respect to the definition of metrics – any source-code analysis rule can be interpreted as a metric, be they PMD-style rules focusing on violations of coding conventions or rules such as those specified by FindBugs that are more semantic in nature.
+
+Sextant can generate software models which can be visualized using third party tools such as Cytoscape, TreeMap, and GraphViz. Sextant can output the CAG of a targeted code base in a JavaScript JSON format. This dot-JSON file can then be loaded into Cytoscape, an open source platform providing
+extensive and sophisticated capabilities for visualizing large complex networks (i.e., graph structures). Similarly, metrics derived from tables and sets can be output in CSV format and viewed using TreeMap [3], and parse trees can be output as dot-files and subsequently viewed via GraphViz.
+
+\section{NDepend}
+
+NDepend is a static analysis tool for .NET managed code. The tool supports a large number of code metrics, allowing to visualize dependencies using directed graphs and dependency matrix. NDepend also offers some special metric visualization through a colored treemap. 
+
+NDepend computes a lot of size related metrics: number of lines of code, number of assemblies, number of types, number of methods, etc. For measuring complexity, NDepend uses Cyclomatic Complexity. This metric measures the complexity of a type or a method by calculating the number of branching points in code.
+NDepend has two metrics for cohesion. Relational Cohesion is an assembly level metric that measure the average number of internal relationships per type. Lack of Cohesion Of Methods (LCOM) measures the cohesiveness of a type. A type is maximally cohesive if all methods use all instance fields.
+
+NDepend uses a visualization tool called a Treemap. The tree structure contains the basic elements of a code base: Assemblies, Namespaces, Types, Methods and Fields.
+
+The tree structure used in NDepend treemap is the usual code hierarchy: 
+
+\begin{itemize}
+	\item .NET assemblies contain namespaces.
+	\item Namespaces contain types.
+	\item Types contains methods and fields.
+\end{itemize}
