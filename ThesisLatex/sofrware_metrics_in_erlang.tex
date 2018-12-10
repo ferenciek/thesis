@@ -337,11 +337,13 @@ Gives the number of OTP callback modules used in modules~\cite{refactorerl}.
 
 \section{Metric visualisation module for WEB2 interface of RefactorErl}
 
-The section describes the main concept and details of the developed module for RefactorErl static analyzis tool.
+The section describes the main concept and details of the developed module for RefactorErl static analyzis tool. The first part introduces the main features of the software. The next part describes which tools were used in the developing process of the module. In the last part we can read how to use the software step-by-step.
 
 \subsection{Description of the software}
 
-The program allows to analyze git repositories with Erlang code. The main feautures are:
+The program which was developed allows to analyze git repositories with Erlang code files. The component is built on RefactorErl static analyzis tool and actively uses its feature of calculating different metrics of Erlang modules and functions. It has very convinient to use web interface with repository structure as a folder tree and a canvas where plots can be observed. These plots contain information how particular metric was changing with repository evolution. The plots can be saved for future usage as a pictures in PNG format.
+
+The main feautures of the software are:
 \begin{itemize}
 	\item Drawing plots which show change of metrics with software evolving from version to version.
 	\item Analyzing modules and functions separately.
@@ -349,9 +351,11 @@ The program allows to analyze git repositories with Erlang code. The main feautu
 	\item User-friendly web interface.
 \end{itemize}
 
-The main focus of the project is to help Erlang developers with analyzing their projects using plots. Visualisation helps with finding patterns and improving of code quality. 
+The main focus of the project is to help Erlang developers with analyzing their projects using plots. Visualisation helps with finding patterns and improving of the code quality. 
 
 \subsection{Used tools}
+
+The interface of the program is the AngularJS component which uses NVD3 library for plot rendering. Metrics data is stored in DETS tables at the stage of calculation in Erlang code. This data passes as JSON objects when Erlang function communicates with javascript code. For saving plots as a pictures the saveSvgAsPng library is used.
 
 \textbf{NVD3}
 
@@ -378,6 +382,10 @@ DETS is Disk Erlang Term Storage. DETS tables store tuples, with access to the e
 Data which stored in Dets tables transforms into JSON objects when Erlang code interact with JavaScript code.
 JSON (JavaScript Object Notation) is a lightweight data-interchange format.
 JSON is a text format that is completely language independent but uses conventions that are familiar to programmers of the C-family of languages, including C, C++, C\#, Java, JavaScript, Perl, Python, and many others. These properties make JSON an ideal data-interchange language.
+
+\textbf{saveSvgAsPng}
+
+This small library is used for saving SVG plots as a PNG pictures. Despite its small size it has a lot of different options such a choosing particular background, font, scale etc. 
 
 JSON is built on two structures:
 \begin{itemize}
