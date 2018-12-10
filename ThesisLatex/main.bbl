@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{metrix}
 Léo~Sartre Antoine~Varet, Nicolas~Larrieu.
@@ -11,6 +11,27 @@ Nenad~Medvidovic André van~der Hoek, Ebru~Dincel.
   architectures.
 \newblock Proceedings of the 9th International Symposium on Software Metrics,
   2003.
+
+\bibitem{complexity}
+Simon~Thompson Zhang~Qingqing.
+\newblock Complexity metrics for service-oriented systems.
+\newblock Second International Symposium on Knowledge Acquisition and Modeling,
+  2009.
+
+\bibitem{fanin}
+CHEN Ping REN Chun-de WANG Yu-ying, LI Qing-shan.
+\newblock Dynamic fan-in and fan-out metrics for program comprehension.
+\newblock O’Reilly Media, Inc., 1005 Gravenstein Highway North, Sebastopol,
+  CA 95472, August 2009.
+
+\bibitem{cohesion}
+Maryam~Hooshyar Habib~Izadkhah.
+\newblock Class cohesion metrics for software engineering: A critical review.
+\newblock Computer Science Journal of Moldova, vol. 25, no.1(73), 2017.
+
+\bibitem{cohesion2}
+R.~S. Pressman.
+\newblock Software engineering: a practitioner’s approach., 2005.
 
 \bibitem{metrics3}
 Robert~Kitlei Roland~Kiraly.
@@ -38,15 +59,19 @@ Refactorerl homepage.
 \newblock \url{http://refactorerl.com.}
 
 \bibitem{erland_o'reilly}
-Simon~Thompson Francesco~Cesarini.
+Li~Xinke Francesco~Cesarini.
 \newblock Erlang programming.
-\newblock O’Reilly Media, Inc., 1005 Gravenstein Highway North, Sebastopol,
-  CA 95472, August 2009.
+\newblock Journal of Shanghai University (English Edition), Volume 11, Issue 5,
+  pp 474–479, Oknober 2007.
 
 \bibitem{sextant}
 Jonathan~Guerrero Victor~Winter, Carl~Reinke.
 \newblock Sextant: A tool to specify and visualize software metrics for java
   source-code.
 \newblock International Workshop on Emerging Trends in Software Metric, 2013.
+
+\bibitem{pvs}
+Pvs-studio analyzer.
+\newblock \url{https://www.viva64.com/en/pvs-studio/.}
 
 \end{thebibliography}

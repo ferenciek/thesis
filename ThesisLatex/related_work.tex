@@ -22,6 +22,15 @@ The Kiviat diagram visualizes information through polar coordinates. The  distan
 together, making a plain polygon, which shapes the specificity of the data that user wants to represent. Of  course, this diagram is not adequate to represent only one or two metrics, it requires at least three values to be pertinent. Values may be of the same metrics, representing the metric measured on different parts of the source code. Values may be 
 of  very  different  metrics,  computed  with  heterogeneous  units.  That  enables  the  user  to  merge  multivariate  data  on  the same diagram. On Kiviat diagrams, values must be strictly positive. 
 
+In figure\ref{fig:metrix} shows an example of two Kiviat diagrams. This diagrams represent coding different metric values for two functions. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=70mm]{figures/metrix.png}
+	\caption{An example of Kiviat diagrams.}
+	\label{fig:metrix}
+\end{figure}
+
 \textbf{City map diagrams}
 This  diagram  is mainly  used  in  urbanism,  to  represent  cities  and  their  buildings  in  three  dimensions.  As  a  software  project  can  
 contain  a  very  large  number  of  source  files,  code  functions  and  code  variables, but this visualization diagram adequately suits for complexity visualization issue. 
@@ -71,14 +80,41 @@ Sextant is open-ended with respect to the definition of metrics – any source-c
 Sextant can generate software models which can be visualized using third party tools such as Cytoscape, TreeMap, and GraphViz. Sextant can output the CAG of a targeted code base in a JavaScript JSON format. This dot-JSON file can then be loaded into Cytoscape, an open source platform providing
 extensive and sophisticated capabilities for visualizing large complex networks (i.e., graph structures). Similarly, metrics derived from tables and sets can be output in CSV format and viewed using TreeMap [3], and parse trees can be output as dot-files and subsequently viewed via GraphViz.
 
+The view in Figure\ref{fig:1} shows an example of represents a coloring of
+dependencies on the unsupported features.Purple nodes have direct dependencies on unsupported features while nodes colored orange have indirect dependencies on unsupported features.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=70mm]{figures/1.png}
+	\caption{An example of using Sextant tool.}
+	\label{fig:1}
+\end{figure}
+
 \section{NDepend}
 
-NDepend is a static analysis tool for .NET managed code. The tool supports a large number of code metrics, allowing to visualize dependencies using directed graphs and dependency matrix. NDepend also offers some special metric visualization through a colored treemap. 
+NDepend is a static analysis tool for .NET managed code. The tool supports a large number of code metrics, allowing to visualize dependencies using directed graphs and dependency matrix.  
 
 NDepend computes a lot of size related metrics: number of lines of code, number of assemblies, number of types, number of methods, etc. For measuring complexity, NDepend uses Cyclomatic Complexity. This metric measures the complexity of a type or a method by calculating the number of branching points in code.
 NDepend has two metrics for cohesion. Relational Cohesion is an assembly level metric that measure the average number of internal relationships per type. Lack of Cohesion Of Methods (LCOM) measures the cohesiveness of a type. A type is maximally cohesive if all methods use all instance fields.
 
-NDepend uses a visualization tool called a Treemap. The tree structure contains the basic elements of a code base: Assemblies, Namespaces, Types, Methods and Fields.
+NDepend uses a visualization tool called a Treemap.
+NDepend comes with a dashboard to quickly visualize all application metrics s shown in Figure\ref{fig:dash}. The dashboard is available both in the Visual Studio extension.For each metric, the dashboard shows the diff since baseline. It also shows if the metric value gets better (in green) or wort (in red). 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=70mm]{figures/dash.png}
+	\caption{An example of using the dashboard.}
+	\label{fig:dash}
+\end{figure}
+
+The Figure\ref{fig:tree} shows metric visualization using the colored treemap.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=70mm]{figures/tree.png}
+	\caption{An example of using the colored treemap.}
+	\label{fig:tree}
+\end{figure}
 
 The tree structure used in NDepend treemap is the usual code hierarchy: 
 
@@ -87,3 +123,7 @@ The tree structure used in NDepend treemap is the usual code hierarchy:
 	\item Namespaces contain types.
 	\item Types contains methods and fields.
 \end{itemize}
+
+\section{PVS-Studio}
+
+PVS-Studio is a tool for detecting bugs and security weaknesses in the source code of programs, written in C, C++, and C\#. It works in Windows, Linux, and macOS environment~\cite{pvs}.

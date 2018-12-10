@@ -3,29 +3,35 @@
 \contentsline {section}{\numberline {2.1}Definition of Software Metrics}{4}{section.2.1}
 \contentsline {section}{\numberline {2.2}Classification of software metrics}{5}{section.2.2}
 \contentsline {section}{\numberline {2.3}Types Of Software Metrics}{7}{section.2.3}
-\contentsline {section}{\numberline {2.4}Software Metric Tools}{10}{section.2.4}
+\contentsline {subsection}{\numberline {2.3.1}Size-Oriented metrics}{7}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Object Oriented metrics (OO)}{7}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Complexity metrics}{9}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Structural Metrics}{10}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Cohesion metrics}{10}{subsection.2.3.5}
+\contentsline {section}{\numberline {2.4}Software Metric Tools}{11}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}CCCC}{11}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Chidamber\&Kemerer}{12}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Analyst4j}{12}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}OOMeter}{13}{subsection.2.4.4}
-\contentsline {subsection}{\numberline {2.4.5}Eclipse Metrics plugin 1.3.6}{13}{subsection.2.4.5}
-\contentsline {subsection}{\numberline {2.4.6}Eclipse Metrics plugin 3.4}{14}{subsection.2.4.6}
-\contentsline {subsection}{\numberline {2.4.7}Semmle}{14}{subsection.2.4.7}
+\contentsline {subsection}{\numberline {2.4.2}Chidamber\&Kemerer}{13}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Analyst4j}{13}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}OOMeter}{14}{subsection.2.4.4}
+\contentsline {subsection}{\numberline {2.4.5}Eclipse Metrics plugin 1.3.6}{14}{subsection.2.4.5}
+\contentsline {subsection}{\numberline {2.4.6}Eclipse Metrics plugin 3.4}{15}{subsection.2.4.6}
+\contentsline {subsection}{\numberline {2.4.7}Semmle}{15}{subsection.2.4.7}
 \contentsline {section}{\numberline {2.5}Measuring functional languages}{15}{section.2.5}
-\contentsline {chapter}{\numberline {3}Sofrware metrics in erlang}{16}{chapter.3}
-\contentsline {section}{\numberline {3.1}An introductory glimpse at the Erlang programming language}{16}{section.3.1}
-\contentsline {section}{\numberline {3.2}The RefactorErl static analysis framework}{18}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Metrics in the RefactorErl}{18}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}Metric visualisation module for WEB2 interface of RefactorErl}{23}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Description of the software}{23}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Used tools}{23}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}The typical workflow}{24}{subsection.3.3.3}
-\contentsline {chapter}{\numberline {4}Measurements and findings}{28}{chapter.4}
-\contentsline {section}{\numberline {4.1}Iron}{28}{section.4.1}
-\contentsline {section}{\numberline {4.2}Erlang chat }{31}{section.4.2}
-\contentsline {chapter}{\numberline {5}Related work}{32}{chapter.5}
-\contentsline {section}{\numberline {5.1}Open Source tool "METRIX"}{32}{section.5.1}
-\contentsline {section}{\numberline {5.2}Sextant}{33}{section.5.2}
-\contentsline {section}{\numberline {5.3}NDepend}{35}{section.5.3}
-\contentsline {chapter}{Bibliography}{35}{section.5.3}
+\contentsline {chapter}{\numberline {3}Sofrware metrics in erlang}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}An introductory glimpse at the Erlang programming language}{17}{section.3.1}
+\contentsline {section}{\numberline {3.2}The RefactorErl static analysis framework}{19}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Metrics in the RefactorErl}{19}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}Metric visualisation module for WEB2 interface of RefactorErl}{24}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Description of the software}{24}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Used tools}{24}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}The typical workflow}{25}{subsection.3.3.3}
+\contentsline {chapter}{\numberline {4}Measurements and findings}{29}{chapter.4}
+\contentsline {section}{\numberline {4.1}Iron}{29}{section.4.1}
+\contentsline {section}{\numberline {4.2}Erlang chat }{32}{section.4.2}
+\contentsline {chapter}{\numberline {5}Related work}{33}{chapter.5}
+\contentsline {section}{\numberline {5.1}Open Source tool "METRIX"}{33}{section.5.1}
+\contentsline {section}{\numberline {5.2}Sextant}{35}{section.5.2}
+\contentsline {section}{\numberline {5.3}NDepend}{37}{section.5.3}
+\contentsline {section}{\numberline {5.4}PVS-Studio}{38}{section.5.4}
+\contentsline {chapter}{Bibliography}{38}{section.5.4}
 \global \c@tocdepth 0\relax 
