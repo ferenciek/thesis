@@ -191,7 +191,7 @@ Table \ref{tab:metrics_ref} shows all the implemented metrics in RefactorErl too
 		  	\\
 		  	
 		  	\hline
-		  	no space afte  comma		& module/function		  			  
+		  	no space after comma		& module/function		  			  
 		  	\\	
 		  	
 		  	\hline
@@ -431,7 +431,7 @@ The final step is pressing "Analyze" button. It will start calculating metrics f
 	\label{fig:metrics_analyze}
 \end{figure}
 
-After analyzis is done the menu with choosing parameters of drawing the plot will be available as shown at Figure \ref{fig:metrics_plot}.
+After analyzis is done the menu with choosing parameters of drawing the plot will be available as shown at Figure \ref{fig:metrics_plot}. It consists of two selection lists. The first one is the list where we can choose type of item for plots drawing (module or function). Depends on chosen type the select boxes with available metrics will differ. For modules: module sum, line of code, char of code, number of fun, number of macros, number of records, included files, imported modules, number of funpath, function calls in, function calls out, cohesion, max depth of calling, max depth of cases, min depth of cases, max depth of structs, number of funclauses, branches of recursion, number of funexpr, number of messpass, fun return points, average size, max length of line, no space after comma, mcCabe, otp used. For functions: line of code, char of code, function sum, max depth of calling, max depth of cases, min depth of cases, max depth of structs, number of funclauses, branches of recursion, calls for function, calls from function, number of funexpr, number of messpass, fun return points, average size, max length of line, no space after comma, is tail recursive, mcCabe. Another list is the list of all items which can be chosen for metrics plot drawing. After plot is shown the "Save" button appears which can be pressed to save SVG plot in a PNG file. 
 
 \begin{figure}[h]
 	\includegraphics[height=80mm]{figures/plot.png}
