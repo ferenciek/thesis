@@ -33,5 +33,6 @@
 \contentsline {section}{\numberline {5.2}Sextant}{35}{section.5.2}
 \contentsline {section}{\numberline {5.3}NDepend}{37}{section.5.3}
 \contentsline {section}{\numberline {5.4}PVS-Studio}{38}{section.5.4}
-\contentsline {chapter}{Bibliography}{38}{section.5.4}
+\contentsline {chapter}{\numberline {6}Conclusion}{39}{chapter.6}
+\contentsline {chapter}{Bibliography}{39}{chapter.6}
 \global \c@tocdepth 0\relax 

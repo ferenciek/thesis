@@ -58,6 +58,10 @@ I.~Bozó, D.~Horpácsi, Z.~Horváth, R.~Kitlei, J.~Köszegi, Tejfel. M., and
 Refactorerl homepage.
 \newblock \url{http://plc.inf.elte.hu/erlang/.}
 
+\bibitem{refactorerlm}
+Metric queries.
+\newblock \url{http://pnyf.inf.elte.hu/trac/refactorerl/wiki/MetricQuery.}
+
 \bibitem{erland_o'reilly}
 Li~Xinke Francesco~Cesarini.
 \newblock Erlang programming.

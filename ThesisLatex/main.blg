@@ -9,45 +9,45 @@ You're missing a field name---line 20 of file biblio.bib.bib
 I'm skipping whatever remains of this entry
 Too many commas in name 1 of "WANG Yu-ying, LI Qing-shan, CHEN Ping, REN Chun-de" for entry fanin
 while executing---line 944 of file unsrt.bst
-You've used 13 entries,
+You've used 14 entries,
             1791 wiz_defined-function locations,
-            506 strings with 5733 characters,
-and the built_in function-call counts, 1951 in all, are:
-= -- 163
-> -- 69
+            509 strings with 5823 characters,
+and the built_in function-call counts, 2051 in all, are:
+= -- 171
+> -- 70
 < -- 1
-+ -- 31
++ -- 32
 - -- 18
 * -- 49
-:= -- 289
-add.period$ -- 36
-call.type$ -- 13
-change.case$ -- 13
+:= -- 298
+add.period$ -- 38
+call.type$ -- 14
+change.case$ -- 14
 chr.to.int$ -- 0
-cite$ -- 13
-duplicate$ -- 81
-empty$ -- 253
+cite$ -- 14
+duplicate$ -- 86
+empty$ -- 271
 format.name$ -- 18
-if$ -- 467
+if$ -- 494
 int.to.chr$ -- 0
-int.to.str$ -- 13
+int.to.str$ -- 14
 missing$ -- 1
-newline$ -- 65
+newline$ -- 69
 num.names$ -- 11
-pop$ -- 79
+pop$ -- 85
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 57
+skip$ -- 63
 stack$ -- 0
 substring$ -- 32
-swap$ -- 22
+swap$ -- 23
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
 while$ -- 14
-width$ -- 15
-write$ -- 126
+width$ -- 16
+write$ -- 133
 (There were 2 error messages)
