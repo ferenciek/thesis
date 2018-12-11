@@ -8,7 +8,7 @@ This project is functional Erlang Toolkit. Iron is released under the MIT licens
 	\item Find with coerce equality, find with custom predicate.
 \end{itemize}
 
-This project has just only one source code file with 68 commits.
+This project has just only one source code file with 68 commits. The link to the ripository is \url{https://github.com/elementerl/iron}
 
 We can see that with the version number increase the line of code number and char of code number also grow on Figure \ref{fig:loc_iron} and on Figure \ref{fig:char_iron}.
 
@@ -62,4 +62,73 @@ As we can see on Figure \ref{fig:number_of_macros_iron} and Figure \ref{fig:numb
 
 \section{Erlang chat }
 
-This project is multi user chat written in Erlang. It has nine source code files and 45 commits.
+This project is multi user chat written in Erlang. It has nine source code files and 45 commits. The link to the ripository is \url{https://github.com/bildeyko/erlangChat}
+
+For this project we analyzed the module websocket\_handler.erl. This module consists 6 functions.
+
+The Figure \ref{fig:loc_chat} shows the changing of number of lines of code.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=45mm]{figures/loc_chat.png}
+	\caption{Effective Line of code for websocket\_handler.erl.}
+	\label{fig:loc_chat}
+\end{figure}
+
+In the Figure \ref{fig:chat} we can see that the author started using message passing from the 9th version of his software.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=45mm]{figures/chat.png}
+	\caption{Number of message passing for websocket\_handler.erl.}
+	\label{fig:chat}
+\end{figure}
+
+As shown in Figure \ref{fig:chat5} there was incresing length of the longest line of code in 9th version. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=45mm]{figures/chat5.png}
+	\caption{Max length of line for websocket\_handler.erl.}
+	\label{fig:chat5}
+\end{figure}
+
+Measurement of McCabe’s cyclomatic complexity metric ensures that developers are sensitive to the fact that programs with high McCabe numbers (e.g. > 10) are likely to be difficult to understand and therefore have a higher probability of containing defects. The tested module has the cyclomatic complexity number which increased to 3o in last versions as shown in Figure \ref{fig:mcCabe}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=45mm]{figures/mcCabe.png}
+	\caption{
+	McCabe cyclomatic complexity metric for websocket\_handler.erl.}
+	\label{fig:mcCabe}
+\end{figure}
+
+In Figure \ref{fig:chat2} shows that developer used otp library functions but after 9th version reconsidered to use them.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=45mm]{figures/chat2.png}
+	\caption{
+		Otp used for websocket\_handler.erl.}
+	\label{fig:chat2}
+\end{figure}
+
+The developed framework allows to measure and visualayze metrics for module and also for each function in the module. For example, in this module developer use message passing from 9th version as we mensioned above. The Figure \ref{fig:chat3} shows that there was discovered function in which author actively used message passing.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=45mm]{figures/chat3.png}
+	\caption{
+	Number of message passing for function websocket\_handle/3.}
+	\label{fig:chat3}
+\end{figure}
+
+Visualyzing of metrics helps to find which functions have been changed, added or deleted. As shown in the Figure\ref{fig:chat3} the developer slightly changed the function terminate/3 by adding two lines of code in 9th version.
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=45mm]{figures/chat3.png}
+	\caption{
+		Number of message passing for function websocket\_handle/3.}
+	\label{fig:chat3}
+\end{figure}
+ 
+To summarize findings we can assume that most of these changes was done in 9th version.

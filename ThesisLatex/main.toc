@@ -17,22 +17,22 @@
 \contentsline {subsection}{\numberline {2.4.6}Eclipse Metrics plugin 3.4}{15}{subsection.2.4.6}
 \contentsline {subsection}{\numberline {2.4.7}Semmle}{15}{subsection.2.4.7}
 \contentsline {section}{\numberline {2.5}Measuring functional languages}{15}{section.2.5}
-\contentsline {chapter}{\numberline {3}Sofrware metrics in erlang}{17}{chapter.3}
+\contentsline {chapter}{\numberline {3}Software metrics in Erlang}{17}{chapter.3}
 \contentsline {section}{\numberline {3.1}An introductory glimpse at the Erlang programming language}{17}{section.3.1}
-\contentsline {section}{\numberline {3.2}The RefactorErl static analysis framework}{19}{section.3.2}
+\contentsline {section}{\numberline {3.2}The RefactorErl static analysis tool}{19}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Metrics in the RefactorErl}{19}{subsection.3.2.1}
 \contentsline {section}{\numberline {3.3}Metric visualisation module for WEB2 interface of RefactorErl}{23}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Description of the software}{23}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.1}Description of the software}{24}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Used tools}{24}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}The typical workflow}{25}{subsection.3.3.3}
-\contentsline {chapter}{\numberline {4}Measurements and findings}{29}{chapter.4}
-\contentsline {section}{\numberline {4.1}Iron}{29}{section.4.1}
-\contentsline {section}{\numberline {4.2}Erlang chat }{32}{section.4.2}
-\contentsline {chapter}{\numberline {5}Related work}{33}{chapter.5}
-\contentsline {section}{\numberline {5.1}Open Source tool "METRIX"}{33}{section.5.1}
-\contentsline {section}{\numberline {5.2}Sextant}{35}{section.5.2}
-\contentsline {section}{\numberline {5.3}NDepend}{37}{section.5.3}
-\contentsline {section}{\numberline {5.4}PVS-Studio}{38}{section.5.4}
-\contentsline {chapter}{\numberline {6}Conclusion}{39}{chapter.6}
-\contentsline {chapter}{Bibliography}{39}{chapter.6}
+\contentsline {chapter}{\numberline {4}Measurements and findings}{30}{chapter.4}
+\contentsline {section}{\numberline {4.1}Iron}{30}{section.4.1}
+\contentsline {section}{\numberline {4.2}Erlang chat }{33}{section.4.2}
+\contentsline {chapter}{\numberline {5}Related work}{36}{chapter.5}
+\contentsline {section}{\numberline {5.1}Open Source tool "METRIX"}{36}{section.5.1}
+\contentsline {section}{\numberline {5.2}Sextant}{38}{section.5.2}
+\contentsline {section}{\numberline {5.3}NDepend}{40}{section.5.3}
+\contentsline {section}{\numberline {5.4}PVS-Studio}{41}{section.5.4}
+\contentsline {chapter}{\numberline {6}Conclusion}{42}{chapter.6}
+\contentsline {chapter}{Bibliography}{42}{chapter.6}
 \global \c@tocdepth 0\relax 

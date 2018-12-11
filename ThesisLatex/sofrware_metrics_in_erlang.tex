@@ -1,5 +1,4 @@
-
-In this chapter we give a brief summary of Erlang and RefactorErl tool.
+In this chapter, we present developed framework which allows to analyze Erlang programs and visualize calculated metrics. The first two sections give a brief summary of Erlang, RefactorErl static analyzis tool and developed metrics.
 
 \section{An introductory glimpse at the Erlang programming language}
 Erlang is a functional language and accompanying runtime designed for highly
@@ -65,7 +64,7 @@ The functions min/1 and max/1 can’t have a default starting value. If the
 list were only negative numbers and we started at 0, the answer would be 
 wrong. So we need to use the first element of the list as a starting point.
 
-\section{The RefactorErl static analysis framework} 
+\section{The RefactorErl static analysis tool} 
 
 RefactorErl~\cite{refactorerl1, refactorerl2} is an open-source static source code analyzer and transformer tool for Erlang,developed by the Department of Programming Languages and Compilers at the Faculty of Informatics, Eötvös Loránd University, Budapest, Hungary. The phrase "refactoring" means a preserving source code transformation, so while you change the programstructure you do not alter its behaviour. RefactorErl was built to refactor Erlang programs.
 
@@ -431,7 +430,13 @@ The final step is pressing "Analyze" button. It will start calculating metrics f
 	\label{fig:metrics_analyze}
 \end{figure}
 
-After analyzis is done the menu with choosing parameters of drawing the plot will be available as shown at Figure \ref{fig:metrics_plot}. It consists of two selection lists. The first one is the list where we can choose type of item for plots drawing (module or function). Depends on chosen type the select boxes with available metrics will differ. For modules: module sum, line of code, char of code, number of fun, number of macros, number of records, included files, imported modules, number of funpath, function calls in, function calls out, cohesion, max depth of calling, max depth of cases, min depth of cases, max depth of structs, number of funclauses, branches of recursion, number of funexpr, number of messpass, fun return points, average size, max length of line, no space after comma, mcCabe, otp used. For functions: line of code, char of code, function sum, max depth of calling, max depth of cases, min depth of cases, max depth of structs, number of funclauses, branches of recursion, calls for function, calls from function, number of funexpr, number of messpass, fun return points, average size, max length of line, no space after comma, is tail recursive, mcCabe. Another list is the list of all items which can be chosen for metrics plot drawing. After plot is shown the "Save" button appears which can be pressed to save SVG plot in a PNG file. 
+After analyzis is done the menu with choosing parameters of drawing the plot will be available as shown at Figure \ref{fig:metrics_plot}. It consists of two selection lists. The first one is the list where we can choose type of item for plots drawing (module or function). Depends on chosen type the select boxes with available metrics will differ. 
+
+For modules: module sum, line of code, char of code, number of fun, number of macros, number of records, included files, imported modules, number of funpath, function calls in, function calls out, cohesion, max depth of calling, max depth of cases, min depth of cases, max depth of structs, number of funclauses, branches of recursion, number of funexpr, number of messpass, fun return points, average size, max length of line, no space after comma, mcCabe, otp used.
+
+For functions: line of code, char of code, function sum, max depth of calling, max depth of cases, min depth of cases, max depth of structs, number of funclauses, branches of recursion, calls for function, calls from function, number of funexpr, number of messpass, fun return points, average size, max length of line, no space after comma, is tail recursive, mcCabe. Another list is the list of all items which can be chosen for metrics plot drawing. 
+
+After plot is shown the "Save" button appears which can be pressed to save SVG plot in a PNG file. 
 
 \begin{figure}[h]
 	\includegraphics[height=80mm]{figures/plot.png}
