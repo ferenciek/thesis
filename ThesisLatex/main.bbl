@@ -73,6 +73,11 @@ Li~Xinke Francesco~Cesarini.
 \newblock Journal of Shanghai University (English Edition), Volume 11, Issue 5,
   pp 474–479, Oknober 2007.
 
+\bibitem{tail}
+Paul~E. Black.
+\newblock Dictionary of algorithms and data structures.
+\newblock https://xlinux.nist.gov/dads/, August 2008.
+
 \bibitem{sextant}
 Jonathan~Guerrero Victor~Winter, Carl~Reinke.
 \newblock Sextant: A tool to specify and visualize software metrics for java
