@@ -1,11 +1,10 @@
-<<<<<<< HEAD
 \contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}
 \contentsline {chapter}{\numberline {2}Software metrics}{4}{chapter.2}
 \contentsline {section}{\numberline {2.1}Definition of Software Metrics}{4}{section.2.1}
 \contentsline {section}{\numberline {2.2}Classification of software metrics}{5}{section.2.2}
 \contentsline {section}{\numberline {2.3}Types Of Software Metrics}{7}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Size-Oriented metrics}{7}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Object Oriented metrics (OO)}{7}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.2}Object-oriented metrics}{7}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Complexity metrics}{9}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Structural Metrics}{10}{subsection.2.3.4}
 \contentsline {subsection}{\numberline {2.3.5}Cohesion metrics}{10}{subsection.2.3.5}
@@ -37,44 +36,4 @@
 \contentsline {section}{\numberline {5.4}PVS-Studio}{48}{section.5.4}
 \contentsline {chapter}{\numberline {6}Conclusion}{49}{chapter.6}
 \contentsline {chapter}{Bibliography}{49}{chapter.6}
-=======
-\contentsline {chapter}{\numberline {1}Introduction}{2}{chapter.1}
-\contentsline {chapter}{\numberline {2}Software metrics}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Definition of Software Metrics}{3}{section.2.1}
-\contentsline {section}{\numberline {2.2}Classification of software metrics}{4}{section.2.2}
-\contentsline {section}{\numberline {2.3}Types Of Software Metrics}{6}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Size-Oriented metrics}{6}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Object Oriented metrics (OO)}{6}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Complexity metrics}{8}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Structural Metrics}{9}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}Cohesion metrics}{9}{subsection.2.3.5}
-\contentsline {section}{\numberline {2.4}Software Metric Tools}{10}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}CCCC}{11}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Chidamber\&Kemerer}{12}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Analyst4j}{12}{subsection.2.4.3}
-\contentsline {subsection}{\numberline {2.4.4}OOMeter}{13}{subsection.2.4.4}
-\contentsline {subsection}{\numberline {2.4.5}Eclipse Metrics plugin 1.3.6}{13}{subsection.2.4.5}
-\contentsline {subsection}{\numberline {2.4.6}Eclipse Metrics plugin 3.4}{14}{subsection.2.4.6}
-\contentsline {subsection}{\numberline {2.4.7}Semmle}{14}{subsection.2.4.7}
-\contentsline {section}{\numberline {2.5}Measuring functional languages}{14}{section.2.5}
-\contentsline {chapter}{\numberline {3}Software metrics in Erlang}{16}{chapter.3}
-\contentsline {section}{\numberline {3.1}An introductory glimpse at the Erlang programming language}{16}{section.3.1}
-\contentsline {section}{\numberline {3.2}The RefactorErl static analysis tool}{18}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Metrics in the RefactorErl}{18}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}Metric visualisation module for WEB2 interface of RefactorErl}{22}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Description of the software}{23}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Used tools}{23}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}The typical workflow}{24}{subsection.3.3.3}
-\contentsline {chapter}{\numberline {4}Measurements and findings}{29}{chapter.4}
-\contentsline {section}{\numberline {4.1}Iron}{29}{section.4.1}
-\contentsline {section}{\numberline {4.2}Erlang chat }{32}{section.4.2}
-\contentsline {section}{\numberline {4.3}prx}{35}{section.4.3}
-\contentsline {chapter}{\numberline {5}Related work}{38}{chapter.5}
-\contentsline {section}{\numberline {5.1}Open Source tool "METRIX"}{38}{section.5.1}
-\contentsline {section}{\numberline {5.2}Sextant}{40}{section.5.2}
-\contentsline {section}{\numberline {5.3}NDepend}{42}{section.5.3}
-\contentsline {section}{\numberline {5.4}PVS-Studio}{43}{section.5.4}
-\contentsline {chapter}{\numberline {6}Conclusion}{44}{chapter.6}
-\contentsline {chapter}{Bibliography}{44}{chapter.6}
->>>>>>> 7012fabd2d759e0c15907125bf334f322ba4f204
 \global \c@tocdepth 0\relax 
