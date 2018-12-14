@@ -1,11 +1,11 @@
-In this chapter, we present developed framework which allows to analyze Erlang programs and visualize calculated metrics. The first two sections give a brief summary of Erlang, RefactorErl static analyzis tool and developed metrics.
+In this chapter, we present a developed framework which allows to analyze Erlang programs and visualize calculated metrics. The first two sections give a brief summary of Erlang, RefactorErl static analysis tool and developed metrics.
 
 \section{An introductory glimpse at the Erlang programming language}
 Erlang is a functional programming language which provides runtime designed for highly parallel, scalable software requiring high uptime. It is designed for development of robust systems that can be distributed between many different computers in a network. Erlang is kinda of similar to Java in the case that it uses a virtual machine and also supports multithreading. 
 
 \textbf{Variables}
 Erlang provides dynamic data types, allowing programmers to develop system
-components (such as message dispatchers) that do not care what type of data they are handling and others that strongly enforce data type restrictions or that decide how to act based on the type of data they receive.Variables must start with a capital letter or an underscore, and are composed of letters, digits and underscores.
+components (such as message dispatchers) that do not care what type of data they are handling and others that strongly enforce data type restrictions or that decide how to act based on the type of data they receive. Variables must start with a capital letter or an underscore, and are composed of letters, digits,	 and underscores.
 
 \textbf{Data types}
 Erlang has:
@@ -16,7 +16,7 @@ Erlang has:
 	\item Atoms. An atom is an element by itself. It starts with a lowercase letter and is built of letters, digits, and underscores, or it is any string placed within single quotes: atom1, 'Atom 2'.
 	\item Lists are a comma-separated sequence of some values placed within brackets: [abc, 123, "It is some string"]. 
 	\item Tuples are a comma-separated sequence of some values placed within braces: {abc, 123, "It is some string"}.
-	\item Records are not a separate data type, but are just tuples with keys associated with each value. They are declared in a file and defined (given specific values) in the program.
+	\item Records are not a separate data type but are just tuples with keys associated with each value. They are declared in a file and defined (given specific values) in the program.
 	\item Binaries are placed within double angle brackets: <<0, 128, 128, 255>>, <<"It is some string">>, <<X:7, Y:5, Z:1>>. Binaries are series of bits; the number of bits in a binary has to be a multiple of 8.
 	\item References are globally unique values.
 	\item Pids stand for process identifiers which are the "names" of processes.
@@ -54,25 +54,21 @@ called example that demonstrated recursive list manipulation.
 Erlang source files consist of a section containing meta-information about the module represented by the file(all functions in Erlang must be defined in
 modules.), and a list of functions that are either exposed to the users of this module (with the -export attribute), or are only defined for internal use inside the module.  
 
-A subtle element of all three functions is that every function needs to 
-have an initial value to start counting with. In the case of 
-sum/2, we use 0, as we’re doing addition, and given \texttt{X = X + 0}, the value is neutral, so we can’t mess up the calculation by starting there. If we were doing multiplication, we would use 1 given \texttt{X = X * 1}. 
+A subtle element of all three functions is that every function needs to have an initial value to start counting with. In the case of sum/2, we use 0, as we’re doing addition, and given \texttt{X = X + 0}, the value is neutral, so we can’t mess up the calculation by starting there. If we were doing multiplication, we would use 1 given \texttt{X = X * 1}. 
 
-The functions min/1 and max/1 can’t have a default starting value. If the 
-list were only negative numbers and we started at 0, the answer would be 
-wrong. So we need to use the first element of the list as a starting point.
+The functions min/1 and max/1 can’t have a default starting value. If the list were only negative numbers and we started at 0, the answer would be wrong. So we need to use the first element of the list as a starting point.
 
 \section{The RefactorErl static analysis tool} 
 
-RefactorErl~\cite{refactorerl1, refactorerl2} is an open-source static source code analyzer and transformer tool for Erlang,developed by the Department of Programming Languages and Compilers at the Faculty of Informatics, Eötvös Loránd University, Budapest, Hungary. The phrase "refactoring" means a preserving source code transformation, so while you change the programstructure you do not alter its behaviour. RefactorErl was built to refactor Erlang programs.
+RefactorErl~\cite{refactorerl1, refactorerl2} is an open-source static source code analyzer and transformer tool for Erlang, developed by the Department of Programming Languages and Compilers at the Faculty of Informatics, Eötvös Loránd University, Budapest, Hungary. The phrase "refactoring" means a preserving source code transformation, so while you change the program structure you do not alter its behavior. RefactorErl was built to refactor Erlang programs.
 
-The main focus of RefactorErl is to support daily code comprehension tasks of Erlang developers~\cite{refactorerl}. It can analyse the structure of the refactored program - based on the syntactic rules of the underlying programming language - and it can also collect and use semantical information about the source code.
+The main focus of RefactorErl is to support daily code comprehension tasks of Erlang developers~\cite{refactorerl}. It can analyze the structure of the refactored program - based on the syntactic rules of the underlying programming language - and it can also collect and use semantical information about the source code.
 
 \subsection{Metrics in the RefactorErl}
 
-A metric query language is incorporated into RefactorErl~\cite{refactorerl} . Metric queries can be executed from the console interface or can be used as properties in semantic query language which is available from every interface.
+A metric query language is incorporated into RefactorErl~\cite{refactorerl}. Metric queries can be executed from the console interface or can be used as properties in semantic query language which is available from every interface.
 
-Table \ref{tab:metrics_ref} shows all the implemented metrics in RefactorErl tool. There are two coloms in this table: the first column gives the information about the name of the metric, and the second column shows the for which node the metric is available.
+Table \ref{tab:metrics_ref} shows all the implemented metrics in RefactorErl tool. There are two columns in this table: the first column gives the information about the name of the metric, and the second column shows the for which node the metric is available.
 
 \begin{table}[!htb]
 	\centering
@@ -208,15 +204,15 @@ Table \ref{tab:metrics_ref} shows all the implemented metrics in RefactorErl too
 
 \textbf{module\_sum}
 
-The sum of the chosen complexity structure metrics measured on the modules functions. The proper metrics adjusted in a list can be implemented in the desired number and order~\cite{refactorerlm}.
+The sum of the chosen complexity structure metrics measured on the functions of the module. The proper metrics adjusted in a list can be implemented in the desired number and order~\cite{refactorerlm}.
 
 \textbf{line\_of\_code}
 
-The number of the lines of part of the text, function, or module. The number of empty lines is not included in the sum. As the number of lines can be measured on more functions, or modules and the system is capable of returning the sum of these, the number of lines of the whole loaded program text can be enquired~\cite{refactorerlm}.
+The number of lines of part of the text, function, or module. The number of empty lines is not included in the sum. As the number of lines can be measured on more functions, or modules and the system is capable of returning the sum of these, the number of lines of the whole loaded program text can be enquired~\cite{refactorerlm}.
 
 \textbf{char\_of\_code}
 
-The number of characters in a program script. This metric is capable of measuring both the codes of functions and modules and with the help of aggregating functions we can enquire the total and average number of characters in a cluster, or in the whole source text~\cite{refactorerlm}.
+The number of characters in a program script. This metric is capable of measuring both the codes of functions and modules and with the help of aggregating functions we can enquire the total and the average number of characters in a cluster, or in the whole source text~\cite{refactorerlm}.
 
 \textbf{number\_of\_fun}
 
@@ -224,11 +220,11 @@ This metric gives the number of functions implemented in the concrete module, bu
 
 \textbf{number\_of\_macros}
 
-This metric gives the number of defined macros in the concrete module, or modules. It is also possible to enquire the number of implemented macros in a module~\cite{refactorerlm}.
+This metric gives the number of defined macros in the concrete module or modules. It is also possible to inquire the number of implemented macros in a module~\cite{refactorerlm}.
 
 \textbf{number\_of\_records}
 
- This metric gives the number of defined records in a module. It is also possible to enquire the number of implemented records in a module~\cite{refactorerlm}.
+ This metric gives the number of defined records in a module. It is also possible to inquire the number of implemented records in a module~\cite{refactorerlm}.
 
 \textbf{included\_files}
 
@@ -240,23 +236,23 @@ This metric gives the number of imported modules used in a concrete module. The 
 
 \textbf{number\_of\_funpath}
 
-The total number of function paths in a module.The metric, besides the number of internal function links, also contains the number of external paths, or the number of paths that lead outward from the module. It is very similar to the metric called cohesion~\cite{refactorerlm}.
+The total number of function paths in a module. The metric, besides the number of internal function links, also contains the number of external paths or the number of paths that lead outward from the module. It is very similar to the metric called cohesion~\cite{refactorerlm}.
 
 \textbf{function\_calls\_in}
 
-Gives the number of function calls into a module from other modules. It can not be implemented to measure a concrete function. For that we use the calls\_for/1 function~\cite{refactorerlm}.
+Gives the number of function calls into a module from other modules. It can not be implemented to measure a concrete function. For that, we use the calls\_for/1 function~\cite{refactorerlm}.
 
 \textbf{function\_calls\_out}
 
-Gives the number of every function call from a module towards other modules. It can not be implemented to measure a concrete function. For that we use the calls\_from/1 function~\cite{refactorerlm}.
+Gives the number of every function call from a module towards other modules. It can not be implemented to measure a concrete function. For that, we use the calls\_from/1 function~\cite{refactorerlm}.
 
 \textbf{cohesion}
 
-The number of call-paths of functions that call eachother. By call-path we mean that an f1 function calls f2 (e.g. f1()->f2().). If f2 also calls f1, then the two calls still count as one call-path~\cite{refactorerlm}.
+The number of call-paths of functions that call each other. By call-path we mean that an f1 function calls f2 (e.g. f1()->f2().). If f2 also calls f1, then the two calls still count as one call-path~\cite{refactorerlm}.
 
 \textbf{function\_sum}
 
-The sum calculated from the functions complexity metrics that characterizes the complexity of the function. It can be calculated using various metrics together~\cite{refactorerlm}.
+The sum calculated from the functions complexity metrics characterizes the complexity of the function. It can be calculated using various metrics together~\cite{refactorerlm}.
 	 
 \textbf{max\_depth\_of\_calling}
 
@@ -264,7 +260,7 @@ The length of function call-chains, namely the chain with the maximum depth~\cit
 	 
 \textbf{max\_depth\_of\_cases}
 
- Gives the maximum of case control structures embedded in case of a concrete function (how deeply are the case control structures embedded). In case of a module it measures the same regarding all the functions in the module. Measuring does not break in case of case expressions, namely when the case is not embedd~\cite{refactorerlm}.
+ Gives the maximum of case control structures embedded in case of a concrete function (how deeply are the case control structures embedded). In case of a module, it measures the same regarding all the functions in the module. Measuring does not break in case of case expressions, namely when the case is not embedded~\cite{refactorerlm}.
 
 \textbf{min\_depth\_of\_cases}
 
@@ -276,7 +272,7 @@ The length of function call-chains, namely the chain with the maximum depth~\cit
 
 \textbf{number\_of\_funclauses}
 
-Gives the number of a functions clauses. Counts all distinct branches, but does not add the functions having the same name, but different arity, to the sum~\cite{refactorerlm}.
+Gives the number of functions clauses. Counts all distinct branches, but does not add the functions having the same name, but different arity, to the sum~\cite{refactorerlm}.
 
 \textbf{branches\_of\_recursion}
 
@@ -284,7 +280,7 @@ Gives the number of a certain function's branches, how many times a function cal
 
 \textbf{calls\_for\_function}
 
-This metric gives the number of calls for a concrete function. It is not equivalent with the number of other functions calling the function, because all of these other functions can refer to the measured one more than once~\cite{refactorerlm}.
+This metric gives the number of calls for a concrete function. It is not equivalent to the number of other functions calling the function, because all of these other functions can refer to the measured one more than once~\cite{refactorerlm}.
 
 \textbf{calls\_from\_function}
 
@@ -296,7 +292,7 @@ Gives the number of function expressions in a module. It does not measure the ca
 
 \textbf{number\_of\_messpass}
 
-In case of functions it measures the number of code snippets implementing messages from a function, while in case of modules it measures the total number of messages in all of the modules functions~\cite{refactorerlm}.
+In the case of functions, it measures the number of code snippets implementing messages from a function, while in case of modules it measures the total number of messages in all of the modules functions~\cite{refactorerlm}.
 
 \textbf{fun\_return\_points}
 
@@ -320,7 +316,7 @@ It gives the number of cases when there are not any whitespaces after a comma or
 
 \textbf{is\_tail\_recursive}
 
-It returns with 1, if the given function is tail recursive; with 0, if it is recursive, but not tail recursive; and -1 if it is not a recursive function (direct and indirect recursions are also examined). If we use this metric from the semanctic query language, the result is converted to tail\_rec, non\_tail\_rec or non\_rec atom~\cite{refactorerlm}.
+It returns with 1 if the given function is tail recursive; with 0, if it is recursive, but not tail recursive; and -1 if it is not a recursive function (direct and indirect recursions are also examined). If we use this metric from the semantic query language, the result is converted to tail\_rec, non\_tail\_rec or non\_rec atom~\cite{refactorerlm}.
 
 \textbf{mcCabe}
 
@@ -332,37 +328,37 @@ Gives the number of OTP callback modules used in modules~\cite{refactorerlm}.
 
 \section{Metric visualisation module for WEB2 interface of RefactorErl}
 
-The section describes the main concept and details of the developed framework for RefactorErl static analyzis tool. The first part introduces the main features of the software. The next part describes which tools were used in the developing process of the module. In the last part we can read how to use the software step-by-step.
+The section describes the main concept and details of the developed framework for RefactorErl static analysis tool. The first part introduces the main features of the software. The next part describes which tools were used in the developing process of the module. In the last part, we can read how to use the software step-by-step.
 
 \subsection{Description of the software}
 
-The program which was developed allows to analyze git repositories with Erlang code files. The component is built on RefactorErl static analyzis tool and actively uses its feature of calculating different metrics of Erlang modules and functions. It has very convinient to use web interface with repository structure as a folder tree and a canvas where plots can be observed. These plots contain information how particular metric was changing with repository evolution. The plots can be saved for future usage as a pictures in PNG format.
+The program which was developed allows analyzing git repositories with Erlang code files. The component is built on RefactorErl static analysis tool and actively uses its feature of calculating different metrics of Erlang modules and functions. It has convenient user-friendly web interface with repository structure as a folder tree and a canvas where plots can be observed. These plots contain information how particular metric was changing with repository evolution. The plot can be saved for future use as a picture in PNG format.
 
-The main feautures of the software are:
+The main features of the software are:
 \begin{itemize}
-	\item Drawing plots which show change of metrics with software evolving from version to version.
+	\item Drawing plots which show the change of metrics with software evolving from version to version.
 	\item Analyzing modules and functions separately.
 	\item Choosing separate files for the analyzing.
 	\item User-friendly web interface.
 \end{itemize}
 
-The main focus of the project is to help Erlang developers with analyzing their projects using plots. Visualisation helps with finding patterns and improving of the code quality. 
+The main focus of the project is to help Erlang developers with analyzing their projects using plots. Visualization helps with finding patterns and improving the code quality. 
 
 \subsection{Used tools}
 
-The interface of the program is the AngularJS component which uses NVD3 library for plot rendering. Metrics data is stored in DETS tables at the stage of calculation in Erlang code. This data passes as JSON objects when Erlang function communicates with javascript code. For saving plots as a pictures the saveSvgAsPng library is used.
+The interface of the program is the AngularJS component which uses NVD3 library for plot rendering. Metrics data is stored in DETS tables at the stage of calculation in Erlang code. This data passes as JSON objects when Erlang function communicates with javascript code. For saving plots as pictures the saveSvgAsPng library is used.
 
 \textbf{NVD3}
 
-This library currently under development of a team of software engineers at Novus Partners company. NVD3 is the D3 based JavaScript library. It allows to create beautiful and reusable charts in web applications.
+This library currently under development of a team of software engineers at Novus Partners company. NVD3 is the D3 based JavaScript library. It allows creating beautiful and reusable charts in web applications.
 
-It has wonderful features for data visualization with nice-looking charts such as the usual box-plot, line and bar charts and more fancy candlestick and sunburst charts. If you need a lot of functionality in a JavaScript charts plotting library, NVD3 is the very nice option for your project.
+It has wonderful features for data visualization with nice-looking charts such as the usual box-plot, line and bar charts and fancier candlestick and sunburst charts. If you need a lot of functionality in a JavaScript chart plotting library, NVD3 is the very nice option for your project.
 
 \textbf{AngularJs}
 
-The new component was created for existing system using this javascript web framework.
+The new component was created for the existing system using this javascript web framework.
 
-AngularJS (also written as Angular.js) is an open-source JavaScript-based front-end web application framework mainly developed by Google and by a community of individuals and corporations to solve many of the challenges which can be observed in development of single-page applications.
+AngularJS (also written as Angular.js) is an open-source JavaScript-based front-end web application framework mainly developed by Google and by a community of individuals and corporations to solve many of the challenges which can be observed in the development of single-page applications.
 
 The AngularJS framework starts his work by reading the Hypertext Markup Language (HTML) page, which has extra tag attributes embedded into it. Angular transforms these attributes as directives to bind input or output parts of the page to a model that is defined by standard JavaScript variables. The values of these JavaScript variables can be manually set in the code, or fetched from static or dynamic JSON resources. 
 
@@ -374,8 +370,7 @@ DETS is Disk Erlang Term Storage. DETS tables store tuples, with access to the e
 
 \textbf{JSON}
 
-Data which stored in Dets tables transforms into JSON objects when Erlang code interact with JavaScript code.
-JSON (JavaScript Object Notation) is a simple format of data-interchange. It is a text format that is absolutely language independent but it uses convention that is familiar to programmers of the C-family of languages which includes C, C++, C\#, Java, JavaScript, Python, Perl, and others. This property makes JSON an ideal language of data-interchange.
+Data, which stored in Dets tables, transforms into JSON objects when Erlang code interact with JavaScript code. JSON (JavaScript Object Notation) is a simple format of data-interchange. It is a text format that is absolutely language independent but it uses a convention that is familiar to programmers of the C-family of languages which includes C, C++, C\#, Java, JavaScript, Python, Perl, and others. This property makes JSON an ideal language of data-interchange.
 
 JSON is built on two data structures:
 \begin{itemize}
@@ -385,7 +380,7 @@ JSON is built on two data structures:
 
 \textbf{saveSvgAsPng}
 
-This small library is used for saving SVG plots as a PNG pictures. Despite its small size it has a lot of different options such a choosing particular background, font, scale etc. 
+This small library is used for saving SVG plots as PNG pictures. Despite its small size, it has a lot of different options such a choosing particular background, font, scale etc. 
 
 \subsection{The typical workflow}
 
@@ -395,7 +390,7 @@ For using the component WEB2 interface should be run. It can be done with this c
 	ri:start_web2([{yaws_path, PATH-TO-YAWS}]).
 \end{lstlisting}
 
-This command will run WEB2 interface available on localhost:8001 by default. After loginning the component can be accessed in metrics tab as shown on Figure \ref{fig:metrics_interface}
+This command will run WEB2 interface available on localhost:8001 by default. After loginning the component can be accessed in the metrics tab as shown in Figure \ref{fig:metrics_interface}
 
 \begin{figure}[h]
 	\includegraphics[height=80mm]{figures/metrics.png}
@@ -403,15 +398,15 @@ This command will run WEB2 interface available on localhost:8001 by default. Aft
 	\label{fig:metrics_interface}
 \end{figure}
 
-The path to git repository should be provided in "Git repository path" input. After clicking the "Check repository" button the folder will be analized. If it is not valid the alert Figure \ref{fig:metrics_alert} will be shown.  
+The path to git repository should be provided in "Git repository path" input. After clicking the "Check repository" button the folder will be analyzed. If it is not valid the alert Figure \ref{fig:metrics_alert} will be shown.  
 
 \begin{figure}[h]
 	\includegraphics[height=80mm]{figures/alert.png}
-	\caption{Alert shown because the provided folder is not a valid repository.}
+	\caption{Alert showed because the provided folder is not a valid repository.}
 	\label{fig:metrics_alert}
 \end{figure}
 
-In other case the folder tree will be available where separate files can be choosen for future analyzing as shown at Figure \ref{fig:metrics_files}. Also there is a possibility to delete some files choosen by mistake.
+In another case, the folder tree will be available where separate files can be chosen for future analyzing as shown in Figure \ref{fig:metrics_files}. Also, there is a possibility to delete some files chosen by mistake.
 
 \begin{figure}[h]
 	\includegraphics[height=80mm]{figures/files.png}
@@ -419,7 +414,7 @@ In other case the folder tree will be available where separate files can be choo
 	\label{fig:metrics_files}
 \end{figure}
 
-The final step is pressing "Analyze" button. It will start calculating metrics for all versions of the repository and progress will be shown on screen Figure \ref{fig:metrics_analyze}. 
+The final step is pressing the "Analyze" button. It will start calculating metrics for all versions of the repository and progress will be shown on screen Figure \ref{fig:metrics_analyze}. 
 
 \begin{figure}[h]
 	\includegraphics[height=80mm]{figures/analyze.png}
@@ -427,13 +422,13 @@ The final step is pressing "Analyze" button. It will start calculating metrics f
 	\label{fig:metrics_analyze}
 \end{figure}
 
-After analyzis is done the menu with choosing parameters of drawing the plot will be available as shown at Figure \ref{fig:metrics_plot}. It consists of two selection lists. The first one is the list where we can choose type of item for plots drawing (module or function). Depends on chosen type the select boxes with available metrics will differ. 
+After analysis is done the menu with choosing parameters of drawing the plot will be available as shown at Figure \ref{fig:metrics_plot}. It consists of two selection lists. The first one is the list where we can choose the type of item for plots drawing (module or function). Depends on the chosen type the select boxes with available metrics will differ. 
 
 For modules: module sum, line of code, char of code, number of fun, number of macros, number of records, included files, imported modules, number of funpath, function calls in, function calls out, cohesion, max depth of calling, max depth of cases, min depth of cases, max depth of structs, number of funclauses, branches of recursion, number of funexpr, number of messpass, fun return points, average size, max length of line, no space after comma, mcCabe, otp used.
 
 For functions: line of code, char of code, function sum, max depth of calling, max depth of cases, min depth of cases, max depth of structs, number of funclauses, branches of recursion, calls for function, calls from function, number of funexpr, number of messpass, fun return points, average size, max length of line, no space after comma, is tail recursive, mcCabe. Another list is the list of all items which can be chosen for metrics plot drawing. 
 
-After plot is shown the "Save" button appears which can be pressed to save SVG plot in a PNG file. 
+After the plot is shown the "Save" button appears which can be pressed to save SVG plot in a PNG file. 
 
 \begin{figure}[h]
 	\includegraphics[height=80mm]{figures/plot.png}
