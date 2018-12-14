@@ -174,7 +174,7 @@ methods are counted, but overridden methods are not, because only one method of 
 A large RFC has been found to indicate more faults. Classes with a high RFC are more complex and harder to understand. Testing and debugging is complicated. A worst case value for possible responses will assist in appropriate allocation of testing time.
 %%___________________________________________________
 \subsection{Complexity metrics}
-Complexity is an important aspect for software quality assessment and must be appropriately addressed in service-oriented architecture\cite{complexity}. One  of  the  key  aims  of  complexity  metrics  is  to  predict modules   that are fault-prone post-release~\cite{complexity2}. This metrics are one of the most difficult software metrics for understanding.
+Complexity is an important aspect for software quality assessment and must be appropriately addressed in service-oriented architecture~\cite{complexity}. One  of  the  key  aims  of  complexity  metrics  is  to  predict modules   that are fault-prone post-release~\cite{complexity2}. This metrics are one of the most difficult software metrics for understanding.
 
 \textbf{McCabe's Cyclomatic Complexity (MVG)}
 
@@ -253,11 +253,11 @@ The report contains a number of tables identifying the modules in the files subm
 
 This tool can measure the following metrics:
 \begin{itemize}
-	\item Fan-In Fan-Out()FIN and FOUT).
+	\item Fan-In Fan-Out (FIN and FOUT).
 	\item Lines of Code (LOC). 
-	\item Numbe r Of Children(NOC).
-	\item Weighted Methods per Class(WMC).
-	\item McCabe's Cyclomatic Complexity(MVG).
+	\item Numbe r Of Children (NOC).
+	\item Weighted Methods per Class (WMC).
+	\item McCabe's Cyclomatic Complexity (MVG).
 	\item Number Of Methods (NOM).
 \end{itemize}
 
@@ -269,8 +269,8 @@ This tool can measure the following metrics:
 
 \begin{itemize}
 	\item Depth of Inheritance Tree (DIT).
-	\item Weighted Methods per Class(WMC).
-	\item Numbe r Of Children(NOC).
+	\item Weighted Methods per Class (WMC).
+	\item Numbe r Of Children (NOC).
 	\item Coupling Between Object classes (CBO).
 	\item Lack of Cohesion in Methods (LCOM).
 	\item Response For a Class (RFC).
@@ -283,12 +283,12 @@ Analyst4j software are most popular to find out the quality related metrics. Thi
 
 This tool can measure the following metrics:
 \begin{itemize}
-	\item Weighted Methods per Class(WMC).
+	\item Weighted Methods per Class (WMC).
 	\item Lines of Code (LOC). 
 	\item Coupling Between Object classes (CBO).
 	\item Depth of Inheritance Tree (DIT).
 	\item Response For a Class (RFC).
-	\item Number Of Children(NOC).
+	\item Number Of Children (NOC).
 	\item Lack of Cohesion in Methods (LCOM).
 	\item Number Of Methods (NOM).
 \end{itemize}
@@ -303,12 +303,12 @@ OOMeter provides an interface for users to define custom metrics through java cl
 This tool can measure the following metrics:
 
 \begin{itemize}
-	\item Weighted Methods per Class(WMC).
+	\item Weighted Methods per Class (WMC).
 	\item Lines of Code (LOC). 
 	\item Coupling Between Object classes (CBO).
 	\item Depth of Inheritance Tree (DIT).
 	\item Response For a Class (RFC).
-	\item Numbe r Of Children(NOC).
+	\item Numbe r Of Children (NOC).
 	\item Tight Class Cohesion (TCC).
 	\item Lack of Cohesion in Methods (LCOM).
 \end{itemize}
@@ -324,9 +324,9 @@ integrated  as  an  EasyEclipse  package.  The  plugin computes   the  various m
 This tool can measure the following metrics:
 
 \begin{itemize}
-	\item Weighted Methods per Class(WMC).
+	\item Weighted Methods per Class (WMC).
 	\item Lines of Code (LOC). 
-	\item Numbe r Of Children(NOC).
+	\item Numbe r Of Children (NOC).
 	\item Depth of Inheritance Tree (DIT).
     \item Number Of Methods (NOM).
 \end{itemize}
@@ -337,7 +337,7 @@ developed using the ID.E It is a open source tool. It counts various metrics in 
 
 This tool can measure the following metrics:
 \begin{itemize}
-	\item Weighted Methods per Class(WMC).
+	\item Weighted Methods per Class (WMC).
 	\item Lines of Code (LOC). 
 	\item Lack of Cohesion in Methods (LCOM).
 	\item Depth of Inheritance Tree (DIT).
@@ -352,12 +352,18 @@ This tool can measure the following metrics:
 	\item Lack of Cohesion in Methods (LCOM).
 	\item Depth of Inheritance Tree (DIT).
 	\item Number Of Methods (NOM).
-	\item Numbe r Of Children(NOC).
+	\item Numbe r Of Children (NOC).
 	\item Response For a Class (RFC).
 \end{itemize}
 
 \section{Measuring functional languages}
-In previous section has been described sofrware metrics for object-oriented languages. However software metrics developed for imperative and object-oriented languages can also be used for measuring in functional programming languages like Erlang and Haskell. We can use the same metrics because several constructs as a class,  a module and a library are similar. All of this structures can be consider like collections of functions. If the chosen metric does not take the distinctive properties of these constructs into account (variables, method overrides, dynamic binding, visibility etc.), then it can be applied to these apparently diverse constructs ~\cite{metrics3}.
+
+In previous section has been described sofrware metrics for object-oriented languages. However software metrics developed for imperative and object-oriented languages can also be used for measuring in functional programming languages like Erlang and Haskell.
+
+Some  of  the  measurement  techniques  from  imperative  and object-oriented  languages  may  transfer  quite  cleanly  to  functional  languages,  for  instance  the  path  count  metric  which  counts  the  number  of  execution  paths through  a  piece  of  program  code,  but  some  of  the  more  advanced features  of  functional  programming  languages  may contribute  to  the  complexity  of  a  program  in  ways  that  are  not  considered  by  traditional  imperative  or  object  oriented 
+metrics ~\cite{fp}. 
+
+We can use the same metrics because several constructs as a class, a module and a library are similar. All of this structures can be consider like collections of functions. If the chosen metric does not take the distinctive properties of these constructs into account (variables, method overrides, dynamic binding, visibility etc.), then it can be applied to these apparently diverse constructs ~\cite{metrics3}.
 
 Dissimilarity between functional and imperative languages are in such features as difference in the level of nesting of blocks and control
 structures, in several ways of connecting certain functions (for example, data flow and call graph), inheritance insted of cohesion and and simple cardinality metrics(lines of code, char of code).

@@ -38,6 +38,12 @@ Maryam~Hooshyar Habib~Izadkhah.
 R.~S. Pressman.
 \newblock Software engineering: a practitioner’s approach., 2005.
 
+\bibitem{fp}
+Dr.K.Krishnamoorthy V.Thangadurai, Dr.K.P.Yadav.
+\newblock A study of software functional programming and measurement.
+\newblock International Journal of Innovative Research in Science, Engineering
+  and Technology, ISSN: 2319-8753, November 2012.
+
 \bibitem{metrics3}
 Robert~Kitlei Roland~Kiraly.
 \newblock Application of complexity metrics in functional languages.
@@ -72,6 +78,13 @@ Li~Xinke Francesco~Cesarini.
 \newblock Erlang programming.
 \newblock Journal of Shanghai University (English Edition), Volume 11, Issue 5,
   pp 474–479, Oknober 2007.
+
+\bibitem{mcCabe}
+Serge~Demeyer Quinten David~Soetens.
+\newblock Studying the effect of refactorings: a complexity metrics
+  perspective.
+\newblock 2010 Seventh International Conference on the Quality of Information
+  and Communications Technology, December 2010.
 
 \bibitem{tail}
 Paul~E. Black.
