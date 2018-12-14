@@ -1,27 +1,25 @@
 In this chapter, we present developed framework which allows to analyze Erlang programs and visualize calculated metrics. The first two sections give a brief summary of Erlang, RefactorErl static analyzis tool and developed metrics.
 
 \section{An introductory glimpse at the Erlang programming language}
-Erlang is a functional language and accompanying runtime designed for highly
-parallel, scalable applications requiring high uptime. Erlang is a programming
-language designed for developing robust systems of programs that can be distributed among different computers in a network.Erlang is similar to Java in that it uses a virtual machine and supports multithreading. 
+Erlang is a functional programming language which provides runtime designed for highly parallel, scalable software requiring high uptime. It is designed for development of robust systems that can be distributed between many different computers in a network. Erlang is kinda of similar to Java in the case that it uses a virtual machine and also supports multithreading. 
 
 \textbf{Variables}
 Erlang provides dynamic data types, allowing programmers to develop system
-components (such as message dispatchers) that do not care what type of data they are handling and others that strongly enforce data type restrictions or that decide how to act based on the type of data they receive.Variables must begin with a capital letter or an underscore, and are composed of letters, digits, and underscores.
+components (such as message dispatchers) that do not care what type of data they are handling and others that strongly enforce data type restrictions or that decide how to act based on the type of data they receive.Variables must start with a capital letter or an underscore, and are composed of letters, digits and underscores.
 
 \textbf{Data types}
 Erlang has:
 \begin{enumerate}
-	\item Integers, of unlimited size.
+	\item Integers of unlimited size.
 	\item Floats.
-	\item Strings, enclosed in double quotes: "This is a string.".
-	\item Atoms. An atom stands for itself. It begins with a lowercase letter and is composed of letters, digits, and underscores, or it is any string enclosed in single quotes: atom1, 'Atom 2'.
-	\item Lists, which are a comma-separated sequence of values enclosed in brackets: [abc, 123,"pigs in a tree"]. 
-	\item Tuples, which are a comma-separated sequence of values enclosed in braces: {abc, 123,"pigs in a tree"}.
-	\item Records, which are not a separate data type, but are just tuples with keys associated with each value. They are declared in a file and defined (given specific values) in the program.
-	\item Binaries, enclosed in double angle brackets: <<0, 255, 128, 128>>, <<"hello">>, <<X:3,Y:7, Z:6>>. Binaries are sequences of bits; the number of bits in a binary must be a multiple of 8.
+	\item Strings, placed within double quotes: "It is some string.".
+	\item Atoms. An atom is an element by itself. It starts with a lowercase letter and is built of letters, digits, and underscores, or it is any string placed within single quotes: atom1, 'Atom 2'.
+	\item Lists are a comma-separated sequence of some values placed within brackets: [abc, 123, "It is some string"]. 
+	\item Tuples are a comma-separated sequence of some values placed within braces: {abc, 123, "It is some string"}.
+	\item Records are not a separate data type, but are just tuples with keys associated with each value. They are declared in a file and defined (given specific values) in the program.
+	\item Binaries are placed within double angle brackets: <<0, 128, 128, 255>>, <<"It is some string">>, <<X:7, Y:5, Z:1>>. Binaries are series of bits; the number of bits in a binary has to be a multiple of 8.
 	\item References are globally unique values.
-	\item Process identifiers (Pids) are the "names" of processes.
+	\item Pids stand for process identifiers which are the "names" of processes.
 \end{enumerate}
 
 Figure \ref{fig:example_erlang}features the source of a small Erlang program
@@ -356,17 +354,17 @@ The interface of the program is the AngularJS component which uses NVD3 library 
 
 \textbf{NVD3}
 
-Inspired by Mike Bostock and currently maintained by a team of frontend software engineers at Novus Partners, NVD3 is another quality D3 based JavaScript library.Allowing you to create beautiful reusable charts in your web applications.
+This library currently under development of a team of software engineers at Novus Partners company. NVD3 is the D3 based JavaScript library. It allows to create beautiful and reusable charts in web applications.
 
-It has great features for visualizing data with lovely charts such as the box-plot, sunburst and candlestick charts. If you are looking for tons of functionality in a JavaScript charting library, NVD3 is the one to look out for.
+It has wonderful features for data visualization with nice-looking charts such as the usual box-plot, line and bar charts and more fancy candlestick and sunburst charts. If you need a lot of functionality in a JavaScript charts plotting library, NVD3 is the very nice option for your project.
 
 \textbf{AngularJs}
 
 The new component was created for existing system using this javascript web framework.
 
-AngularJS (also written as Angular.js) is a JavaScript-based open-source front-end web application framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications.
+AngularJS (also written as Angular.js) is an open-source JavaScript-based front-end web application framework mainly developed by Google and by a community of individuals and corporations to solve many of the challenges which can be observed in development of single-page applications.
 
-The AngularJS framework works by first reading the Hypertext Markup Language (HTML) page, which has additional custom tag attributes embedded into it. Angular interprets those attributes as directives to bind input or output parts of the page to a model that is represented by standard JavaScript variables. The values of those JavaScript variables can be manually set within the code, or retrieved from static or dynamic JSON resources. 
+The AngularJS framework starts his work by reading the Hypertext Markup Language (HTML) page, which has extra tag attributes embedded into it. Angular transforms these attributes as directives to bind input or output parts of the page to a model that is defined by standard JavaScript variables. The values of these JavaScript variables can be manually set in the code, or fetched from static or dynamic JSON resources. 
 
 \textbf{DETS tables}
 
@@ -377,13 +375,12 @@ DETS is Disk Erlang Term Storage. DETS tables store tuples, with access to the e
 \textbf{JSON}
 
 Data which stored in Dets tables transforms into JSON objects when Erlang code interact with JavaScript code.
-JSON (JavaScript Object Notation) is a lightweight data-interchange format.
-JSON is a text format that is completely language independent but uses conventions that are familiar to programmers of the C-family of languages, including C, C++, C\#, Java, JavaScript, Perl, Python, and many others. These properties make JSON an ideal data-interchange language.
+JSON (JavaScript Object Notation) is a simple format of data-interchange. It is a text format that is absolutely language independent but it uses convention that is familiar to programmers of the C-family of languages which includes C, C++, C\#, Java, JavaScript, Python, Perl, and others. This property makes JSON an ideal language of data-interchange.
 
-JSON is built on two structures:
+JSON is built on two data structures:
 \begin{itemize}
-	\item A collection of name/value pairs. In various languages, this is realized as an object, record, struct, dictionary, hash table, keyed list, or associative array.
-	\item An ordered list of values. In most languages, this is realized as an array, vector, list, or sequence.
+	\item A collection of name/value pairs. In various languages, this is realized as an object, struct, record, hash table, dictionary, associative array or keyed list.
+	\item An ordered list of values. Usually, this is realized as an array, list, vector, or sequence.
 \end{itemize}
 
 \textbf{saveSvgAsPng}
