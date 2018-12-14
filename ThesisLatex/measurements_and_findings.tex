@@ -1,11 +1,11 @@
-The aim of this chapter is to test and analyze projects from git by using developed module for RefactorErl. Git commit logs hold all the change history. This is an excellent source to observe trends and patterns about projects. All projects selected for the experiment are written in Erlang and have more than 40 commits.
+The aim of this chapter is to test and analyze projects from git by using the developed module for RefactorErl. Git commit logs hold all the change history. This is an excellent source to observe trends and patterns about projects. All projects selected for the experiment are written in Erlang and have more than 40 commits.
 
 \section{Iron}
 
 This project is functional Erlang Toolkit. Iron is released under the MIT license. It can do the foolowing:
 \begin{itemize}
-	\item Count with coerce equality, count with custom predicate.
-	\item Find with coerce equality, find with custom predicate.
+	\item Count with coerce equality, count with a custom predicate.
+	\item Find with coerce equality, find with a custom predicate.
 \end{itemize}
 
 This project has just only one source code file with 68 commits. The link to the repository is \url{https://github.com/elementerl/iron}.
@@ -55,7 +55,7 @@ In Figure \ref{fig:max_depth_of_cases_iron} we can see that the metric \textbf{m
 	\label{fig:max_depth_of_cases_iron}
 \end{figure}
 
-Average length of line was not stabilize until arround 35th version with gradually decreasing from 50 symbols to 38 symbols in Figure \ref{fig:average_length_of_line_iron}.
+The average length of the line was not stabilized until 35th version with gradually decreasing from 50 symbols to 38 symbols in Figure \ref{fig:average_length_of_line_iron}.
 
 \begin{figure}[h]
 	\centering
@@ -64,7 +64,7 @@ Average length of line was not stabilize until arround 35th version with gradual
 	\label{fig:average_length_of_line_iron}
 \end{figure}
 
-As we can see on Figure \ref{fig:number_of_macros_iron} and Figure \ref{fig:number_of_records_iron} there are not defined macroses and records in the whole iron project.
+As we can see in Figure \ref{fig:number_of_macros_iron} and Figure \ref{fig:number_of_records_iron} there are not defined macroses and records in the whole iron project.
 
 \begin{figure}[h]
 	\centering
@@ -83,9 +83,9 @@ As we can see on Figure \ref{fig:number_of_macros_iron} and Figure \ref{fig:numb
 
 \section{Erlang chat }
 
-This project is multi user chat written in Erlang. It has nine source code files and 45 commits. The link to the repository is \url{https://github.com/bildeyko/erlangChat}
+This project is multi-user chat written in Erlang. It has nine source code files and 45 commits. The link to the repository is \url{https://github.com/bildeyko/erlangChat}
 
-For this project we analyzed the module \textbf{websocket\_handler.erl}. This module consists 6 functions.
+For this project, we analyzed the module \textbf{websocket\_handler.erl}. This module consists of 6 functions.
 
 We can see an increasing number of lines of code in Figure \ref{fig:loc_chat} and an increasing number of characters in a program text in Figure \ref{fig:char_of_code_chat}.
 
@@ -103,16 +103,16 @@ We can see an increasing number of lines of code in Figure \ref{fig:loc_chat} an
 	\label{fig:char_of_code_chat}
 \end{figure}
 
-In the Figure \ref{fig:chat} we can see that the author started using message passing from the 9th version of his software.
+In Figure \ref{fig:chat} we can see that the author started using message passing from the 9th version of his software.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=45mm]{figures/chat.png}
-	\caption{Number of message passing for module websocket\_handler.erl.}
+	\caption{The number of message passing for module websocket\_handler.erl.}
 	\label{fig:chat}
 \end{figure}
 
-As shown in Figure \ref{fig:chat5} there was incresing length of the longest line of code in 9th version. 
+As shown in Figure \ref{fig:chat5} there was increase in the length of the longest line of code in 9th version. 
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=45mm]{figures/chat5.png}
@@ -140,7 +140,7 @@ In Figure \ref{fig:chat2} shows that developer used otp library functions but af
 	\label{fig:chat2}
 \end{figure}
 
-The developed framework allows to measure and visualayze metrics for module and also for each function in the module. For example, in this module developer use message passing from 9th version as we mensioned above. The Figure \ref{fig:chat3} shows that there was discovered function in which author actively used message passing.
+The developed framework allows measuring and visualizing metrics for a module and also for each function in the module. For example, in this module developer use message passing from the 9th version as we mentioned above. The Figure \ref{fig:chat3} shows that there was discovered function in which the author actively used message passing.
 
 \begin{figure}[h]
 	\centering
@@ -149,7 +149,7 @@ The developed framework allows to measure and visualayze metrics for module and 
 	\label{fig:chat3}
 \end{figure}
 
-Visualyzing of metrics helps to find which functions have been changed, added or deleted. As shown in the Figure \ref{fig:chat3} the developer slightly changed the function \textbf{terminate/3} by adding two lines of code in 9th version.
+Visualizing of metrics helps to find which functions have been changed, added or deleted. As shown in the Figure \ref{fig:chat3} the developer slightly changed the function \textbf{terminate/3} by adding two lines of code in the 9th version.
 
 \begin{figure}[h]
 	\centering
@@ -159,7 +159,7 @@ Visualyzing of metrics helps to find which functions have been changed, added or
 	\label{fig:chat3}
 \end{figure}
  
-To summarize findings we can assume that most of these changes was done in 9th version.
+To summarize findings we can assume that most of these changes were done in the 9th version.
 
 %%______________________________________________________
 
@@ -179,9 +179,9 @@ The project provides:
 
 The link to the repository is \url{https://github.com/msantos/prx}. This project has 201 commits. 
 
-For this project we tested the module \textbf{prx.erl}. 
+For this project, we tested the module \textbf{prx.erl}. 
 
-As in previous two experiments, at the beginning we started to meausure the \textbf{LOC} metric. This metric helps us to see the changes all of project from over time. This results is shown in Figure \ref{fig:line_of_code_prx}.
+As in previous two experiments, at the beginning, we started to measure the \textbf{LOC} metric. This metric helps us to see the changes all of the project from over time. This result is shown in Figure \ref{fig:line_of_code_prx}.
 
 \begin{figure}[h]
 	\centering
@@ -190,13 +190,13 @@ As in previous two experiments, at the beginning we started to meausure the \tex
 	\label{fig:line_of_code_prx}
 \end{figure}
 
-Another important metric is \textbf{cohesion} metric. Modules with high cohesion tend to be preferable, because high cohesion is associated with several desirable traits of software including robustness, reliability, reusability, and understandability. In contrast, low cohesion is associated with undesirable traits such as being difficult to maintain, test, reuse, or even understand. 
-The Figure \ref{fig:cohesion_prx} and shows the decreasing of calculated metric. 
+Another important metric is \textbf{cohesion} metric. Modules with high cohesion tend to be preferable because high cohesion is associated with several desirable traits of software including robustness, reliability, reusability, and understandability. In contrast, low cohesion is associated with undesirable traits such as being difficult to maintain, test, reuse, or even understand. 
+The Figure \ref{fig:cohesion_prx} and shows the decreasing of the calculated metric. 
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=45mm]{figures/cohesion_prx.png}
-	\caption{Cohesion of the module prx.erl.}
+	\caption{The cohesion of the module prx.erl.}
 	\label{fig:cohesion_prx}
 \end{figure}
 
@@ -219,7 +219,7 @@ When we are comparing results of cohesion and McCabe cyclomatic complexity metri
 	\label{fig:otp_prx}
 \end{figure}
 
-Apart from analyzing the changes of module we also can observe the changes of funtions. The Figure \ref{fig:find/2} shows that the function \textbf{find/2} was used only in one version and later was renamed or deleted.
+Apart from analyzing the changes of the module we also can observe the changes of functions. The Figure \ref{fig:find/2} shows that the function \textbf{find/2} was used only in one version and later was renamed or deleted.
 
 \begin{figure}[h]
 	\centering
@@ -228,11 +228,8 @@ Apart from analyzing the changes of module we also can observe the changes of fu
 	\label{fig:find/2}
 \end{figure}
 
-One of the feature of functional programming languages is the presence of tail recursion. It is special form of recursion where the last operation of a function is a recursive call ~\cite{tail}.
-The metric \textbf{is\_tail\_recursive} returns with 1, if the given function
-is tail recursive; with 0, if it is recursive, but not tail recursive 
-and -1 if it is not a recursive function. As shown in Figure \ref{fig:tail1}
-we can see that developer got rid of this function from 37th version untill 40th version.
+One of the features of functional programming languages is the presence of tail recursion. It is a special form of recursion where the last operation of a function is a recursive call ~\cite{tail}.
+The metric \textbf{is\_tail\_recursive} returns with 1, if the given function is tail recursive; with 0, if it is recursive, but not tail recursive and -1 if it is not a recursive function. As shown in Figure \ref{fig:tail1} we can see that developer got rid of this function from 37th version until 40th version.
 
 \begin{figure}[h]
 	\centering
