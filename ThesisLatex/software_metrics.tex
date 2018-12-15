@@ -118,28 +118,26 @@ re-use), and in classes which are little more than data types.
 
 \textbf{Number Of Children (NOC)}
 
-NOC is a number of immediate subclasses subordinated to a class in the class hierarchy. NOC counts the number of subclasses belonging to a class.
+NOC metric measures the number of subclasses which belong to a class. This metric calculates the class hierarchy.
 
-NOC measures the breadth of a class hierarchy, where maximum DIT measures the depth. Depth is generally better than breadth, since it promotes reuse of methods through inheritance. NOC and DIT are closely related. Inheritance levels can be added to increase the depth and reduce the breadth.
+NOC metric is closely relevant with DIT metric, which is more better because it supports for reusing methods through inheritance. The first metric calculates the number of child classes, DIT measures the depth of the class.
+Inheritance levels can be used to gain the depth and reduce the breadth.
 
-A high NOC, a large number of child classes, can indicate several things: 
+A high number of NOC means the following: 
 \begin{itemize}
-	\item High reuse of base class. Inheritance is a form of reuse.
-	\item Base class may require more testing.
-	\item Improper abstraction of the parent class. 
-	\item Misuse of sub-classing. In such a case, it may be necessary to group related classes and introduce another level of inheritance.
+	\item Wrong abstraction of the parent class. 
+	\item The reuse of the base class is high. The form of reuse is inheritance.
+	\item Wrong using of subclasses. In this case, it is needed to introduce a new level of inheritance with newly grouped related classes.
+	\item Base class needed to be more tested.
 \end{itemize}
 
-A class with a high NOC and a high WMC indicates complexity at the top of the class hierarchy. The class is potentially influencing a large number of descendant classes. This can be a sign of poor design. A redesign may be required.
-
-Not all classes should have the same number of sub-classes. Classes higher up in the hierarchy should have more sub-classes then those lower down.
-
+Classes high hierarchy have more subclasses then classes with low hierarchy.
 
 \textbf{Weighted Methods per Class (WMC)}
 
-This metric is the sum of complexities of methods defined in a class. It therefore represents the
-complexity of a class as a whole and this measure can be used to indicate the development and
-maintenance effort for the class. Classes with a large Weighted Methods Per Class value can often be refactored into two or more classes.
+This metric calculates a sum of complexities all defined methods in a class. WMC shows the complexity of whole class. This measure helps to indicate the development and maintenance effort for the class. Classes with a large number of WMC can often be refactored into several classes.
+
+A class with a high value of WMC and a high number of NOC indicates complexity at the top of the class hierarchy. A sign of poor design is the potential impact of the base class on a large number of subclasses.
 
 \textbf{Coupling Between Object classes (CBO)}
 

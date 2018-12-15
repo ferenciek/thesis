@@ -6,18 +6,20 @@ In this chapter will be described some tools for visualization of software quali
 
 This tool can compute different software quality metrics. METRIX is able to evaluate software written in C and ADA languages and many metrics can be considered for software evaluation (the different metrics will be described in detail in the next section~\cite{metrix}. 
 
-Different diagrams enable the user to visualize numeric data. Graphics like line charts, scatter plots and histograms are common. 
-There are two less-common classes of diagrams: 
+The user can use different types of diagrams for metrics visualization: histograms, scatter plots and line charts. 
+This tool allows to use two not common classes of diagrams: 
+
 \begin{itemize}
-	\item The radar plots, also called Kiviat diagrams.
-	\item The city map diagram, mostly used to represent the cartography of cities.
+	\item The first is Kiviat diagrams, also known as the radar plots.
+	\item The second is the city map diagram.
 \end{itemize}
-One specific feature of METRIX is to use those two types of visualization for constructing signature and cartography of source codes.
+
+One specific feature of METRIX is to use those two types of visualization for constructing signature and cartography of source codes~\cite{metrix}.
  
 \textbf{Kiviat diagrams}
-The Kiviat diagram visualizes information through polar coordinates. The distance between the point and the origin is associated to the value user want to represent, while the angle between two points is constant, this constant is uninformative and calculated to uniformly distribute the different points. Moreover, all metric points are linked together, making a plain polygon, which shapes the specificity of the data that the user wants to represent. Of course, this diagram is not adequate to represent only one or two metrics, it requires at least three values to be pertinent. Values may be of the same metrics, representing the metric measured on different parts of the source code. Values may be of very different metrics, computed  with heterogeneous units. That enables the user to merge multivariate data on the same diagram. On Kiviat diagrams, values must be strictly positive. 
+The Kiviat diagram uses polar coordinates for visualization. The value which user wants to represent associated with the distance between the point and the origin. The angle between two points does not change because it is constant. This constant is calculated to uniformly distribute the different points. Linked together metric points make a plain polygon, which forms the data specifics of represented values. This type of diagram can be used only for visualization of more than three values of calculated metric. All values must be strictly positive. The user can merge data in one diagram. Also, this tool allows drawing the diagram for one or several metrics together. 
 
-In figure\ref{fig:metrix} shows an example of two Kiviat diagrams. These diagrams represent coding different metric values for two functions. 
+In figure\ref{fig:metrix} shows an example of two Kiviat diagrams. These diagrams represent different metric values for two functions. 
 
 \begin{figure}[h]
 	\centering
@@ -27,19 +29,17 @@ In figure\ref{fig:metrix} shows an example of two Kiviat diagrams. These diagram
 \end{figure}
 
 \textbf{City map diagrams}
-This diagram is mainly used in urbanism, to represent cities and their buildings in three dimensions. As a software project  can contain a very large number of source files, code functions  and code variables, but this visualization diagram adequately suits for complexity visualization issue. 
+Usually this type of diagrams used for representing cities with buildings in three dimensions. City map diagrams also suit for visualization of software metrics of the project with a large number of source files, functions and variables. Source code metrics are represented by rectangles by using the treemap diagram. Some authors used variants of this class of visualization diagrams to represent  values with esthetic considerations. City map diagrams are indeed multi-parameters diagrams: each “building” is associated with an n-tuple of numeric values~\cite{metrix}.  
 
-The treemap diagram is used in computing to represent in two dimensions source code metrics with rectangles. Some authors used variants of this class of visualization diagrams to represent  values with esthetic considerations. City map diagrams are indeed multi-parameters diagrams: each “building” is associated with an n-tuple of numeric values.  
+This tool also has a graphical user interface with a single Window containing three tabs: “Calc”, “Csv” and “Plots”.
 
-This tool also has a graphical user interface with a single Window containing three tabs.
+In the first "Calc" tab user chose source files for evaluation and also chose metrics which neede to be measured.It allows to users to use  hand-start scripts with a prompt. The open source aspect of the tool allows users to repeat the measuring scripts manually or to integrate them into other software.
 
-The first tab called “Calc” and enables the user to indicate the source file(s) to evaluate and to parameterize the metrics to compute. It avoids using hand-start scripts with a prompt, but the open source aspect of the tool allows advanced users to reuse the measuring scripts manually and/or to integrate them into other software.
+In the second “Csv” tab user can find a list of numeric values and chose which values will be used for function or for the file. There is an option for exporting calculated values to a spreadsheet application for drawing graphs, like scatter plots, line plots, etc.
 
-The second tab called “Csv” presents the numeric values as a list, with a tab per function and per file. The user may export these values to a spreadsheet application, in order to represent  the values with common visualization graphs, like scatter plots, line plots, etc.
+In the third “Plots” tab the user can build the city map diagrams for the source code. The user can change the settings of the tool like the modification of placement of the buildings in the city map or make the data colored, etc.
 
-The third tab called “Plots” and provides a way to visualize the city map diagrams for the source code, the signatures of functions and the comparisons between functions through radar/Kiviat plots. This tab enables the user to change the default behavior of the tool, for example, to modify the ceiling and floor to insert color into the data, to adapt the placement of the buildings in the city map, etc. 
-
-This tool may generate a report in the form of a LaTeX file, so the user can use it to produce a PDF file. This report summarizes all the values measured on the project. Each function and each file make a section of this report. In each section, numerical values are coupled with the signature of the function (as a Kiviat diagram). Each file produces three views of the associated city map diagram, as well as different Kiviat diagrams for the different metrics measured on the functions of the file. 
+This tool supports making a report in the form of a LaTeX file where each function and each file make a section of this report. User can use PDF file for analisis. This report includes all the values measured on the project. Each file produces three views of the associated city map diagram, as well as different Kiviat diagrams for the different metrics measured on the functions of the file~\cite{metrix}. 
 
 \section{Sextant}
 

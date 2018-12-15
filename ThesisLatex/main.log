@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.12.4)  14 DEC 2018 23:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.12.4)  16 DEC 2018 00:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1904,7 +1904,10 @@ Overfull \hbox (27.33615pt too wide) in paragraph at lines 128--130
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/chat2.png, id=442, 1047.915pt x 301.125pt>
+[34
+
+ <./figures/loc_chat.png> <./figures/char_of_code_chat.png>]
+<figures/chat2.png, id=453, 1047.915pt x 301.125pt>
 File: figures/chat2.png Graphic file (type png)
  <use figures/chat2.png>
 Package pdftex.def Info: figures/chat2.png used on input line 138.
@@ -1914,13 +1917,10 @@ Overfull \hbox (27.33615pt too wide) in paragraph at lines 138--139
  [][] 
  []
 
-[34
-
- <./figures/loc_chat.png> <./figures/char_of_code_chat.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/chat3.png, id=456, 1033.8625pt x 301.125pt>
+<figures/chat3.png, id=455, 1033.8625pt x 301.125pt>
 File: figures/chat3.png Graphic file (type png)
  <use figures/chat3.png>
 Package pdftex.def Info: figures/chat3.png used on input line 147.
@@ -2019,10 +2019,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: figures/filter2.png Graphic file (type png)
 
 <use figures/filter2.png>
-Package pdftex.def Info: figures/filter2.png used on input line 239.
+Package pdftex.def Info: figures/filter2.png used on input line 236.
 (pdftex.def)             Requested size: 472.9057pt x 128.0374pt.
 
-Overfull \hbox (54.65202pt too wide) in paragraph at lines 239--240
+Overfull \hbox (54.65202pt too wide) in paragraph at lines 236--237
  [][] 
  []
 
@@ -2032,10 +2032,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <figures/br.png, id=502, 1045.9075pt x 301.125pt>
 File: figures/br.png Graphic file (type png)
  <use figures/br.png>
-Package pdftex.def Info: figures/br.png used on input line 248.
+Package pdftex.def Info: figures/br.png used on input line 245.
 (pdftex.def)             Requested size: 444.73622pt x 128.0374pt.
 
-Overfull \hbox (26.48254pt too wide) in paragraph at lines 248--249
+Overfull \hbox (26.48254pt too wide) in paragraph at lines 245--246
  [][] 
  []
 
@@ -2043,14 +2043,14 @@ Overfull \hbox (26.48254pt too wide) in paragraph at lines 248--249
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (5.5128pt too wide) in paragraph at lines 253--255
+Overfull \hbox (5.5128pt too wide) in paragraph at lines 250--252
 \T1/lmr/m/n/10 gether: \T1/lmr/bx/n/10 line_of_code\T1/lmr/m/n/10 , \T1/lmr/bx/
 n/10 char_of_code\T1/lmr/m/n/10 , \T1/lmr/bx/n/10 num-ber_of_funclauses\T1/lmr/
 m/n/10 , \T1/lmr/bx/n/10 branches_of_recursion\T1/lmr/m/n/10 ,
  []
 
 
-Overfull \hbox (50.48007pt too wide) in paragraph at lines 253--255
+Overfull \hbox (50.48007pt too wide) in paragraph at lines 250--252
 \T1/lmr/bx/n/10 mc-Cabe\T1/lmr/m/n/10 , \T1/lmr/bx/n/10 calls_for_function\T1/l
 mr/m/n/10 , \T1/lmr/bx/n/10 calls_from_function\T1/lmr/m/n/10 , \T1/lmr/bx/n/10
  fun_return_points\T1/lmr/m/n/10 , \T1/lmr/bx/n/10 num-ber_of_messpass\T1/lmr/m
@@ -2062,11 +2062,11 @@ mr/m/n/10 , \T1/lmr/bx/n/10 calls_from_function\T1/lmr/m/n/10 , \T1/lmr/bx/n/10
 File: figures/function_sum_task4.png Graphic file (type png)
 
 <use figures/function_sum_task4.png>
-Package pdftex.def Info: figures/function_sum_task4.png used on input line 258.
+Package pdftex.def Info: figures/function_sum_task4.png used on input line 255.
 
 (pdftex.def)             Requested size: 466.93034pt x 128.0374pt.
 
-Overfull \hbox (48.67667pt too wide) in paragraph at lines 258--259
+Overfull \hbox (48.67667pt too wide) in paragraph at lines 255--256
  [][] 
  []
 
@@ -2078,10 +2078,10 @@ File: figures/calls_from_function_task4.png Graphic file (type png)
 
 <use figures/calls_from_function_task4.png>
 Package pdftex.def Info: figures/calls_from_function_task4.png used on input li
-ne 265.
+ne 262.
 (pdftex.def)             Requested size: 466.93034pt x 128.0374pt.
 
-Overfull \hbox (48.67667pt too wide) in paragraph at lines 265--266
+Overfull \hbox (48.67667pt too wide) in paragraph at lines 262--263
  [][] 
  []
 
@@ -2091,10 +2091,10 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <figures/task4.png, id=518, 1112.155pt x 301.125pt>
 File: figures/task4.png Graphic file (type png)
  <use figures/task4.png>
-Package pdftex.def Info: figures/task4.png used on input line 272.
+Package pdftex.def Info: figures/task4.png used on input line 269.
 (pdftex.def)             Requested size: 472.9057pt x 128.0374pt.
 
-Overfull \hbox (54.65202pt too wide) in paragraph at lines 272--273
+Overfull \hbox (54.65202pt too wide) in paragraph at lines 269--270
  [][] 
  []
 
@@ -2108,29 +2108,29 @@ Chapter 5.
 (./related_work.tex [43
 
 ]
-<figures/metrix.png, id=548, 759.83875pt x 372.39125pt>
+<figures/metrix.png, id=549, 759.83875pt x 372.39125pt>
 File: figures/metrix.png Graphic file (type png)
 
 <use figures/metrix.png>
-Package pdftex.def Info: figures/metrix.png used on input line 29.
+Package pdftex.def Info: figures/metrix.png used on input line 26.
 (pdftex.def)             Requested size: 406.39957pt x 199.16928pt.
  [44 <./figures/metrix.png>] [45]
-<figures/1.png, id=562, 574.145pt x 437.635pt>
+<figures/1.png, id=565, 574.145pt x 437.635pt>
 File: figures/1.png Graphic file (type png)
  <use figures/1.png>
-Package pdftex.def Info: figures/1.png used on input line 88.
+Package pdftex.def Info: figures/1.png used on input line 80.
 (pdftex.def)             Requested size: 261.29771pt x 199.16928pt.
- [46 <./figures/1.png>] <figures/dash.png, id=570, 578.91281pt x 446.41782pt>
+ [46 <./figures/1.png>] <figures/dash.png, id=574, 578.91281pt x 446.41782pt>
 File: figures/dash.png Graphic file (type png)
 
 <use figures/dash.png>
-Package pdftex.def Info: figures/dash.png used on input line 105.
+Package pdftex.def Info: figures/dash.png used on input line 97.
 (pdftex.def)             Requested size: 258.28232pt x 199.16928pt.
- <figures/tree.png, id=572, 660.21657pt x 499.8675pt>
+ <figures/tree.png, id=576, 660.21657pt x 499.8675pt>
 File: figures/tree.png Graphic file (type png)
 
 <use figures/tree.png>
-Package pdftex.def Info: figures/tree.png used on input line 114.
+Package pdftex.def Info: figures/tree.png used on input line 106.
 (pdftex.def)             Requested size: 263.05438pt x 199.16928pt.
 
 
@@ -2158,7 +2158,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  31054 strings out of 493029
  580283 string characters out of 6136234
- 637960 words of memory out of 5000000
+ 637966 words of memory out of 5000000
  33802 multiletter control sequences out of 15000+600000
  75437 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2173,10 +2173,10 @@ type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb><
 /usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/
 public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb></usr/sh
 are/texmf/fonts/type1/public/lm/lmtti10.pfb>
-Output written on main.pdf (53 pages, 1762371 bytes).
+Output written on main.pdf (53 pages, 1827726 bytes).
 PDF statistics:
- 693 PDF objects out of 1000 (max. 8388607)
- 548 compressed objects within 6 object streams
+ 696 PDF objects out of 1000 (max. 8388607)
+ 551 compressed objects within 6 object streams
  186 named destinations out of 1000 (max. 500000)
  249 words of extra memory for PDF output out of 10000 (max. 10000000)
 
