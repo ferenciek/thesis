@@ -1,3 +1,7 @@
+Nowadays, the requirements for development speed and software quality are significantly increasing. The use of a flexible architecture and various design techniques certainly can improve the quality of development, but formal quality criteria, such as code metrics, showing the quantitative characteristics of a software system in various dimensions, still remain relevant. In evaluating the duration and complexity of software development, various metrics are used.
+Software metrics and their visualization are two important features of   measurement systems. 
+
+The  goal  of  my  thesis  work  is to  analyse  open  source  software  with  RefactorErl,log  the changes of metric value, visualize it and conclude the findings.
 Requirements for the quality of the product being developed have rapidly increased in recent years. From the beginning of software product development, developers have been striving to monitor quality. Software metrics and their visualization are two important features of measurement systems. 
 
 In this thesis, we introduce framework for analysing of quality of programs written in the Erlang programing language which built on the top of the RefactorErl static analysis tool. Our goal is to analyse
@@ -186,7 +190,8 @@ methods are counted, but overridden methods are not, because only one method of 
 A large RFC has been found to indicate more faults. Classes with a high RFC are more complex and harder to understand. Testing and debugging is complicated. A worst-case value for possible responses will assist in appropriate allocation of testing time.
 
 Complexity metrics
-Complexity is an important aspect for software quality assessment and must be appropriately addressed in service-oriented architecturecomplexity. One  of  the  key  aims  of  complexity  metrics  is  to  predict modules   that are fault-prone post-release complexity2. This metrics are one of the most difficult software metrics for understanding.
+
+Complexity is an important aspect for software quality assessment and must be appropriately addressed in service-oriented architecturecomplexity. One of the key aims of complexity  metrics is to predict modules that are fault-prone post-release complexity2. These metrics are one of the most difficult software metrics for understanding.
 
 McCabe's Cyclomatic Complexity (MVG)
 
@@ -205,84 +210,82 @@ description
 description
 
 Fan-out and fan-in metrics reflect structure dependency fanin.
-This structural metrics were first defined by Henry.
-This metrics can be applied both at module level and function level. This metrics just puts a number on how complex is interlinking of different modules or functions. Unlike Cyclomatic complexity you cannot put a number and say it cannot go beyond this number. This is used just to size up how
-difficult it will be to replace a function or module in your application and how changes to a function or module can impact other functions or modules. Sometimes you can put restriction on number of Fan-Out a function has to avoid cluttering your function but is not a widely accepted practice.
+These structural metrics were first defined by Henry.
+These metrics can be applied both at the module level and function level. These metrics just put a number on how complex is interlinking of different modules or functions. Unlike Cyclomatic complexity, you cannot put a number and say it cannot go beyond this number. This is used just to size up how difficult it will be to replace a function or module in your application and how changes to a function or module can impact other functions or modules. Sometimes you can put the restriction on the number of Fan-Out.
 
 
 
 Cohesion metrics
-Cohesion is an important software quality attribute and high cohesion is one of characteristics of well-structured software design cohesion.
-Cohesion metrics analyze the connection between methods of a class.
+Cohesion is an important software quality attribute and high cohesion is one of the characteristics of well-structured software design cohesion.
+Cohesion metrics analyze the connection between the methods of a class.
 Module cohesion indicates relatedness in the functionality of a software module cohesion2.
 
 Lack of Cohesion in Methods (LCOM)
 
-LCOM calculates the number of cohesiveness present, how well a system was designed and how complex a class is. LCOM is a count of the number of method pairs whose similarity is zero,minus the count of method pairs whose similarity is not zero. LCOM is probably the most controversial and argued over of the CK metrics.
+LCOM calculates the number of cohesiveness present, how well a system was designed and how complex a class is. LCOM is a count of the number of method pairs whose similarity is zero, minus the count of method pairs whose similarity is not zero. LCOM is probably the most controversial and argued over of the CK metrics.
 
 CK's rationale for the LCOM method was as follows:
 itemize
 	Lack of cohesion implies classes should probably be split into two or more subclasses.
-	Cohesiveness of methods within a class is desirable, since it promotes encapsulation.
+	The cohesiveness of methods within a class is desirable since it promotes encapsulation.
 	Low cohesion increases complexity, thereby increasing the likelihood of errors during the development process.
 	Any measure of disparateness of methods helps identify flaws in the design of classes. 
 itemize
 
-Although there is a fair amount of debate about how to calculate LCOM and it features in a lot of metrics sets an increasing number of researchers suggest that it is not a particularly useful metric. Perhaps this is also reflected in there being a fair amount of debate about how to calculate LCOM but very little on how to interpret it and how it fits in with other metrics. 
+Although there is a fair amount of debate about how to calculate LCOM and it features in a lot of metrics sets an increasing number of researchers to suggest that it is not a particularly useful metric. Perhaps this is also reflected in there being a fair amount of debate about how to calculate LCOM but very little on how to interpret it and how it fits in with other metrics. 
 
 Tight and Loose Class Cohesion (TCC and LCC)
 
-TCC(Tight Class Cohesion) and LCC(Loose Class Cohesion) metrics measure  the  relative number of directly-connected pairs of methods and the   relative   number of directly- or indirectly- connected pairs of methods.
+TCC(Tight Class Cohesion) and LCC(Loose Class Cohesion) metrics measure the relative number of directly-connected pairs of methods and the relative number of directly- or indirectly- connected pairs of methods.
 The Tight Class Cohesion metric measures the cohesion between the public methods of a class. That is the relative number of directly connected public methods in the class. Classes having a low cohesion indicate errors in the design.
 
-TCC considers two methods to be connected if they share the  use  of  at  least  one  attribute.  A  method  uses  an  attribute if the attribute appears in the method’s body or  the  method  invokes  directly  or  indirectly  another method   that   has   the   attribute   in   its   body.   
-The higher TCC and LCC, the more cohesive and thus better the class.
+TCC considers two methods to be connected if they share the use of at least one attribute. A method uses an attribute if the attribute appears in the method’s body or the method invokes directly or indirectly another method that has the attribute in its body. The higher TCC and LCC, the more cohesive and thus better the class.
 
-In this Section we focused our attention on all posible software metrics. In the next Chapter we will define metrics which are used to describe various aspects of Erlang projects. 
+In this Section, we focused our attention on all possible software metrics. In the next Chapter, we will define metrics which are used to describe various aspects of Erlang projects. 
 
 
 Software Metric Tools
-There are a lot of software metrics have been developed and numerous tools exist to gather the metrics from program representations. This large number of tools allows a user to choose the tool best suited as per the use requirements for example it's handling, tool support, cost etc. This is accepted that the metrics computed by the metric tools are same for all the metric tools. One can think of a software metric tool as a program which implements a set of software metrics definitions. It allows to access a software system according to the metrics by extracting the required entities from the software ad providing the corresponding metric values. There are
+There are a lot of software metrics have been developed and numerous tools exist to gather the metrics from program representations. This large number of tools allows a user to choose the tool best suited for user requirements, for example, its handling, tool support, cost etc. This is accepted that the metrics computed by the metric tools are the same for all the metric tools. One can think of a software metric tool as a program which implements a set of software metrics definitions. It allows accessing a software system according to the metrics by extracting the required entities from the software and providing the corresponding metric values. There are
 some criteria for selecting the proper metric tools as the availability of the software tools can make confusion. One such criterion is that the tools must have to calculate any form of software metrics. Majority metric tools are available for Java programs. Many tools are just code counting
-tool, they basically count the variants of the lines of code(LOC) metric. The specific criteria areas follows language: Java(source or byte code), metrics: well known object oriented metrics on class level, license: freely available.
+tool, they basically count the variants of the lines of code(LOC) metric. The specific criteria areas follow language: Java(source or bytecode), metrics: well-known object-oriented metrics on class level, license: freely available.
 
 CCCC
 
-It is a little command-line tool that generates metrics from the source code of a C or C++ project. The output of the tool is a simple HTML website with information about all your sources. It generates reports on various metrics including lines of code (LOC) and metrics proposed by ChidamberKemererand HenryKafura. CCCC has been developed as freeware, and is released in source code form. Users are encouraged to compile the program themselves, and to modify the source to reflect their preferences and interests.
+It is a little command-line tool that generates metrics from the source code of a C or C++ project. The output of the tool is a simple HTML website with information about all your sources. It generates reports on various metrics including lines of code (LOC) and metrics proposed by ChidamberKemererand HenryKafura. CCCC has been developed as freeware and is released in source code form. Users are encouraged to compile the program themselves and to modify the source to reflect their preferences and interests.
 
 CCCC will process each of the files specified on the command line (using standard wildcard processing were appropriate. For each file, named, CCCC will examine the extension of the filename, and if the extension is recognized as indicating a supported language, the appropriate parser will run on the file. As each file is parsed, recognition of certain constructs will cause records to be written into an internal database. When all files have been processed, a report on the contents of the internal database
-will be generated in HTML format. By default the main summary HTML report is generated to the file cccc.htm in a subdirectory called .cccc of the the current working directory, with detailed reports on each module (i.e. C++ or Java class) identified by the analysis run).
+will be generated in HTML format. By default the main summary HTML report is generated to the file cccc.htm in a subdirectory called .cccc of the current working directory, with detailed reports on each module (i.e. C++ or Java class) identified by the analysis run).
 
-In addition to the summary and detailed HTML reports, the run will cause generation of corresponding summary and detailed reports in XML format, and a further file called cccc.db to be created. cccc.db will contain a dump of the internal database of the program in a format delimited with the character '@' (chosen because it is one of the few characters which cannot legally appear in C/C++ non -comment source code).
+In addition to the summary and detailed HTML reports, the run will cause generation of corresponding summary and detailed reports in XML format, and a further file called cccc.db to be created. cccc.db will contain a dump of the internal database of the program in a format delimited with the character '@' (chosen because it is one of the few characters which cannot legally appear in C/C++ non-comment source code).
 
 The report contains a number of tables identifying the modules in the files submitted and covering:
 enumerate
 	Measures of the number and type of the relationships each module is a party to either as a client or a supplier.
-	Measures of the procedural volume and complexity of each module and its functions;. 
+	Measures of the procedural volume and complexity of each module and its functions. 
 	A summary report over the whole body of code processed of the measures identified above.
 	Identification of any parts of the source code submitted which the program failed to parse.
 enumerate
 
 This tool can measure the following metrics:
 itemize
-	Fan-In Fan-Out()FIN and FOUT).
+	Fan-In Fan-Out (FIN and FOUT).
 	Lines of Code (LOC). 
-	Numbe r Of Children(NOC).
-	Weighted Methods per Class(WMC).
-	McCabe's Cyclomatic Complexity(MVG).
+	Number Of Children (NOC).
+	Weighted Methods per Class (WMC).
+	McCabe's Cyclomatic Complexity (MVG).
 	Number Of Methods (NOM).
 itemize
 
 ChidamberKemerer
 
-The program counts Chidamber and Kemerer object-oriented metrics by introspection the bytecode of compiled Java files.It is open source command line tool. The program counts the following six metrics for each class, and displays them on its standard output, following the class's name.
+The program counts Chidamber and Kemerer object-oriented metrics by introspection the bytecode of compiled Java files. It is an open source command line tool. The program counts the following six metrics for each class, and displays them on its standard output, following the class's name.
 
 This tool can measure the following metrics:
 
 itemize
 	Depth of Inheritance Tree (DIT).
-	Weighted Methods per Class(WMC).
-	Numbe r Of Children(NOC).
+	Weighted Methods per Class (WMC).
+	Numbe r Of Children (NOC).
 	Coupling Between Object classes (CBO).
 	Lack of Cohesion in Methods (LCOM).
 	Response For a Class (RFC).
@@ -291,36 +294,35 @@ itemize
 Analyst4j
 It is built on the Eclipse platform and can be downloaded as a standalone Rich Client Application or also as an Eclipse
 IDE plugin. Its features are search, metrics analyzing, quality analyzing, report generating for Java programming.
-Analyst4j software are most popular to find out the quality related metrics. This tool is based on ChidamberKemerer metrics.
+Analyst4j software is most popular to find out the quality-related metrics. This tool is based on ChidamberKemerer metrics.
 
 This tool can measure the following metrics:
 itemize
-	Weighted Methods per Class(WMC).
+	Weighted Methods per Class (WMC).
 	Lines of Code (LOC). 
 	Coupling Between Object classes (CBO).
 	Depth of Inheritance Tree (DIT).
 	Response For a Class (RFC).
-	Number Of Children(NOC).
+	Number Of Children (NOC).
 	Lack of Cohesion in Methods (LCOM).
 	Number Of Methods (NOM).
 itemize
 
 OOMeter
 
-OOMeter is a software metric tool for measuring the quality attributes of Java and C source code and UML models, stored in XMI format. OOMeter has a rich collection of object-oriented software metrics. This is the Eclipse plugin. It provides an querying language for object-oriented code similiar to SQL which
-allows to search for measure code metrics, bugs etc.
+OOMeter is a software metric tool for measuring the quality attributes of Java and C source code and UML models, stored in XMI format. OOMeter has a rich collection of object-oriented software metrics. This is the Eclipse plugin. It provides a querying language for object-oriented code similar to SQL which allows to search for measure code metrics, bugs etc.
 
-OOMeter provides an interface for users to define custom metrics through java classes that implement a certain interface. It supports export of metric results to a number of formats, including XML, HTML, delimited text, Microsoft Excel, etc.
+OOMeter provides an interface for users to define custom metrics through Java classes that implement a certain interface. It supports export of metric results to a number of formats, including XML, HTML, delimited text, Microsoft Excel, etc.
 
 This tool can measure the following metrics:
 
 itemize
-	Weighted Methods per Class(WMC).
+	Weighted Methods per Class (WMC).
 	Lines of Code (LOC). 
 	Coupling Between Object classes (CBO).
 	Depth of Inheritance Tree (DIT).
 	Response For a Class (RFC).
-	Numbe r Of Children(NOC).
+	Numbe r Of Children (NOC).
 	Tight Class Cohesion (TCC).
 	Lack of Cohesion in Methods (LCOM).
 itemize
@@ -330,26 +332,25 @@ itemize
 Eclipse Metrics plugin 1.3.6
 
 This is an open source dependency analyzer and metrics calculation plugin for Eclipse IDE. The plugin is also provided 
-integrated  as  an  EasyEclipse  package.  The  plugin computes   the  various metrics and displays it in the integrated view.
+integrated as an EasyEclipse package. The plugin computes the various metrics and displays it in the integrated view.
 
 
 This tool can measure the following metrics:
 
 itemize
-	Weighted Methods per Class(WMC).
+	Weighted Methods per Class (WMC).
 	Lines of Code (LOC). 
-	Numbe r Of Children(NOC).
+	Numbe r Of Children (NOC).
 	Depth of Inheritance Tree (DIT).
     Number Of Methods (NOM).
 itemize
 
 Eclipse Metrics plugin 3.4
-The  eclipse  plugin  3.4 developed  by  Lance  Walton  is  also  integrated  with Eclipse   and   is   available   for   all   Java   projects 
-developed using the ID.E It is a open source tool. It counts various metrics in the moment of build cycles and shows warnings via the problem view of metrics range violations.
+The eclipse plugin 3.4 developed by Lance Walton is also integrated with Eclipse and is available for all Java projects developed using the IDE. It is an open source tool. It counts various metrics in the moment of build cycles and shows warnings via the problem view of metrics range violations.
 
 This tool can measure the following metrics:
 itemize
-	Weighted Methods per Class(WMC).
+	Weighted Methods per Class (WMC).
 	Lines of Code (LOC). 
 	Lack of Cohesion in Methods (LCOM).
 	Depth of Inheritance Tree (DIT).
@@ -357,52 +358,55 @@ itemize
 
 Semmle
 
-Semmle is the platform for analyzing that produces detailed report of the code base for one or more software projects. For every project that it analyzes, it calculates artifacts against rules that check for good practice. Analysis can be scheduled to run on a regular basis. The copy of the source code is checked out from the repository for analysis as part of this process. The code, and related artifacts, is checked against rules, defined using queries, to identify any alerts. Finally, metrics are calculated and data can be imported from third-party systems used by your company. A database is created, containing detailed information about the artifacts and every alert.
+Semmle is the platform for analyzing that produces a detailed report of the code base for one or more software projects. For every project that it analyzes, it calculates artifacts against rules that check for good practice. Analysis can be scheduled to run on a regular basis. The copy of the source code is checked out from the repository for analysis as part of this process. The code, and related artifacts is checked against rules, defined using queries, to identify any alerts. Finally, metrics are calculated and data can be imported from third-party systems used by your company. A database is created, containing detailed information about the artifacts and every alert.
 
 This tool can measure the following metrics:
 itemize
 	Lack of Cohesion in Methods (LCOM).
 	Depth of Inheritance Tree (DIT).
 	Number Of Methods (NOM).
-	Numbe r Of Children(NOC).
+	Numbe r Of Children (NOC).
 	Response For a Class (RFC).
 itemize
 
 Measuring functional languages
-In previous section has been described sofrware metrics for object-oriented languages. However software metrics developed for imperative and object-oriented languages can also be used for measuring in functional programming languages like Erlang and Haskell. We can use the same metrics because several constructs as a class,  a module and a library are similar. All of this structures can be consider like collections of functions. If the chosen metric does not take the distinctive properties of these constructs into account (variables, method overrides, dynamic binding, visibility etc.), then it can be applied to these apparently diverse constructs  metrics3.
 
-Dissimilarity between functional and imperative languages are in such features as difference in the level of nesting of blocks and control
-structures, in several ways of connecting certain functions (for example, data flow and call graph), inheritance insted of cohesion and and simple cardinality metrics(lines of code, char of code).
+In the previous section has been described software metrics for object-oriented languages. However, software metrics developed for imperative and object-oriented languages can also be used for measuring in functional programming languages like Erlang and Haskell. 
 
+Some  of  the  measurement  techniques  from  imperative  and object-oriented  languages  may  transfer  quite  cleanly  to  functional  languages,  for  instance  the  path  count  metric  which  counts  the  number  of  execution  paths through  a  piece  of  program  code,  but  some  of  the  more  advanced features  of  functional  programming  languages  may contribute  to  the  complexity  of  a  program  in  ways  that  are  not  considered  by  traditional  imperative  or  object  oriented 
+metrics  fp. 
 
-Another difference functional programming languages from imperative languages is there are some constructs and properties that can be used only in functional programming languages as: list comprehensions, pattern matching, referential transparency of pure functions, currying, laziness of expression evaluation.
+We can use the same metrics because several constructs as a class, a module, and a library are similar. All of this structures can be consider like collections of functions. If the chosen metric does not take the distinctive properties of these constructs into account (variables, method overrides, dynamic binding, visibility etc.), then it can be applied to these apparently diverse constructs  metrics3.
+
+The dissimilarity between functional and imperative languages are in the difference in the level of nesting of blocks and control structures, in several ways of connecting certain functions (for example, data flow and call graph), inheritance instead of cohesion and simple cardinality metrics(lines of code, char of code).
+
+Another difference functional programming languages from imperative languages is there are some constructs and properties that can be used only in functional programming languages as list comprehensions, pattern matching, referential transparency of pure functions, currying, laziness of expression evaluation.
 
 While these features raise the expressive power of functional languages,
-most of the existing complexity metrics require some changes before they be-
-come applicable to functional languages  metrics3.
+most of the existing complexity metrics require some changes before they become applicable to functional languages  metrics3.
 
 There are general metrics are acceptable for functional languages:
 itemize
-	Branches of recursion.This metric allows to measure how many times did the function call itself
+	Branches of recursion. This metric allows measuring how many times did the function call itself
 	Fun expressions and message passing constructs.
 	Return points of a function.
 	There is possible to calculate metrics on a single clause of a function.
 	There is possible to calculate metrics on a single clause of a function.
-	Otp used. This metric allows measure OTP behaviours.
+	Otp used. This metric allows measure OTP behaviors.
 itemize
 
 In the next chapter will be described all developed metrics for Erlang in details.
 
 
 
-In this chapter, we present developed framework which allows to analyze Erlang programs and visualize calculated metrics. The first two sections give a brief summary of Erlang, RefactorErl static analyzis tool and developed metrics.
+In this chapter, we present a developed framework which allows to analyze Erlang programs and visualize calculated metrics. The first two sections give a brief summary of Erlang, RefactorErl static analysis tool and developed metrics.
 
 An introductory glimpse at the Erlang programming language
 Erlang is a functional programming language which provides runtime designed for highly parallel, scalable software requiring high uptime. It is designed for development of robust systems that can be distributed between many different computers in a network. Erlang is kinda of similar to Java in the case that it uses a virtual machine and also supports multithreading. 
 
 Variables
 Erlang provides dynamic data types, allowing programmers to develop system
-components (such as message dispatchers) that do not care what type of data they are handling and others that strongly enforce data type restrictions or that decide how to act based on the type of data they receive.Variables must start with a capital letter or an underscore, and are composed of letters, digits and underscores.
+components (such as message dispatchers) that do not care what type of data they are handling and others that strongly enforce data type restrictions or that decide how to act based on the type of data they receive. Variables must start with a capital letter or an underscore, and are composed of letters, digits,	 and underscores.
 
 Data types
 Erlang has:
@@ -413,7 +417,7 @@ enumerate
 	Atoms. An atom is an element by itself. It starts with a lowercase letter and is built of letters, digits, and underscores, or it is any string placed within single quotes: atom1, 'Atom 2'.
 	Lists are a comma-separated sequence of some values placed within brackets: [abc, 123, "It is some string"]. 
 	Tuples are a comma-separated sequence of some values placed within braces: abc, 123, "It is some string".
-	Records are not a separate data type, but are just tuples with keys associated with each value. They are declared in a file and defined (given specific values) in the program.
+	Records are not a separate data type but are just tuples with keys associated with each value. They are declared in a file and defined (given specific values) in the program.
 	Binaries are placed within double angle brackets: <<0, 128, 128, 255>>, <<"It is some string">>, <<X:7, Y:5, Z:1>>. Binaries are series of bits; the number of bits in a binary has to be a multiple of 8.
 	References are globally unique values.
 	Pids stand for process identifiers which are the "names" of processes.
@@ -451,25 +455,21 @@ figure
 Erlang source files consist of a section containing meta-information about the module represented by the file(all functions in Erlang must be defined in
 modules.), and a list of functions that are either exposed to the users of this module (with the -export attribute), or are only defined for internal use inside the module.  
 
-A subtle element of all three functions is that every function needs to 
-have an initial value to start counting with. In the case of 
-sum/2, we use 0, as we’re doing addition, and given X = X + 0, the value is neutral, so we can’t mess up the calculation by starting there. If we were doing multiplication, we would use 1 given X = X * 1. 
+A subtle element of all three functions is that every function needs to have an initial value to start counting with. In the case of sum/2, we use 0, as we’re doing addition, and given X = X + 0, the value is neutral, so we can’t mess up the calculation by starting there. If we were doing multiplication, we would use 1 given X = X * 1. 
 
-The functions min/1 and max/1 can’t have a default starting value. If the 
-list were only negative numbers and we started at 0, the answer would be 
-wrong. So we need to use the first element of the list as a starting point.
+The functions min/1 and max/1 can’t have a default starting value. If the list were only negative numbers and we started at 0, the answer would be wrong. So we need to use the first element of the list as a starting point.
 
 The RefactorErl static analysis tool 
 
-RefactorErl refactorerl1, refactorerl2 is an open-source static source code analyzer and transformer tool for Erlang,developed by the Department of Programming Languages and Compilers at the Faculty of Informatics, Eötvös Loránd University, Budapest, Hungary. The phrase "refactoring" means a preserving source code transformation, so while you change the programstructure you do not alter its behaviour. RefactorErl was built to refactor Erlang programs.
+RefactorErl refactorerl1, refactorerl2 is an open-source static source code analyzer and transformer tool for Erlang, developed by the Department of Programming Languages and Compilers at the Faculty of Informatics, Eötvös Loránd University, Budapest, Hungary. The phrase "refactoring" means a preserving source code transformation, so while you change the program structure you do not alter its behavior. RefactorErl was built to refactor Erlang programs.
 
-The main focus of RefactorErl is to support daily code comprehension tasks of Erlang developers refactorerl. It can analyse the structure of the refactored program - based on the syntactic rules of the underlying programming language - and it can also collect and use semantical information about the source code.
+The main focus of RefactorErl is to support daily code comprehension tasks of Erlang developers refactorerl. It can analyze the structure of the refactored program - based on the syntactic rules of the underlying programming language - and it can also collect and use semantical information about the source code.
 
 Metrics in the RefactorErl
 
-A metric query language is incorporated into RefactorErl refactorerl . Metric queries can be executed from the console interface or can be used as properties in semantic query language which is available from every interface.
+A metric query language is incorporated into RefactorErl refactorerl. Metric queries can be executed from the console interface or can be used as properties in semantic query language which is available from every interface.
 
-Table tab:metrics_ref shows all the implemented metrics in RefactorErl tool. There are two coloms in this table: the first column gives the information about the name of the metric, and the second column shows the for which node the metric is available.
+Table tab:metrics_ref shows all the implemented metrics in RefactorErl tool. There are two columns in this table: the first column gives the information about the name of the metric, and the second column shows the for which node the metric is available.
 
 table[!htb]
 		Implemented metrics in RefactorErl
@@ -605,15 +605,15 @@ table[!htb]
 
 modulesum
 
-The sum of the chosen complexity structure metrics measured on the modules functions. The proper metrics adjusted in a list can be implemented in the desired number and order refactorerlm.
+The sum of the chosen complexity structure metrics measured on the functions of the module. The proper metrics adjusted in a list can be implemented in the desired number and order refactorerlm.
 
 lineofcode
 
-The number of the lines of part of the text, function, or module. The number of empty lines is not included in the sum. As the number of lines can be measured on more functions, or modules and the system is capable of returning the sum of these, the number of lines of the whole loaded program text can be enquired refactorerlm.
+The number of lines of part of the text, function, or module. The number of empty lines is not included in the sum. As the number of lines can be measured on more functions, or modules and the system is capable of returning the sum of these, the number of lines of the whole loaded program text can be enquired refactorerlm.
 
 charofcode
 
-The number of characters in a program script. This metric is capable of measuring both the codes of functions and modules and with the help of aggregating functions we can enquire the total and average number of characters in a cluster, or in the whole source text refactorerlm.
+The number of characters in a program script. This metric is capable of measuring both the codes of functions and modules and with the help of aggregating functions we can enquire the total and the average number of characters in a cluster, or in the whole source text refactorerlm.
 
 numberoffun
 
@@ -621,11 +621,11 @@ This metric gives the number of functions implemented in the concrete module, bu
 
 numberofmacros
 
-This metric gives the number of defined macros in the concrete module, or modules. It is also possible to enquire the number of implemented macros in a module refactorerlm.
+This metric gives the number of defined macros in the concrete module or modules. It is also possible to inquire the number of implemented macros in a module refactorerlm.
 
 numberofrecords
 
- This metric gives the number of defined records in a module. It is also possible to enquire the number of implemented records in a module refactorerlm.
+ This metric gives the number of defined records in a module. It is also possible to inquire the number of implemented records in a module refactorerlm.
 
 includedfiles
 
@@ -637,23 +637,23 @@ This metric gives the number of imported modules used in a concrete module. The 
 
 numberoffunpath
 
-The total number of function paths in a module.The metric, besides the number of internal function links, also contains the number of external paths, or the number of paths that lead outward from the module. It is very similar to the metric called cohesion refactorerlm.
+The total number of function paths in a module. The metric, besides the number of internal function links, also contains the number of external paths or the number of paths that lead outward from the module. It is very similar to the metric called cohesion refactorerlm.
 
 functioncallsin
 
-Gives the number of function calls into a module from other modules. It can not be implemented to measure a concrete function. For that we use the callsfor/1 function refactorerlm.
+Gives the number of function calls into a module from other modules. It can not be implemented to measure a concrete function. For that, we use the callsfor/1 function refactorerlm.
 
 functioncallsout
 
-Gives the number of every function call from a module towards other modules. It can not be implemented to measure a concrete function. For that we use the callsfrom/1 function refactorerlm.
+Gives the number of every function call from a module towards other modules. It can not be implemented to measure a concrete function. For that, we use the callsfrom/1 function refactorerlm.
 
 cohesion
 
-The number of call-paths of functions that call eachother. By call-path we mean that an f1 function calls f2 (e.g. f1()->f2().). If f2 also calls f1, then the two calls still count as one call-path refactorerlm.
+The number of call-paths of functions that call each other. By call-path we mean that an f1 function calls f2 (e.g. f1()->f2().). If f2 also calls f1, then the two calls still count as one call-path refactorerlm.
 
 functionsum
 
-The sum calculated from the functions complexity metrics that characterizes the complexity of the function. It can be calculated using various metrics together refactorerlm.
+The sum calculated from the functions complexity metrics characterizes the complexity of the function. It can be calculated using various metrics together refactorerlm.
 	 
 maxdepthofcalling
 
@@ -661,7 +661,7 @@ The length of function call-chains, namely the chain with the maximum depth refa
 	 
 maxdepthofcases
 
- Gives the maximum of case control structures embedded in case of a concrete function (how deeply are the case control structures embedded). In case of a module it measures the same regarding all the functions in the module. Measuring does not break in case of case expressions, namely when the case is not embedd refactorerlm.
+ Gives the maximum of case control structures embedded in case of a concrete function (how deeply are the case control structures embedded). In case of a module, it measures the same regarding all the functions in the module. Measuring does not break in case of case expressions, namely when the case is not embedded refactorerlm.
 
 mindepthofcases
 
@@ -673,7 +673,7 @@ maxdepthofstructs
 
 numberoffunclauses
 
-Gives the number of a functions clauses. Counts all distinct branches, but does not add the functions having the same name, but different arity, to the sum refactorerlm.
+Gives the number of functions clauses. Counts all distinct branches, but does not add the functions having the same name, but different arity, to the sum refactorerlm.
 
 branchesofrecursion
 
@@ -681,7 +681,7 @@ Gives the number of a certain function's branches, how many times a function cal
 
 callsforfunction
 
-This metric gives the number of calls for a concrete function. It is not equivalent with the number of other functions calling the function, because all of these other functions can refer to the measured one more than once refactorerlm.
+This metric gives the number of calls for a concrete function. It is not equivalent to the number of other functions calling the function, because all of these other functions can refer to the measured one more than once refactorerlm.
 
 callsfromfunction
 
@@ -693,7 +693,7 @@ Gives the number of function expressions in a module. It does not measure the ca
 
 numberofmesspass
 
-In case of functions it measures the number of code snippets implementing messages from a function, while in case of modules it measures the total number of messages in all of the modules functions refactorerlm.
+In the case of functions, it measures the number of code snippets implementing messages from a function, while in case of modules it measures the total number of messages in all of the modules functions refactorerlm.
 
 funreturnpoints
 
@@ -717,7 +717,7 @@ It gives the number of cases when there are not any whitespaces after a comma or
 
 istailrecursive
 
-It returns with 1, if the given function is tail recursive; with 0, if it is recursive, but not tail recursive; and -1 if it is not a recursive function (direct and indirect recursions are also examined). If we use this metric from the semanctic query language, the result is converted to tailrec, nontailrec or nonrec atom refactorerlm.
+It returns with 1 if the given function is tail recursive; with 0, if it is recursive, but not tail recursive; and -1 if it is not a recursive function (direct and indirect recursions are also examined). If we use this metric from the semantic query language, the result is converted to tailrec, nontailrec or nonrec atom refactorerlm.
 
 mcCabe
 
@@ -729,37 +729,37 @@ Gives the number of OTP callback modules used in modules refactorerlm.
 
 Metric visualisation module for WEB2 interface of RefactorErl
 
-The section describes the main concept and details of the developed framework for RefactorErl static analyzis tool. The first part introduces the main features of the software. The next part describes which tools were used in the developing process of the module. In the last part we can read how to use the software step-by-step.
+The section describes the main concept and details of the developed framework for RefactorErl static analysis tool. The first part introduces the main features of the software. The next part describes which tools were used in the developing process of the module. In the last part, we can read how to use the software step-by-step.
 
 Description of the software
 
-The program which was developed allows to analyze git repositories with Erlang code files. The component is built on RefactorErl static analyzis tool and actively uses its feature of calculating different metrics of Erlang modules and functions. It has very convinient to use web interface with repository structure as a folder tree and a canvas where plots can be observed. These plots contain information how particular metric was changing with repository evolution. The plots can be saved for future usage as a pictures in PNG format.
+The program which was developed allows analyzing git repositories with Erlang code files. The component is built on RefactorErl static analysis tool and actively uses its feature of calculating different metrics of Erlang modules and functions. It has convenient user-friendly web interface with repository structure as a folder tree and a canvas where plots can be observed. These plots contain information how particular metric was changing with repository evolution. The plot can be saved for future use as a picture in PNG format.
 
-The main feautures of the software are:
+The main features of the software are:
 itemize
-	Drawing plots which show change of metrics with software evolving from version to version.
+	Drawing plots which show the change of metrics with software evolving from version to version.
 	Analyzing modules and functions separately.
 	Choosing separate files for the analyzing.
 	User-friendly web interface.
 itemize
 
-The main focus of the project is to help Erlang developers with analyzing their projects using plots. Visualisation helps with finding patterns and improving of the code quality. 
+The main focus of the project is to help Erlang developers with analyzing their projects using plots. Visualization helps with finding patterns and improving the code quality. 
 
 Used tools
 
-The interface of the program is the AngularJS component which uses NVD3 library for plot rendering. Metrics data is stored in DETS tables at the stage of calculation in Erlang code. This data passes as JSON objects when Erlang function communicates with javascript code. For saving plots as a pictures the saveSvgAsPng library is used.
+The interface of the program is the AngularJS component which uses NVD3 library for plot rendering. Metrics data is stored in DETS tables at the stage of calculation in Erlang code. This data passes as JSON objects when Erlang function communicates with javascript code. For saving plots as pictures the saveSvgAsPng library is used.
 
 NVD3
 
-This library currently under development of a team of software engineers at Novus Partners company. NVD3 is the D3 based JavaScript library. It allows to create beautiful and reusable charts in web applications.
+This library currently under development of a team of software engineers at Novus Partners company. NVD3 is the D3 based JavaScript library. It allows creating beautiful and reusable charts in web applications.
 
-It has wonderful features for data visualization with nice-looking charts such as the usual box-plot, line and bar charts and more fancy candlestick and sunburst charts. If you need a lot of functionality in a JavaScript charts plotting library, NVD3 is the very nice option for your project.
+It has wonderful features for data visualization with nice-looking charts such as the usual box-plot, line and bar charts and fancier candlestick and sunburst charts. If you need a lot of functionality in a JavaScript chart plotting library, NVD3 is the very nice option for your project.
 
 AngularJs
 
-The new component was created for existing system using this javascript web framework.
+The new component was created for the existing system using this javascript web framework.
 
-AngularJS (also written as Angular.js) is an open-source JavaScript-based front-end web application framework mainly developed by Google and by a community of individuals and corporations to solve many of the challenges which can be observed in development of single-page applications.
+AngularJS (also written as Angular.js) is an open-source JavaScript-based front-end web application framework mainly developed by Google and by a community of individuals and corporations to solve many of the challenges which can be observed in the development of single-page applications.
 
 The AngularJS framework starts his work by reading the Hypertext Markup Language (HTML) page, which has extra tag attributes embedded into it. Angular transforms these attributes as directives to bind input or output parts of the page to a model that is defined by standard JavaScript variables. The values of these JavaScript variables can be manually set in the code, or fetched from static or dynamic JSON resources. 
 
@@ -771,8 +771,7 @@ DETS is Disk Erlang Term Storage. DETS tables store tuples, with access to the e
 
 JSON
 
-Data which stored in Dets tables transforms into JSON objects when Erlang code interact with JavaScript code.
-JSON (JavaScript Object Notation) is a simple format of data-interchange. It is a text format that is absolutely language independent but it uses convention that is familiar to programmers of the C-family of languages which includes C, C++, C, Java, JavaScript, Python, Perl, and others. This property makes JSON an ideal language of data-interchange.
+Data, which stored in Dets tables, transforms into JSON objects when Erlang code interact with JavaScript code. JSON (JavaScript Object Notation) is a simple format of data-interchange. It is a text format that is absolutely language independent but it uses a convention that is familiar to programmers of the C-family of languages which includes C, C++, C, Java, JavaScript, Python, Perl, and others. This property makes JSON an ideal language of data-interchange.
 
 JSON is built on two data structures:
 itemize
@@ -782,7 +781,7 @@ itemize
 
 saveSvgAsPng
 
-This small library is used for saving SVG plots as a PNG pictures. Despite its small size it has a lot of different options such a choosing particular background, font, scale etc. 
+This small library is used for saving SVG plots as PNG pictures. Despite its small size, it has a lot of different options such a choosing particular background, font, scale etc. 
 
 The typical workflow
 
@@ -792,7 +791,7 @@ lstlisting[frame=none, numbers=none]
 	ri:start_web2([yaws_path, PATH-TO-YAWS]).
 lstlisting
 
-This command will run WEB2 interface available on localhost:8001 by default. After loginning the component can be accessed in metrics tab as shown on Figure fig:metrics_interface
+This command will run WEB2 interface available on localhost:8001 by default. After loginning the component can be accessed in the metrics tab as shown in Figure fig:metrics_interface
 
 figure[h]
 	figures/metrics.png
@@ -800,15 +799,15 @@ figure[h]
 	fig:metrics_interface
 figure
 
-The path to git repository should be provided in "Git repository path" input. After clicking the "Check repository" button the folder will be analized. If it is not valid the alert Figure fig:metrics_alert will be shown.  
+The path to git repository should be provided in "Git repository path" input. After clicking the "Check repository" button the folder will be analyzed. If it is not valid the alert Figure fig:metrics_alert will be shown.  
 
 figure[h]
 	figures/alert.png
-	Alert shown because the provided folder is not a valid repository.
+	Alert showed because the provided folder is not a valid repository.
 	fig:metrics_alert
 figure
 
-In other case the folder tree will be available where separate files can be choosen for future analyzing as shown at Figure fig:metrics_files. Also there is a possibility to delete some files choosen by mistake.
+In another case, the folder tree will be available where separate files can be chosen for future analyzing as shown in Figure fig:metrics_files. Also, there is a possibility to delete some files chosen by mistake.
 
 figure[h]
 	figures/files.png
@@ -816,7 +815,7 @@ figure[h]
 	fig:metrics_files
 figure
 
-The final step is pressing "Analyze" button. It will start calculating metrics for all versions of the repository and progress will be shown on screen Figure fig:metrics_analyze. 
+The final step is pressing the "Analyze" button. It will start calculating metrics for all versions of the repository and progress will be shown on screen Figure fig:metrics_analyze. 
 
 figure[h]
 	figures/analyze.png
@@ -824,29 +823,29 @@ figure[h]
 	fig:metrics_analyze
 figure
 
-After analyzis is done the menu with choosing parameters of drawing the plot will be available as shown at Figure fig:metrics_plot. It consists of two selection lists. The first one is the list where we can choose type of item for plots drawing (module or function). Depends on chosen type the select boxes with available metrics will differ. 
+After analysis is done the menu with choosing parameters of drawing the plot will be available as shown at Figure fig:metrics_plot. It consists of two selection lists. The first one is the list where we can choose the type of item for plots drawing (module or function). Depends on the chosen type the select boxes with available metrics will differ. 
 
 For modules: module sum, line of code, char of code, number of fun, number of macros, number of records, included files, imported modules, number of funpath, function calls in, function calls out, cohesion, max depth of calling, max depth of cases, min depth of cases, max depth of structs, number of funclauses, branches of recursion, number of funexpr, number of messpass, fun return points, average size, max length of line, no space after comma, mcCabe, otp used.
 
 For functions: line of code, char of code, function sum, max depth of calling, max depth of cases, min depth of cases, max depth of structs, number of funclauses, branches of recursion, calls for function, calls from function, number of funexpr, number of messpass, fun return points, average size, max length of line, no space after comma, is tail recursive, mcCabe. Another list is the list of all items which can be chosen for metrics plot drawing. 
 
-After plot is shown the "Save" button appears which can be pressed to save SVG plot in a PNG file. 
+After the plot is shown the "Save" button appears which can be pressed to save SVG plot in a PNG file. 
 
 figure[h]
 	figures/plot.png
 	The example of plot.
 	fig:metrics_plot
-figureThe aim of this chapter is to test and analyze projects from git by using developed module for RefactorErl. Git commit logs hold all the change history This is an excellent source to observe trends and patterns about projects. All projects selected for the experiment are written in Erlang and have more than 40 commits.
+figureThe aim of this chapter is to test and analyze projects from git by using the developed module for RefactorErl. Git commit logs hold all the change history. This is an excellent source to observe trends and patterns about projects. All projects selected for the experiment are written in Erlang and have more than 40 commits.
 
 Iron
 
 This project is functional Erlang Toolkit. Iron is released under the MIT license. It can do the foolowing:
 itemize
-	Count with coerce equality, count with custom predicate.
-	Find with coerce equality, find with custom predicate.
+	Count with coerce equality, count with a custom predicate.
+	Find with coerce equality, find with a custom predicate.
 itemize
 
-This project has just only one source code file with 68 commits. The link to the repository is https://github.com/elementerl/iron
+This project has just only one source code file with 68 commits. The link to the repository is https://github.com/elementerl/iron.
 
 We can see that with the version number increase the line of code number and char of code number also grow on Figure fig:loc_iron and in Figure fig:char_iron.
 
@@ -870,7 +869,25 @@ figure[h]
 	fig:otp_iron
 figure
 
-Average length of line was not stabilize until arround 35th version with gradually decreasing from 50 symbols to 38 symbols in Figure fig:average_length_of_line_iron.
+The Figure fig:mcCabe_iron shows an overview of the evolution of the overall McCabe cyclomatic complexity. We can observe that the complexity keeps increasing.
+
+There was a spike in 45th version, because some functions were called to an other module, however author removed changes in 46th version. There was also an insignificant drop in complexity in 28th version and a little increase in 29th version. The  complexity decreases  when  the  extracted  piece  of code occurred more than one time and the complexity of the function is more than one mcCabe. 
+
+In Figure fig:max_depth_of_cases_iron we can see that the metric maxdepthofcases is 1, but before it was 0, therefore developer stopped using case inside another case for this version of the software. We can find the same trend on plot with mcCabe metric where it appears as decreasing of the program complexity.  
+
+figure[h]
+		figures/mcCabe_iron.png
+	McCabe cyclomatic complexity metric for fe.erl file.
+	fig:mcCabe_iron
+figure
+
+figure[h]
+		figures/max_depth_of_cases_iron.png
+	Max depth of cases for fe.erl file.
+	fig:max_depth_of_cases_iron
+figure
+
+The average length of the line was not stabilized until 35th version with gradually decreasing from 50 symbols to 38 symbols in Figure fig:average_length_of_line_iron.
 
 figure[h]
 		figures/average_length_of_line_iron.png
@@ -878,7 +895,7 @@ figure[h]
 	fig:average_length_of_line_iron
 figure
 
-As we can see on Figure fig:number_of_macros_iron and Figure fig:number_of_records_iron there are not defined macros and record in the whole iron project.
+As we can see in Figure fig:number_of_macros_iron and Figure fig:number_of_records_iron there are not defined macroses and records in the whole iron project.
 
 figure[h]
 		figures/number_of_macros_iron.png
@@ -892,41 +909,49 @@ figure[h]
 	fig:number_of_records_iron
 figure
 
+
 Erlang chat 
 
-This project is multi user chat written in Erlang. It has nine source code files and 45 commits. The link to the repository is https://github.com/bildeyko/erlangChat
+This project is multi-user chat written in Erlang. It has nine source code files and 45 commits. The link to the repository is https://github.com/bildeyko/erlangChat
 
-For this project we analyzed the module websockethandler.erl. This module consists 6 functions.
+For this project, we analyzed the module websockethandler.erl. This module consists of 6 functions.
 
-The Figure fig:loc_chat shows the changing of number of lines of code.
+We can see an increasing number of lines of code in Figure fig:loc_chat and an increasing number of characters in a program text in Figure fig:char_of_code_chat.
 
 figure[h]
 		figures/loc_chat.png
-	Effective Line of code for websockethandler.erl.
+	Effective Line of code for module websockethandler.erl.
 	fig:loc_chat
 figure
 
-In the Figure fig:chat we can see that the author started using message passing from the 9th version of his software.
+figure[h]
+		figures/char_of_code_chat.png
+	Characters of the code for module websockethandler.erl.
+	fig:char_of_code_chat
+figure
+
+In Figure fig:chat we can see that the author started using message passing from the 9th version of his software.
 
 figure[h]
 		figures/chat.png
-	Number of message passing for websockethandler.erl.
+	The number of message passing for module websockethandler.erl.
 	fig:chat
 figure
 
-As shown in Figure fig:chat5 there was incresing length of the longest line of code in 9th version. 
+As shown in Figure fig:chat5 there was increase in the length of the longest line of code in 9th version. 
 figure[h]
 		figures/chat5.png
-	Max length of line for websockethandler.erl.
+	Max length of line for module websockethandler.erl.
 	fig:chat5
 figure
 
-Measurement of McCabe’s cyclomatic complexity metric ensures that developers are sensitive to the fact that programs with high McCabe numbers (e.g. > 10) are likely to be difficult to understand and therefore have a higher probability of containing defects. The tested module has the cyclomatic complexity number which increased to 3o in last versions as shown in Figure fig:mcCabe.
+Measurement of McCabe’s cyclomatic complexity metric ensures that developers are sensitive to the fact that programs with high McCabe numbers (e.g. > 10) are likely to be difficult to understand and therefore have a higher probability of containing defects. 
+The tested module has the cyclomatic complexity number which increased to 30 in last versions as shown in Figure fig:mcCabe.
 
 figure[h]
 		figures/mcCabe.png
 	
-	McCabe cyclomatic complexity metric for websockethandler.erl.
+	McCabe cyclomatic complexity metric for module websockethandler.erl.
 	fig:mcCabe
 figure
 
@@ -934,21 +959,20 @@ In Figure fig:chat2 shows that developer used otp library functions but after 9t
 
 figure[h]
 		figures/chat2.png
-	
 	Otp used for websockethandler.erl.
 	fig:chat2
 figure
 
-The developed framework allows to measure and visualayze metrics for module and also for each function in the module. For example, in this module developer use message passing from 9th version as we mensioned above. The Figure fig:chat3 shows that there was discovered function in which author actively used message passing.
+The developed framework allows measuring and visualizing metrics for a module and also for each function in the module. For example, in this module developer use message passing from the 9th version as we mentioned above. The Figure fig:chat3 shows that there was discovered function in which the author actively used message passing.
 
 figure[h]
 		figures/chat3.png
-	
 	Number of message passing for function websockethandle/3.
 	fig:chat3
 figure
 
-Visualyzing of metrics helps to find which functions have been changed, added or deleted. As shown in the Figure fig:chat3 the developer slightly changed the function terminate/3 by adding two lines of code in 9th version.
+Visualizing of metrics helps to find which functions have been changed, added or deleted. As shown in the Figure fig:chat3 the developer slightly changed the function terminate/3 by adding two lines of code in the 9th version.
+
 figure[h]
 		figures/chat3.png
 	
@@ -956,7 +980,9 @@ figure[h]
 	fig:chat3
 figure
  
-To summarize findings we can assume that most of these changes was done in 9th version.
+To summarize findings we can assume that most of these changes were done in the 9th version.
+
+
 
 prx
 
@@ -974,9 +1000,9 @@ itemize
 
 The link to the repository is https://github.com/msantos/prx. This project has 201 commits. 
 
-For this project we tested the module prx.erl. 
+For this project, we tested the module prx.erl. 
 
-As in previous two experiments, at the beginning we started to meausure the LOC metric. This metric helps us to see the changes all of project from over time. This results is shown in Figure line_of_code_prx 
+As in previous two experiments, at the beginning, we started to measure the LOC metric. This metric helps us to see the changes all of the project from over time. This result is shown in Figure fig:line_of_code_prx.
 
 figure[h]
 		figures/line_of_code_prx.png
@@ -984,16 +1010,33 @@ figure[h]
 	fig:line_of_code_prx
 figure
 
-Another important metric is cohesion. Modules with high cohesion tend to be preferable, because high cohesion is associated with several desirable traits of software including robustness, reliability, reusability, and understandability. In contrast, low cohesion is associated with undesirable traits such as being difficult to maintain, test, reuse, or even understand. 
-The Figure fig:cohesion_prx shows the decreasing of calculated metric.
+Another important metric is cohesion metric. Modules with high cohesion tend to be preferable because high cohesion is associated with several desirable traits of software including robustness, reliability, reusability, and understandability. In contrast, low cohesion is associated with undesirable traits such as being difficult to maintain, test, reuse, or even understand. 
+The Figure fig:cohesion_prx and shows the decreasing of the calculated metric. 
 
 figure[h]
 		figures/cohesion_prx.png
-	Cohesion of the module prx.erl.
+	The cohesion of the module prx.erl.
 	fig:cohesion_prx
 figure
 
-Apart from analyzing the changes of module we also can observe the changes of funtions. The Figure fig:find/2 shows that the function find/2 was used only in one version and later was renamed or deleted.
+When developer started to use otp library in this project in 80th version, as we can see in Figure fig:otp_prx, the McCabe cyclomatic complexity metric was rapidly increased in Figure fig:McCabe. If complexity is increasing dramatically between versions, it is an indication of logic 
+being added. 
+
+figure[h]
+		figures/mccabe.png
+	McCabe for the module prx.erl.
+	fig:McCabe
+figure
+
+When we are comparing results of cohesion and McCabe cyclomatic complexity metrics, we can conclude that low cohesion increases complexity, thereby increasing the likelihood of errors during the development process.
+
+figure[h]
+		figures/otp_prx.png
+	OTP used for the module prx.erl.
+	fig:otp_prx
+figure
+
+Apart from analyzing the changes of the module we also can observe the changes of functions. The Figure fig:find/2 shows that the function find/2 was used only in one version and later was renamed or deleted.
 
 figure[h]
 		figures/find2.png
@@ -1001,12 +1044,8 @@ figure[h]
 	fig:find/2
 figure
 
-
-One of the feature of functional programming languages is the presence of tail recursion. It is special form of recursion where the last operation of a function is a recursive call  tail.
-The metric istailrecursive returns with 1, if the given function
-is tail recursive; with 0, if it is recursive, but not tail recursive 
-and -1 if it is not a recursive function. As shown in Figure fig:tail1. 
-We can see that developer got rid of this function from 37th version untill 40th version.
+One of the features of functional programming languages is the presence of tail recursion. It is a special form of recursion where the last operation of a function is a recursive call  tail.
+The metric istailrecursive returns with 1, if the given function is tail recursive; with 0, if it is recursive, but not tail recursive and -1 if it is not a recursive function. As shown in Figure fig:tail1 we can see that developer got rid of this function from 37th version until 40th version.
 
 figure[h]
 		figures/filter2.png
@@ -1014,31 +1053,53 @@ figure[h]
 	fig:tail1
 figure
 
-Nowadays,the need of the visualization of software quality metrics have been rapidly increased. Software metrics help developers and companies to check and analyze information about the performance, quality of code and cost of software data. it helps to find out and fix errors in the early stages of development.
+Also we can calculate how many times a function calls itself by using branchesofrecursion metric for all module. The Figure fig:br illustrates that there were created more recursive functions after 140th version.
 
-In this chapter will be described some tools for visualization of software quality metrics and tool for code analyzis.
+figure[h]
+		figures/br.png
+	Branches of recursion for module prx.erl. 
+	fig:br
+figure
+
+In RefactorErl there is a functionsum metric which can be calculated using these metrics together: lineofcode, charofcode, numberoffunclauses, branchesofrecursion,
+mcCabe, callsforfunction, callsfromfunction, funreturnpoints, numberofmesspass. Metrics callsforfunction and callsfromfunction available only for functions. We can notice the dependency of functionsum (Figure fig:function_sum_task4) on two metrics changes: number of lines of code (Figure fig:task4) and calls from the function (Figure fig:calls_from_function_task4).
+
+figure[h]
+		figures/function_sum_task4.png
+	Function sum function task/4. 
+	fig:function_sum_task4
+figure
+
+figure[h]
+		figures/calls_from_function_task4.png
+	Calls from the function for function task/4. 
+	fig:calls_from_function_task4
+figure
+
+figure[h]
+		figures/task4.png
+	Effective Line of code for function task/4. 
+	fig:task4
+figureNowadays, the need for the visualization of software quality metrics has been rapidly increased. Software metrics help developers and companies to check and analyze information about the performance, quality of code and cost of software data. it helps to find out and fix errors in the early stages of development.
+
+In this chapter will be described some tools for visualization of software quality metrics and tool for code analysis.
 
 Open Source tool "METRIX"
 
-This tool can can compute different software quality 
-metrics. METRIX is  able  to  evaluate  software  written  in  C  and  ADA  languages  and  many  metrics  can  be  considered  for  software evaluation (the different metrics will be described in detail in the next section metrix. 
+This tool can compute different software quality metrics. METRIX is able to evaluate software written in C and ADA languages and many metrics can be considered for software evaluation (the different metrics will be described in detail in the next section metrix. 
 
-Different  diagrams  enable  the  user  to  visualize  numeric  data.  Graphics  like  line  charts,  scatter  plots  and  
-histograms are common. 
+Different diagrams enable the user to visualize numeric data. Graphics like line charts, scatter plots and histograms are common. 
 There are two less-common classes of diagrams: 
 itemize
 	The radar plots, also called Kiviat diagrams.
-	The city map diagram, mostly used to represent the cartography of 
-	cities.
+	The city map diagram, mostly used to represent the cartography of cities.
 itemize
-One specific feature of METRIX is to use those two types of visualization for constructing signature and cartography ofsource codes.
+One specific feature of METRIX is to use those two types of visualization for constructing signature and cartography of source codes.
  
 Kiviat diagrams
-The Kiviat diagram visualizes information through polar coordinates. The  distance between the  point and  the origin is associated to the value user want to represent, while the angle between two points is constant, this constant is uninformative  and  calculated  to  uniformly  distribute  the  different  points.  Moreover, all metric points are linked  
-together, making a plain polygon, which shapes the specificity of the data that user wants to represent. Of  course, this diagram is not adequate to represent only one or two metrics, it requires at least three values to be pertinent. Values may be of the same metrics, representing the metric measured on different parts of the source code. Values may be 
-of  very  different  metrics,  computed  with  heterogeneous  units.  That  enables  the  user  to  merge  multivariate  data  on  the same diagram. On Kiviat diagrams, values must be strictly positive. 
+The Kiviat diagram visualizes information through polar coordinates. The distance between the point and the origin is associated to the value user want to represent, while the angle between two points is constant, this constant is uninformative and calculated to uniformly distribute the different points. Moreover, all metric points are linked together, making a plain polygon, which shapes the specificity of the data that the user wants to represent. Of course, this diagram is not adequate to represent only one or two metrics, it requires at least three values to be pertinent. Values may be of the same metrics, representing the metric measured on different parts of the source code. Values may be of very different metrics, computed  with heterogeneous units. That enables the user to merge multivariate data on the same diagram. On Kiviat diagrams, values must be strictly positive. 
 
-In figurefig:metrix shows an example of two Kiviat diagrams. This diagrams represent coding different metric values for two functions. 
+In figurefig:metrix shows an example of two Kiviat diagrams. These diagrams represent coding different metric values for two functions. 
 
 figure[h]
 		figures/metrix.png
@@ -1047,22 +1108,19 @@ figure[h]
 figure
 
 City map diagrams
-This  diagram  is mainly  used  in  urbanism,  to  represent  cities  and  their  buildings  in  three  dimensions.  As  a  software  project  can  
-contain  a  very  large  number  of  source  files,  code  functions  and  code  variables, but this visualization diagram adequately suits for complexity visualization issue. 
+This diagram is mainly used in urbanism, to represent cities and their buildings in three dimensions. As a software project  can contain a very large number of source files, code functions  and code variables, but this visualization diagram adequately suits for complexity visualization issue. 
 
-The  treemap  diagram  is  used  in  computing  to represent  in  two  dimensions  source  code  metrics  with  rectangles.  Some  authors  used  variants  of  this  class  of  visualization  diagrams  to  represent  values  with  esthetic  considerations. City  map  diagrams  are  indeed  multi-parameters  diagrams:  each  “building”  is  associated  with  a  n–tuple of numeric values.  
+The treemap diagram is used in computing to represent in two dimensions source code metrics with rectangles. Some authors used variants of this class of visualization diagrams to represent  values with esthetic considerations. City map diagrams are indeed multi-parameters diagrams: each “building” is associated with an n-tuple of numeric values.  
 
 This tool also has a graphical user interface with a single Window containing three tabs.
 
-The first tab called “Calc” and enables the user to indicate the source file(s) to evaluate and to parameterize the metrics to compute. It avoids using hand-start scripts with a prompt, but the open source aspect 
-of our tool  allows  advanced  users  to (re)use  our measuring scripts  manually  and/or to  integrate them into other software.
+The first tab called “Calc” and enables the user to indicate the source file(s) to evaluate and to parameterize the metrics to compute. It avoids using hand-start scripts with a prompt, but the open source aspect of the tool allows advanced users to reuse the measuring scripts manually and/or to integrate them into other software.
 
-The second tab called “Csv” presents the numeric values as a list, with a tab per function and per file. The  user  may  export  these  values  to  a  spreadsheet  application,  in  order  to  represent  the  values  with  common visualization graphs, like scatter plots, line plots, etc.
+The second tab called “Csv” presents the numeric values as a list, with a tab per function and per file. The user may export these values to a spreadsheet application, in order to represent  the values with common visualization graphs, like scatter plots, line plots, etc.
 
-The third tab called “Plots” and provides a way to visualize the city map diagrams for the source code, the signatures of functions and the comparisons between functions through radar/Kiviat plots. This tab enables the user to change the default behavior of the tool, for example to modify the ceiling and floor to insert color into the data, to adapt the placement of the buildings in the city map, etc. 
+The third tab called “Plots” and provides a way to visualize the city map diagrams for the source code, the signatures of functions and the comparisons between functions through radar/Kiviat plots. This tab enables the user to change the default behavior of the tool, for example, to modify the ceiling and floor to insert color into the data, to adapt the placement of the buildings in the city map, etc. 
 
-This tool  may  generate  a report  in  the  form  of  a  LaTeX  file,  so  the  user  can  use  it to produce  a  PDF  file.  This  
-report summarizes all the values measured on the project. Each function and each file make a section of this report. In  each  section,  numerical  values  are  coupled  with  the  signature  of  the  function  (as  a  Kiviat  diagram).  Each  file  produces  three  views  of  the  associated  city  map  diagram,  as  well  as  different  Kiviat  diagrams  for  the  different metrics measured on the functions of the file. 
+This tool may generate a report in the form of a LaTeX file, so the user can use it to produce a PDF file. This report summarizes all the values measured on the project. Each function and each file make a section of this report. In each section, numerical values are coupled with the signature of the function (as a Kiviat diagram). Each file produces three views of the associated city map diagram, as well as different Kiviat diagrams for the different metrics measured on the functions of the file. 
 
 Sextant
 
@@ -1070,14 +1128,14 @@ Sextant is a Java source-code analysis tool under development at the University 
 transformation system) specialized to the domain of the Java
 programming language.
 
-One of the primary design goals of Sextant is to provide a tool facilitating specification and visualization of custom analyzis rules (e.g.,domain specific or even application specific analyzis rules).
+One of the primary design goals of Sextant is to provide a tool facilitating specification and visualization of custom analysis rules (e.g., domain-specific or even application specific analysis rules).
 
-Sextant analysis rules are based on information drawn from several software models. There are two models of central importance. The first model, a syntactic model,is the parse tree of the source code. Parse trees correspond
+Sextant analysis rules are based on information drawn from several software models. There are two models of central importance. The first model, a syntactic model, is the parse tree of the source code. Parse trees correspond
 to compilation units (i.e., Java files) and are generated using GLR parser technology provided by the TL system. Parse trees are well-suited to analysis and manipulation through standard primitives provided by program transformation systems such as matching and generic traversal.
 
 The second model, a compound attributed graph (CAG), is a semantic model capturing structural, subtype, and reference dependencies among the fields, methods, constructors, types, and packages. The CAG also associates an attribute list with each node and edge.
 
-Information in the CAG is made accessible to Sextant’s transformation-based analysis rules through two mechanisms.The first mechanism is a positional system that establishes a relation between parse (sub)trees and corresponding contexts within the CAG. It is this relation that makes it possible to
+Information in the CAG is made accessible to Sextant’s transformation-based analysis rules through two mechanisms. The first mechanism is a positional system that establishes a relation between parse (sub)trees and corresponding contexts within the CAG. It is this relation that makes it possible to
 correctly resolve references to types, fields, local variables, methods, and constructors during the course of generic traversals which are a key enabling mechanism within program transformation systems.
 
 The second mechanism is a library of semantic queries which, thanks to the positioning system, can be accessed during the course of transformation. Functionality presently provided by this library includes things like:
@@ -1096,7 +1154,7 @@ Sextant can generate software models which can be visualized using third party t
 extensive and sophisticated capabilities for visualizing large complex networks (i.e., graph structures). Similarly, metrics derived from tables and sets can be output in CSV format and viewed using TreeMap [3], and parse trees can be output as dot-files and subsequently viewed via GraphViz.
 
 The view in Figurefig:1 shows an example of represents a coloring of
-dependencies on the unsupported features.Purple nodes have direct dependencies on unsupported features while nodes colored orange have indirect dependencies on unsupported features.
+dependencies on the unsupported features. Purple nodes have direct dependencies on unsupported features while nodes colored orange have indirect dependencies on unsupported features.
 
 figure[h]
 		figures/1.png
@@ -1108,11 +1166,11 @@ NDepend
 
 NDepend is a static analysis tool for .NET managed code. The tool supports a large number of code metrics, allowing to visualize dependencies using directed graphs and dependency matrix.  
 
-NDepend computes a lot of size related metrics: number of lines of code, number of assemblies, number of types, number of methods, etc. For measuring complexity, NDepend uses Cyclomatic Complexity. This metric measures the complexity of a type or a method by calculating the number of branching points in code.
-NDepend has two metrics for cohesion. Relational Cohesion is an assembly level metric that measure the average number of internal relationships per type. Lack of Cohesion Of Methods (LCOM) measures the cohesiveness of a type. A type is maximally cohesive if all methods use all instance fields.
+NDepend computes a lot of size-related metrics: number of lines of code, number of assemblies, number of types, number of methods, etc. For measuring complexity, NDepend uses Cyclomatic Complexity. This metric measures the complexity of a type or a method by calculating the number of branching points in the code.
+NDepend has two metrics for cohesion. Relational Cohesion is an assembly level metric that measures the average number of internal relationships per type. Lack of Cohesion Of Methods (LCOM) measures the cohesiveness of a type. A type is maximally cohesive if all methods use all instance fields.
 
 NDepend uses a visualization tool called a Treemap.
-NDepend comes with a dashboard to quickly visualize all application metrics s shown in Figurefig:dash. The dashboard is available both in the Visual Studio extension.For each metric, the dashboard shows the diff since baseline. It also shows if the metric value gets better (in green) or wort (in red). 
+NDepend comes with a dashboard to quickly visualize all application metrics s shown in Figurefig:dash. The dashboard is available both in the Visual Studio extension. For each metric, the dashboard shows the diff since baseline. It also shows if the metric value gets better (in green) or wort (in red). 
 
 figure[h]
 		figures/dash.png
@@ -1133,26 +1191,25 @@ The tree structure used in NDepend treemap is the usual code hierarchy:
 itemize
 	.NET assemblies contain namespaces.
 	Namespaces contain types.
-	Types contains methods and fields.
+	Types contain methods and fields.
 itemize
 
 PVS-Studio
 
 PVS-Studio is a tool for detecting bugs and security weaknesses in the source code of programs, written in C, C++, and C. It works in Windows, Linux, and macOS environment pvs.
 
-This tool executes static code analysis and after that createsa report for helping a developers to find and fix bugs. PVS-Studio has a wide range check methods. It helps to find misprints and Copy-Paste errors.
-The main value of static analysis is in its regular use, so that errors are identified and fixed at the earliest stages pvs. 
+This tool executes static code analysis and after that creates a report for helping developers to find and fix bugs. PVS-Studio has wide range check methods. It helps to find misprints and Copy-Paste errors. The main value of static analysis is in its regular use so that errors are identified and fixed at the earliest stages pvs. 
 
-PVS-Studio runs from the command line. The analysis results can be save as HTML with full source code navigation. It is possible to not include files from the analysis by name, folder or mask; to run the analysis on the files modified during the last N days. Error statistics can be viewed in Excel pvs. 
+PVS-Studio runs from the command line. The analysis results can be saved as HTML with full source code navigation. It is possible to not include files from the analysis by name, folder or mask; to run the analysis on the files modified during the last N days. Error statistics can be viewed in Excel pvs. 
 
-This tool has an online reference guide concerning all the diagnostics available in the program, on the web site and documentation. 
+This tool has an online reference guide concerning all the diagnostics available in the program, on the website and documentation. 
 
-PVS-Studio ha an integration with open source platform SonarQube designed for continuous analysis and measurement of code quality.The main goal of this thesis, as stated at the beginning of this work, is to analyze a quality of programs written in the Erlang programing language by using RefactorErl tool. To accomplish that goal, it became necessary to provide a general overview of Erlang, RefactorErl static analysis tool and developed metrics. In this thesis the software quality, software metrics and some of tools for measure software quality metrics has been studied and analyzed.
+PVS-Studio has an integration with open source platform SonarQube designed for continuous analysis and measurement of code quality.The main goal of this thesis, as stated at the beginning of this work, is to analyze the quality of programs written in the Erlang programing language by using RefactorErl tool. To accomplish that goal, it became necessary to provide a general overview of Erlang, RefactorErl static analysis tool and developed metrics. In this thesis, the software quality, software metrics and some of the tools for measuring software quality metrics have been studied and analyzed.
 
 Erlang is a functional language designed for highly parallel, scalable applications requiring high uptime. RefactorErl is a static source code analysis and transformation tool for Erlang providing several software metrics. The tool is developed by the Department of Programming Languages and Compilers at the Faculty of Informatics, Eötvös Loránd University, Budapest, Hungary. Among the features of RefactorErl is included a metric query language which can support Erlang developers in everyday tasks such as program comprehension, debugging, finding relationships among program parts, etc.
 
-In this thesis we presented developed framework which analyze git repositories with Erlang code files. The new component is built on RefactorErl static analysis tool and actively uses its feature of calculating different metrics of Erlang modules and functions. This frawework allows to draw plots which show change of metrics with software evolving from version to version. The plots can be saved for future usage as a pictures in PNG format. 
+In this thesis, we presented a developed framework which analyzes git repositories with Erlang code files. The new component is built on RefactorErl static analysis tool and actively uses its feature of calculating different metrics of Erlang modules and functions. This framework allows drawing plots which show change of metrics with software evolving from version to version. The plots can be saved for future usage as a pictures in PNG format. 
 
-The main focus of the component is to help Erlang developers with analyzing their projects using plots. Also, it was important to test the developed component on some projects and after that to analyze the measurments. For this purpose have been choosen three different projects from git. The experimental results allows to find changes (increasing the line of code number, char of code number, using otp library and etc.) in code. Visualisation helps with finding patterns and improving of the code quality.
+The main focus of the component is to help Erlang developers with analyzing their projects using plots. Also, it was important to test the developed component on some projects and after that to analyze the measurements. For this purpose have been chosen three different projects from git. The experimental results allow finding changes (increasing the line of code number, char of code number, using otp library and etc.) in code. Visualisation helps with finding patterns and improving of the code quality.
 
-It is safe to say that the main goals of this thesis were successfully achieved. The usage of software metrics is within an organization and it usage is expected to have a beneficial effect on software organizations by make software quality more visible.
+It is safe to say that the main goals of this thesis were successfully achieved. The usage of software metrics is within an organization and its usage is expected to have a beneficial effect on software organizations by making software quality more visible.
