@@ -81,11 +81,7 @@ Objective metrics always results in identical values for a given metric as measu
 
 \section{Types Of Software Metrics}
 
-It is now apparent that software metrics are important in software
-engineering. Symons stated that "a reliable and credible method
-for measuring the software development cycle is needed that has a reasonable
-theoretica1 basis and that produces results that practitioners can trust" Hence, software metrics have been used to measure a wide range of software
-engineering activities.
+It is now apparent that software metrics are important in software engineering. Symons stated that "a reliable and credible method for measuring the software development cycle is needed that has a reasonable theoretica1 basis and that produces results that practitioners can trust" Hence, software metrics were used to measure a wide range of software developing activities.
 
 \subsection{Size-Oriented metrics}
 
@@ -93,28 +89,24 @@ Size-oriented metrics are used to analyze the quality of software.
 
 \textbf{Lines of Code (LOC)}
 
-Lines Of Code (also known as Source Lines of Code - SLOC) is a metric generally used to
-evaluate a software program or codebase according to its size. It shows how many lines of source
-code there is in the application, namespace, class or method. LoC can be used to: check the size
-of code units and estimate the size of project. LOC is the popular and simplest one.
+Lines Of Code (also possible SLOC - Source Lines of Code) is a metric generally used to measure a software program or codebase according to its size. It represents how many lines of source
+code exist in the application, class, methord or namespace. LoC can be used for: checking the size of code units and estimating the size of project. LOC is the simplest one but very popular.
 There are two major types of SLOC measures: 
 
 \begin{description}
-	\item[Physical SLOC (LOC)] Physical SLOC is a count of lines in the text of the program's source code including comment.
-	\item[Logical SLOC(LLOC)] Logical LOC tries to count the number of "statements", but their specific definitions are tied to specific computer languages.
+	\item[Physical SLOC (LOC)] Physical SLOC is a number of lines in the source code of the program including comment.
+	\item[Logical SLOC (LLOC)] Logical LOC tries to calculate the number of "statements", but their specific definitions are tied to specific computer languages.
 \end{description}
 
 Physical SLOC measures are sensitive to logically irrelevant formatting and style conventions, while logical LOC is less sensitive to formatting and style conventions. Unfortunately, SLOC measures are often stated without giving their definition, and logical LOC can often be significantly different from physical SLOC.
 
 \subsection{Object-oriented metrics}
 
-Chidamber and Kemerer have specified a several metrics for object-oriented
-designs. All of these metrics are referred to the separate class but not to the whole system.
+Chidamber and Kemerer have specified several metrics for object-oriented designs. All of these metrics are referred not to the whole system, but the separate class.
 
 \textbf{Number Of Methods (NOM)}
 
-The Number Of Methods metric is used to calculate the average count of all class operations per class. A class must have some, but not an excessive number of operations.This information is useful when identifying a lack of primitiveness in class operations (inhibiting
-re-use), and in classes which are little more than data types.
+The Number Of Methods metric is used to measure the average count of all class operations per class. A class must have some, but not an excessive number of operations. This information is useful when identifying a lack of primitiveness in class operations (inhibiting re-use), and in classes which are little more than data types.
 
 \textbf{Number Of Children (NOC)}
 
@@ -152,26 +144,25 @@ CBO classes metric demonstrates the number of classes coupled to a given class. 
 	\item Variables in methods
 \end{itemize}
 
-Coupling among classes is needed for a system to do useful work, but redundant coupling makes the system more difficult to reuse and maintain. At project or package level, this metric shows the average number of classes used per class.
+Coupling among classes is crucial for a system to do useful work, but redundant coupling makes the system more complicated to maintain and reuse. At the project or package level, this metric displays the average number of classes used per class.
 
 \textbf{Depth of Inheritance Tree (DIT)}
 
-Depth of Inheritance Tree (DIT) is the maximum length of a path from a class to a root class in the inheritance structure of a system. DIT measures how many super-classes can affect a class. DIT is only applicable to object-oriented systems.
+Depth of Inheritance Tree (DIT) measures the maximum length of a path from the current class to the root class in the inheritance structure of a system. DIT calculates how many super-classes can affect a class. DIT is applicable only to object-oriented systems.
 
-The deeper a class is in the hierarchy, the more methods and variables it is likely to inherit, making it more complex. Deep trees as such indicate greater design complexity. Inheritance is a tool to manage complexity, really, not to not increase it. As a positive factor, deep trees promote reuse because of method inheritance.
+If a class is on the deep level in the hierarchy, the more methods and variables it tends to inherit, what makes it more complex. Deep trees indicate big complexity of the design. Inheritance is a key for complexity managing, really, not for its increasing. As a positive factor, deep trees promote reuse because of method inheritance.
 
 C\&K suggested the following consequences based on the depth of inheritance:
 \begin{itemize}
-	\item Deeper trees establish greater design complexity, since more classes and methods are involved
-	\item The deeper a class is in the hierarchy, the greater the number of methods it is going to inherit, making it more complex to foresee its behavior
-	\item The deeper a particular class is in the hierarchy, the greater the possible reuse of inherited methods 
+	\item Deeper trees establish large design complexity, since more classes and methods are involved
+	\item If a class is on the deep level in the hierarchy, the more methods and variables it tends to inherit, what makes it more complex to foresee its behavior
+	\item If a particular class is on the deep level in the hierarchy, there is a great chance of the possible reuse of inherited methods 
 \end{itemize}
 
 \textbf{Response For a Class (RFC)} 
-The Response for Class (RFC) metric is the total number of methods that can potentially be executed in response to a message received by an object of a class. This number is the sum of the methods of the class, and all distinct methods are invoked directly within the class methods. Additionally, inherited
-methods are counted, but overridden methods are not, because only one method of a particular signature will always be available to an object of a given class.
+The Response for Class (RFC) metric measures the total number of methods that can probably be executed as a response to a message received by some object of a class. This number calculates as the sum of the methods of the class, and all distinct methods are called directly within the class methods. Additionally, it counts inherited methods, but not overridden methods, because only one method of a particular signature will always be accessible for an object of a given class.
 
-A large RFC has been found to indicate more faults. Classes with a high RFC are more complex and harder to understand. Testing and debugging is complicated. A worst-case value for possible responses will assist in appropriate allocation of testing time.
+A large RFC is an indicator of more faults. Classes that have a high RFC are more complex and more difficult to understand. Testing and debugging for these classes is also complicated. A worst-case value for possible responses will assist in the appropriate allocation of testing time.
 %%___________________________________________________
 \subsection{Complexity metrics}
 
