@@ -4,7 +4,7 @@ In this chapter will be described some tools for visualization of software quali
 
 \section{Open Source tool "METRIX"}
 
-This tool can compute different software quality metrics. METRIX is able to evaluate software written in C and ADA languages and many metrics can be considered for software evaluation (the different metrics will be described in detail in the next section~\cite{metrix}. 
+This tool can compute different software quality metrics. METRIX is able to evaluate software written in C and ADA languages and many metrics can be considered for software evaluation (the different metrics will be described in detail in the next section ~\cite{metrix}. 
 
 The user can use different types of diagrams for metrics visualization: histograms, scatter plots and line charts. 
 This tool allows to use two not common classes of diagrams: 
@@ -14,12 +14,12 @@ This tool allows to use two not common classes of diagrams:
 	\item The second is the city map diagram.
 \end{itemize}
 
-One specific feature of METRIX is to use those two types of visualization for constructing signature and cartography of source codes~\cite{metrix}.
+One specific feature of METRIX is to use those two types of visualization for constructing signature and cartography of source codes ~\cite{metrix}.
  
 \textbf{Kiviat diagrams}
 The Kiviat diagram uses polar coordinates for visualization. The value which user wants to represent associated with the distance between the point and the origin. The angle between two points does not change because it is constant. This constant is calculated to uniformly distribute the different points. Linked together metric points make a plain polygon, which forms the data specifics of represented values. This type of diagram can be used only for visualization of more than three values of calculated metric. All values must be strictly positive. The user can merge data in one diagram. Also, this tool allows drawing the diagram for one or several metrics together. 
 
-In figure\ref{fig:metrix} shows an example of two Kiviat diagrams. These diagrams represent different metric values for two functions. 
+In Figure \ref{fig:metrix} shows an example of two Kiviat diagrams. These diagrams represent different metric values for two functions. 
 
 \begin{figure}[h]
 	\centering
@@ -29,7 +29,7 @@ In figure\ref{fig:metrix} shows an example of two Kiviat diagrams. These diagram
 \end{figure}
 
 \textbf{City map diagrams}
-Usually this type of diagrams used for representing cities with buildings in three dimensions. City map diagrams also suit for visualization of software metrics of the project with a large number of source files, functions and variables. Source code metrics are represented by rectangles by using the treemap diagram. Some authors used variants of this class of visualization diagrams to represent  values with esthetic considerations. City map diagrams are indeed multi-parameters diagrams: each “building” is associated with an n-tuple of numeric values~\cite{metrix}.  
+Usually this type of diagrams used for representing cities with buildings in three dimensions. City map diagrams also suit for visualization of software metrics of the project with a large number of source files, functions and variables. Source code metrics are represented by rectangles by using the treemap diagram. Some authors used variants of this class of visualization diagrams to represent  values with esthetic considerations. City map diagrams are indeed multi-parameters diagrams: each “building” is associated with an n-tuple of numeric values ~\cite{metrix}.  
 
 This tool also has a graphical user interface with a single Window containing three tabs: “Calc”, “Csv” and “Plots”.
 
@@ -39,11 +39,11 @@ In the second “Csv” tab user can find a list of numeric values and chose whi
 
 In the third “Plots” tab the user can build the city map diagrams for the source code. The user can change the settings of the tool like the modification of placement of the buildings in the city map or make the data colored, etc.
 
-This tool supports making a report in the form of a LaTeX file where each function and each file make a section of this report. User can use PDF file for analisis. This report includes all the values measured on the project. Each file produces three views of the associated city map diagram, as well as different Kiviat diagrams for the different metrics measured on the functions of the file~\cite{metrix}. 
+This tool supports making a report in the form of a LaTeX file where each function and each file make a section of this report. User can use PDF file for analisis. This report includes all the values measured on the project. Each file produces three views of the associated city map diagram, as well as different Kiviat diagrams for the different metrics measured on the functions of the file ~\cite{metrix}. 
 
 \section{Sextant}
 
-Sextant is a Java source-code analysis tool under development at the University of Nebraska at Omaha (UNO)~\cite{sextant}. This software is a complex extension of the TL system (a general-purpose program transformation system) created particularly for the Java programming language domain.
+Sextant is a Java source-code analysis tool under development at the University of Nebraska at Omaha (UNO) ~\cite{sextant}. This software is a complex extension of the TL system (a general-purpose program transformation system) created particularly for the Java programming language domain.
 
 The main design goal of Sextant is providing a tool facilitating specification and visualization of custom analysis rules, which can be domain-specific or moreover application specific analysis rules.
 
@@ -63,11 +63,11 @@ The second mechanism is a library of semantic queries. These queries can be acce
  
 Sextant stores table and set types for information collecting with relation to analysis rules. These constructs can be used for storing information related to a custom metrics wide variety.
 
-Sextant is open-ended with respect to the definition of metrics – any source-code analysis rule can be interpreted as a metric, be they PMD-style rules focusing on violations of coding conventions or rules such as those specified by FindBugs that are more semantic in nature\cite{sextant}.
+Sextant is open-ended with respect to the definition of metrics – any source-code analysis rule can be interpreted as a metric, be they PMD-style rules focusing on violations of coding conventions or rules such as those specified by FindBugs that are more semantic in nature \cite{sextant}.
 
 Sextant can do software models generation. These models can be visualized using other tools such as GraphViz, Cytoscape and TreeMap. Sextant can produce the CAG of the code base in a JavaScript object notation format (JSON). This JSON file can be loaded into Cytoscape, an open source platform which provides extensive and sophisticated capabilities for large complex networks visualization, for example, graph structures. The same way, metrics derived from sets and tables can be produced in CSV format and viewed with use of TreeMap. Parse trees can be output as dot-files and later viewed with use of GraphViz.
 
-The view in Figure\ref{fig:1} shows an example of represents a coloring of dependencies on the unsupported features. Nodes colored orange have indirect dependencies on unsupported features while purple nodes have direct dependencies on unsupported features.
+The view in Figure \ref{fig:1} shows an example of represents a coloring of dependencies on the unsupported features. Nodes colored orange have indirect dependencies on unsupported features while purple nodes have direct dependencies on unsupported features.
 
 \begin{figure}[h]
 	\centering
@@ -84,7 +84,7 @@ NDepend computes many size-related metrics: number of lines of code, number of a
 
 NDepend has two metrics for cohesion. Relational Cohesion is an assembly level metric that calculates the average number of internal relationships for each type. Lack of Cohesion Of Methods (LCOM) measures a type cohesiveness. A type is maximally cohesive if every method use all instance fields.
 
-NDepend has a tool for visualization called a Treemap. Also, NDepend has a dashboard for quick visualization of all application metrics. It's shown in Figure\ref{fig:dash}. The dashboard is available as the extension for Visual Studio. The dashboard shows the diff since baseline for every metric. It also displays if the metric value becomes better (in green) or worse (in red). 
+NDepend has a tool for visualization called a Treemap. Also, NDepend has a dashboard for quick visualization of all application metrics. It's shown in Figure \ref{fig:dash}. The dashboard is available as the extension for Visual Studio. The dashboard shows the diff since baseline for every metric. It also displays if the metric value becomes better (in green) or worse (in red). 
 
 \begin{figure}[h]
 	\centering
@@ -93,7 +93,7 @@ NDepend has a tool for visualization called a Treemap. Also, NDepend has a dashb
 	\label{fig:dash}
 \end{figure}
 
-The Figure\ref{fig:tree} shows metric visualization using the colored treemap.
+The Figure \ref{fig:tree} shows metric visualization using the colored treemap.
 
 \begin{figure}[h]
 	\centering
@@ -112,11 +112,11 @@ The tree structure used in NDepend treemap is the usual code hierarchy:
 
 \section{PVS-Studio}
 
-PVS-Studio is a tool for detecting bugs and security weaknesses in the source code of programs, written in C, C++, and C\#. It works in Windows, Linux, and macOS environment~\cite{pvs}. The user can use online reference manual concerning all the diagnostics methods available in the program and  on the website.
+PVS-Studio is a tool for detecting bugs and security weaknesses in the source code of programs, written in C, C++, and C\#. It works in Windows, Linux, and macOS environment ~\cite{pvs}. The user can use online reference manual concerning all the diagnostics methods available in the program and  on the website.
 
-This tool executes static code analysis. The generated report helps developers in debugging. PVS-Studio has large number of methods for checking. These methods help to find typing and copy-paste mistakes. The main value of static analysis is in its regular use so that errors are identified and fixed at the earliest stages~\cite{pvs}. 				
+This tool executes static code analysis. The generated report helps developers in debugging. PVS-Studio has large number of methods for checking. These methods help to find typing and copy-paste mistakes. The main value of static analysis is in its regular use so that errors are identified and fixed at the earliest stages ~\cite{pvs}. 				
 
-PVS-Studio can work on a Linux environment on Windows. It can be run from the command or can be integrated into Visual Studio development environment. The results of the analysis are presented in the HTML document which allows full navigation through the source code. The Figure \ref{fig:pvs} shows an example of HTML-report.
+PVS-Studio can work on a Linux environment on Windows. It can be run from the command or can be integrated into Visual Studio development environment. The results of the analysis are presented in the HTML document which allows full navigation through the source code. The Figure \ref{fig:pvs} shows an example of an HTML-report.
 
 \begin{figure}[h]
 	\centering
@@ -125,4 +125,4 @@ PVS-Studio can work on a Linux environment on Windows. It can be run from the co
 	\label{fig:pvs}
 \end{figure}
 
-It is possible to not include files from the analysis by name, folder or mask; to run the analysis on the files modified during the last N days~\cite{pvs}. PVS-Studio has an integration with open source platform SonarQube. This platform was designed for uninterrupted analysis and evaluation of the quality of code.
+It is possible to not include files from the analysis by name, folder or mask; to run the analysis on the files modified during the last N days ~\cite{pvs}. PVS-Studio has an integration with open source platform SonarQube. This platform was designed for uninterrupted analysis and evaluation of the quality of code.
