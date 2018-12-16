@@ -112,12 +112,17 @@ The tree structure used in NDepend treemap is the usual code hierarchy:
 
 \section{PVS-Studio}
 
-PVS-Studio is a tool for detecting bugs and security weaknesses in the source code of programs, written in C, C++, and C\#. It works in Windows, Linux, and macOS environment~\cite{pvs}.
+PVS-Studio is a tool for detecting bugs and security weaknesses in the source code of programs, written in C, C++, and C\#. It works in Windows, Linux, and macOS environment~\cite{pvs}. The user can use online reference manual concerning all the diagnostics methods available in the program and  on the website.
 
-This tool executes static code analysis and after that creates a report for helping developers to find and fix bugs. PVS-Studio has wide range check methods. It helps to find misprints and Copy-Paste errors. The main value of static analysis is in its regular use so that errors are identified and fixed at the earliest stages~\cite{pvs}. 
+This tool executes static code analysis. The generated report helps developers in debugging. PVS-Studio has large number of methods for checking. These methods help to find typing and copy-paste mistakes. The main value of static analysis is in its regular use so that errors are identified and fixed at the earliest stages~\cite{pvs}. 				
 
-PVS-Studio runs from the command line. The analysis results can be saved as HTML with full source code navigation. It is possible to not include files from the analysis by name, folder or mask; to run the analysis on the files modified during the last N days. Error statistics can be viewed in Excel~\cite{pvs}. 
+PVS-Studio can work on a Linux environment on Windows. It can be run from the command or can be integrated into Visual Studio development environment. The results of the analysis are presented in the HTML document which allows full navigation through the source code. The Figure \ref{fig:pvs} shows an example of HTML-report.
 
-This tool has an online reference guide concerning all the diagnostics available in the program, on the website and documentation. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=53mm]{figures/pvs.png}
+	\caption{Main page of an HTML-report.}
+	\label{fig:pvs}
+\end{figure}
 
-PVS-Studio has an integration with open source platform SonarQube designed for continuous analysis and measurement of code quality.
+It is possible to not include files from the analysis by name, folder or mask; to run the analysis on the files modified during the last N days~\cite{pvs}. PVS-Studio has an integration with open source platform SonarQube. This platform was designed for uninterrupted analysis and evaluation of the quality of code.
