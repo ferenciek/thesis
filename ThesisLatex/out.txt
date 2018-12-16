@@ -97,11 +97,7 @@ Objective metrics always results in identical values for a given metric as measu
 
 Types Of Software Metrics
 
-It is now apparent that software metrics are important in software
-engineering. Symons stated that "a reliable and credible method
-for measuring the software development cycle is needed that has a reasonable
-theoretica1 basis and that produces results that practitioners can trust" Hence, software metrics have been used to measure a wide range of software
-engineering activities.
+It is now apparent that software metrics are important in software engineering. Symons stated that "a reliable and credible method for measuring the software development cycle is needed that has a reasonable theoretica1 basis and that produces results that practitioners can trust" Hence, software metrics were used to measure a wide range of software developing activities.
 
 Size-Oriented metrics
 
@@ -109,53 +105,47 @@ Size-oriented metrics are used to analyze the quality of software.
 
 Lines of Code (LOC)
 
-Lines Of Code (also known as Source Lines of Code - SLOC) is a metric generally used to
-evaluate a software program or codebase according to its size. It shows how many lines of source
-code there is in the application, namespace, class or method. LoC can be used to: check the size
-of code units and estimate the size of project. LOC is the popular and simplest one.
+Lines Of Code (also possible SLOC - Source Lines of Code) is a metric generally used to measure a software program or codebase according to its size. It represents how many lines of source
+code exist in the application, class, methord or namespace. LoC can be used for: checking the size of code units and estimating the size of project. LOC is the simplest one but very popular.
 There are two major types of SLOC measures: 
 
 description
-	[Physical SLOC (LOC)] Physical SLOC is a count of lines in the text of the program's source code including comment.
-	[Logical SLOC(LLOC)] Logical LOC tries to count the number of "statements", but their specific definitions are tied to specific computer languages.
+	[Physical SLOC (LOC)] Physical SLOC is a number of lines in the source code of the program including comment.
+	[Logical SLOC (LLOC)] Logical LOC tries to calculate the number of "statements", but their specific definitions are tied to specific computer languages.
 description
 
 Physical SLOC measures are sensitive to logically irrelevant formatting and style conventions, while logical LOC is less sensitive to formatting and style conventions. Unfortunately, SLOC measures are often stated without giving their definition, and logical LOC can often be significantly different from physical SLOC.
 
 Object-oriented metrics
 
-Chidamber and Kemerer have specified a several metrics for object-oriented
-designs. All of these metrics are referred to the separate class but not to the whole system.
+Chidamber and Kemerer have specified several metrics for object-oriented designs. All of these metrics are referred not to the whole system, but the separate class.
 
 Number Of Methods (NOM)
 
-The Number Of Methods metric is used to calculate the average count of all class operations per class. A class must have some, but not an excessive number of operations.This information is useful when identifying a lack of primitiveness in class operations (inhibiting
-re-use), and in classes which are little more than data types.
+The Number Of Methods metric is used to measure the average count of all class operations per class. A class must have some, but not an excessive number of operations. This information is useful when identifying a lack of primitiveness in class operations (inhibiting re-use), and in classes which are little more than data types.
 
 Number Of Children (NOC)
 
-NOC is a number of immediate subclasses subordinated to a class in the class hierarchy. NOC counts the number of subclasses belonging to a class.
+NOC metric measures the number of subclasses which belong to a class. This metric calculates the class hierarchy.
 
-NOC measures the breadth of a class hierarchy, where maximum DIT measures the depth. Depth is generally better than breadth, since it promotes reuse of methods through inheritance. NOC and DIT are closely related. Inheritance levels can be added to increase the depth and reduce the breadth.
+NOC metric is closely relevant with DIT metric, which is more better because it supports for reusing methods through inheritance. The first metric calculates the number of child classes, DIT measures the depth of the class.
+Inheritance levels can be used to gain the depth and reduce the breadth.
 
-A high NOC, a large number of child classes, can indicate several things: 
+A high number of NOC means the following: 
 itemize
-	High reuse of base class. Inheritance is a form of reuse.
-	Base class may require more testing.
-	Improper abstraction of the parent class. 
-	Misuse of sub-classing. In such a case, it may be necessary to group related classes and introduce another level of inheritance.
+	Wrong abstraction of the parent class. 
+	The reuse of the base class is high. The form of reuse is inheritance.
+	Wrong using of subclasses. In this case, it is needed to introduce a new level of inheritance with newly grouped related classes.
+	Base class needed to be more tested.
 itemize
 
-A class with a high NOC and a high WMC indicates complexity at the top of the class hierarchy. The class is potentially influencing a large number of descendant classes. This can be a sign of poor design. A redesign may be required.
-
-Not all classes should have the same number of sub-classes. Classes higher up in the hierarchy should have more sub-classes then those lower down.
-
+Classes high hierarchy have more subclasses then classes with low hierarchy.
 
 Weighted Methods per Class (WMC)
 
-This metric is the sum of complexities of methods defined in a class. It therefore represents the
-complexity of a class as a whole and this measure can be used to indicate the development and
-maintenance effort for the class. Classes with a large Weighted Methods Per Class value can often be refactored into two or more classes.
+This metric calculates a sum of complexities all defined methods in a class. WMC shows the complexity of whole class. This measure helps to indicate the development and maintenance effort for the class. Classes with a large number of WMC can often be refactored into several classes.
+
+A class with a high value of WMC and a high number of NOC indicates complexity at the top of the class hierarchy. A sign of poor design is the potential impact of the base class on a large number of subclasses.
 
 Coupling Between Object classes (CBO)
 
@@ -168,26 +158,25 @@ itemize
 	Variables in methods
 itemize
 
-Coupling among classes is needed for a system to do useful work, but redundant coupling makes the system more difficult to reuse and maintain. At project or package level, this metric shows the average number of classes used per class.
+Coupling among classes is crucial for a system to do useful work, but redundant coupling makes the system more complicated to maintain and reuse. At the project or package level, this metric displays the average number of classes used per class.
 
 Depth of Inheritance Tree (DIT)
 
-Depth of Inheritance Tree (DIT) is the maximum length of a path from a class to a root class in the inheritance structure of a system. DIT measures how many super-classes can affect a class. DIT is only applicable to object-oriented systems.
+Depth of Inheritance Tree (DIT) measures the maximum length of a path from the current class to the root class in the inheritance structure of a system. DIT calculates how many super-classes can affect a class. DIT is applicable only to object-oriented systems.
 
-The deeper a class is in the hierarchy, the more methods and variables it is likely to inherit, making it more complex. Deep trees as such indicate greater design complexity. Inheritance is a tool to manage complexity, really, not to not increase it. As a positive factor, deep trees promote reuse because of method inheritance.
+If a class is on the deep level in the hierarchy, the more methods and variables it tends to inherit, what makes it more complex. Deep trees indicate big complexity of the design. Inheritance is a key for complexity managing, really, not for its increasing. As a positive factor, deep trees promote reuse because of method inheritance.
 
 CK suggested the following consequences based on the depth of inheritance:
 itemize
-	Deeper trees establish greater design complexity, since more classes and methods are involved
-	The deeper a class is in the hierarchy, the greater the number of methods it is going to inherit, making it more complex to foresee its behavior
-	The deeper a particular class is in the hierarchy, the greater the possible reuse of inherited methods 
+	Deeper trees establish large design complexity, since more classes and methods are involved
+	If a class is on the deep level in the hierarchy, the more methods and variables it tends to inherit, what makes it more complex to foresee its behavior
+	If a particular class is on the deep level in the hierarchy, there is a great chance of the possible reuse of inherited methods 
 itemize
 
 Response For a Class (RFC) 
-The Response for Class (RFC) metric is the total number of methods that can potentially be executed in response to a message received by an object of a class. This number is the sum of the methods of the class, and all distinct methods are invoked directly within the class methods. Additionally, inherited
-methods are counted, but overridden methods are not, because only one method of a particular signature will always be available to an object of a given class.
+The Response for Class (RFC) metric measures the total number of methods that can probably be executed as a response to a message received by some object of a class. This number calculates as the sum of the methods of the class, and all distinct methods are called directly within the class methods. Additionally, it counts inherited methods, but not overridden methods, because only one method of a particular signature will always be accessible for an object of a given class.
 
-A large RFC has been found to indicate more faults. Classes with a high RFC are more complex and harder to understand. Testing and debugging is complicated. A worst-case value for possible responses will assist in appropriate allocation of testing time.
+A large RFC is an indicator of more faults. Classes that have a high RFC are more complex and more difficult to understand. Testing and debugging for these classes is also complicated. A worst-case value for possible responses will assist in the appropriate allocation of testing time.
 
 Complexity metrics
 
@@ -945,8 +934,7 @@ figure[h]
 	fig:chat5
 figure
 
-Measurement of McCabe’s cyclomatic complexity metric ensures that developers are sensitive to the fact that programs with high McCabe numbers (e.g. > 10) are likely to be difficult to understand and therefore have a higher probability of containing defects. 
-The tested module has the cyclomatic complexity number which increased to 30 in last versions as shown in Figure fig:mcCabe.
+McCabe’s cyclomatic complexity metric measurement guarantees that developers are sensitive to the fact that programs with high McCabe numbers, for example, more than 10 are likely to be hard for understanding and accordingly have a higher probability of defects containing within the code base. The tested module has the cyclomatic complexity number which increased to 30 in the last versions as shown in Figure fig:mcCabe.
 
 figure[h]
 		figures/mcCabe.png
@@ -991,10 +979,10 @@ This project is an Erlang library for Unix process management and system program
 The project provides:
 
 itemize
-	Beam-friendly interface to system calls and other POSIX operation.
-	Reliable OS process management by mapping Erlang processes to a hierarchy of system processes.
-	An interface for privilege separation operations to restrict processes.
-	Operations to isolate processes like containers and jails.
+	Reliable operating system process management by mapping Erlang processes to a hierarchy of system processes.
+	Beam-friendly interface for system calls and other POSIX operation.
+	Operations for processes isolation like jails and containers.
+	An interface for separation operations with privileges for processes restriction.
 itemize
 
 
@@ -1010,8 +998,7 @@ figure[h]
 	fig:line_of_code_prx
 figure
 
-Another important metric is cohesion metric. Modules with high cohesion tend to be preferable because high cohesion is associated with several desirable traits of software including robustness, reliability, reusability, and understandability. In contrast, low cohesion is associated with undesirable traits such as being difficult to maintain, test, reuse, or even understand. 
-The Figure fig:cohesion_prx and shows the decreasing of the calculated metric. 
+Another important metric is cohesion metric. Modules with high cohesion tend to be preferable because high cohesion is associated with several desirable traits of software including robustness, reliability, reusability, and understandability. In contrast, low cohesion is associated with undesirable traits such as being difficult to maintain, test, reuse, or even understand. The Figure fig:cohesion_prx and shows the decreasing of the calculated metric. 
 
 figure[h]
 		figures/cohesion_prx.png
@@ -1088,18 +1075,20 @@ Open Source tool "METRIX"
 
 This tool can compute different software quality metrics. METRIX is able to evaluate software written in C and ADA languages and many metrics can be considered for software evaluation (the different metrics will be described in detail in the next section metrix. 
 
-Different diagrams enable the user to visualize numeric data. Graphics like line charts, scatter plots and histograms are common. 
-There are two less-common classes of diagrams: 
+The user can use different types of diagrams for metrics visualization: histograms, scatter plots and line charts. 
+This tool allows to use two not common classes of diagrams: 
+
 itemize
-	The radar plots, also called Kiviat diagrams.
-	The city map diagram, mostly used to represent the cartography of cities.
+	The first is Kiviat diagrams, also known as the radar plots.
+	The second is the city map diagram.
 itemize
-One specific feature of METRIX is to use those two types of visualization for constructing signature and cartography of source codes.
+
+One specific feature of METRIX is to use those two types of visualization for constructing signature and cartography of source codes metrix.
  
 Kiviat diagrams
-The Kiviat diagram visualizes information through polar coordinates. The distance between the point and the origin is associated to the value user want to represent, while the angle between two points is constant, this constant is uninformative and calculated to uniformly distribute the different points. Moreover, all metric points are linked together, making a plain polygon, which shapes the specificity of the data that the user wants to represent. Of course, this diagram is not adequate to represent only one or two metrics, it requires at least three values to be pertinent. Values may be of the same metrics, representing the metric measured on different parts of the source code. Values may be of very different metrics, computed  with heterogeneous units. That enables the user to merge multivariate data on the same diagram. On Kiviat diagrams, values must be strictly positive. 
+The Kiviat diagram uses polar coordinates for visualization. The value which user wants to represent associated with the distance between the point and the origin. The angle between two points does not change because it is constant. This constant is calculated to uniformly distribute the different points. Linked together metric points make a plain polygon, which forms the data specifics of represented values. This type of diagram can be used only for visualization of more than three values of calculated metric. All values must be strictly positive. The user can merge data in one diagram. Also, this tool allows drawing the diagram for one or several metrics together. 
 
-In figurefig:metrix shows an example of two Kiviat diagrams. These diagrams represent coding different metric values for two functions. 
+In figurefig:metrix shows an example of two Kiviat diagrams. These diagrams represent different metric values for two functions. 
 
 figure[h]
 		figures/metrix.png
@@ -1108,53 +1097,45 @@ figure[h]
 figure
 
 City map diagrams
-This diagram is mainly used in urbanism, to represent cities and their buildings in three dimensions. As a software project  can contain a very large number of source files, code functions  and code variables, but this visualization diagram adequately suits for complexity visualization issue. 
+Usually this type of diagrams used for representing cities with buildings in three dimensions. City map diagrams also suit for visualization of software metrics of the project with a large number of source files, functions and variables. Source code metrics are represented by rectangles by using the treemap diagram. Some authors used variants of this class of visualization diagrams to represent  values with esthetic considerations. City map diagrams are indeed multi-parameters diagrams: each “building” is associated with an n-tuple of numeric values metrix.  
 
-The treemap diagram is used in computing to represent in two dimensions source code metrics with rectangles. Some authors used variants of this class of visualization diagrams to represent  values with esthetic considerations. City map diagrams are indeed multi-parameters diagrams: each “building” is associated with an n-tuple of numeric values.  
+This tool also has a graphical user interface with a single Window containing three tabs: “Calc”, “Csv” and “Plots”.
 
-This tool also has a graphical user interface with a single Window containing three tabs.
+In the first "Calc" tab user chose source files for evaluation and also chose metrics which neede to be measured.It allows to users to use  hand-start scripts with a prompt. The open source aspect of the tool allows users to repeat the measuring scripts manually or to integrate them into other software.
 
-The first tab called “Calc” and enables the user to indicate the source file(s) to evaluate and to parameterize the metrics to compute. It avoids using hand-start scripts with a prompt, but the open source aspect of the tool allows advanced users to reuse the measuring scripts manually and/or to integrate them into other software.
+In the second “Csv” tab user can find a list of numeric values and chose which values will be used for function or for the file. There is an option for exporting calculated values to a spreadsheet application for drawing graphs, like scatter plots, line plots, etc.
 
-The second tab called “Csv” presents the numeric values as a list, with a tab per function and per file. The user may export these values to a spreadsheet application, in order to represent  the values with common visualization graphs, like scatter plots, line plots, etc.
+In the third “Plots” tab the user can build the city map diagrams for the source code. The user can change the settings of the tool like the modification of placement of the buildings in the city map or make the data colored, etc.
 
-The third tab called “Plots” and provides a way to visualize the city map diagrams for the source code, the signatures of functions and the comparisons between functions through radar/Kiviat plots. This tab enables the user to change the default behavior of the tool, for example, to modify the ceiling and floor to insert color into the data, to adapt the placement of the buildings in the city map, etc. 
-
-This tool may generate a report in the form of a LaTeX file, so the user can use it to produce a PDF file. This report summarizes all the values measured on the project. Each function and each file make a section of this report. In each section, numerical values are coupled with the signature of the function (as a Kiviat diagram). Each file produces three views of the associated city map diagram, as well as different Kiviat diagrams for the different metrics measured on the functions of the file. 
+This tool supports making a report in the form of a LaTeX file where each function and each file make a section of this report. User can use PDF file for analisis. This report includes all the values measured on the project. Each file produces three views of the associated city map diagram, as well as different Kiviat diagrams for the different metrics measured on the functions of the file metrix. 
 
 Sextant
 
-Sextant is a Java source-code analysis tool under development at the University of Nebraska at Omaha (UNO) sextant. Sextant represents a non-trivial extension of the TL system (a general-purpose program
-transformation system) specialized to the domain of the Java
-programming language.
+Sextant is a Java source-code analysis tool under development at the University of Nebraska at Omaha (UNO) sextant. This software is a complex extension of the TL system (a general-purpose program transformation system) created particularly for the Java programming language domain.
 
-One of the primary design goals of Sextant is to provide a tool facilitating specification and visualization of custom analysis rules (e.g., domain-specific or even application specific analysis rules).
+The main design goal of Sextant is providing a tool facilitating specification and visualization of custom analysis rules, which can be domain-specific or moreover application specific analysis rules.
 
-Sextant analysis rules are based on information drawn from several software models. There are two models of central importance. The first model, a syntactic model, is the parse tree of the source code. Parse trees correspond
-to compilation units (i.e., Java files) and are generated using GLR parser technology provided by the TL system. Parse trees are well-suited to analysis and manipulation through standard primitives provided by program transformation systems such as matching and generic traversal.
+Analysis rules of Sextant are based on information fetched from different software models. There are two main models of central importance. The first model is a syntactic model. It is the source code parse tree. Parse trees conform to compilation units which represented by Java files and are generated with use of GLR parser technology provided by the TL system. Parse trees are well-fitted for analyzing and manipulating through standard primitives provided by program transformation systems, for example, by matching and generic traversal.
 
-The second model, a compound attributed graph (CAG), is a semantic model capturing structural, subtype, and reference dependencies among the fields, methods, constructors, types, and packages. The CAG also associates an attribute list with each node and edge.
+The second model is a compound attributed graph (CAG). It is a semantic model which captures subtype, structural, and reference dependencies among the constructors, methods, fields, packages and types. The CAG also links an attribute list with every node and edge.
 
-Information in the CAG is made accessible to Sextant’s transformation-based analysis rules through two mechanisms. The first mechanism is a positional system that establishes a relation between parse (sub)trees and corresponding contexts within the CAG. It is this relation that makes it possible to
-correctly resolve references to types, fields, local variables, methods, and constructors during the course of generic traversals which are a key enabling mechanism within program transformation systems.
+CAG information is accessible to Sextant’s transformation-based analysis rules via two mechanisms. The first mechanism is a positional system which organizes a relation between contexts within the CAG and corresponding parse (sub)trees. This relation makes possible correctly resolving references to constructors, methods, types, fields, and local variables, during the process of generic traversals which are the key enabling mechanism in program transformation systems.
 
-The second mechanism is a library of semantic queries which, thanks to the positioning system, can be accessed during the course of transformation. Functionality presently provided by this library includes things like:
+The second mechanism is a library of semantic queries. These queries can be accessed even in the middle of transformation course. Functionality which provided by this library contains things like:
 itemize
-	Resolving a reference.
-	Determining the type of a reference.
+	Reference resolving.
+	Reference type determining.
+	Determining declaration shadowing or overriding.
 	Determining whether one type is a subtype of another.
-	Determining whether one declaration shadows or overrides.
 itemize
  
-Sextant provides table and set datatypes for collecting information associated with analysis rules. These constructs are suitable for storing information related to a wide variety of custom metrics.
+Sextant stores table and set types for information collecting with relation to analysis rules. These constructs can be used for storing information related to a custom metrics wide variety.
 
-Sextant is open-ended with respect to the definition of metrics – any source-code analysis rule can be interpreted as a metric, be they PMD-style rules focusing on violations of coding conventions or rules such as those specified by FindBugs that are more semantic in nature.
+Sextant is open-ended with respect to the definition of metrics – any source-code analysis rule can be interpreted as a metric, be they PMD-style rules focusing on violations of coding conventions or rules such as those specified by FindBugs that are more semantic in naturesextant.
 
-Sextant can generate software models which can be visualized using third party tools such as Cytoscape, TreeMap, and GraphViz. Sextant can output the CAG of a targeted code base in a JavaScript JSON format. This dot-JSON file can then be loaded into Cytoscape, an open source platform providing
-extensive and sophisticated capabilities for visualizing large complex networks (i.e., graph structures). Similarly, metrics derived from tables and sets can be output in CSV format and viewed using TreeMap [3], and parse trees can be output as dot-files and subsequently viewed via GraphViz.
+Sextant can do software models generation. These models can be visualized using other tools such as GraphViz, Cytoscape and TreeMap. Sextant can produce the CAG of the code base in a JavaScript object notation format (JSON). This JSON file can be loaded into Cytoscape, an open source platform which provides extensive and sophisticated capabilities for large complex networks visualization, for example, graph structures. The same way, metrics derived from sets and tables can be produced in CSV format and viewed with use of TreeMap. Parse trees can be output as dot-files and later viewed with use of GraphViz.
 
-The view in Figurefig:1 shows an example of represents a coloring of
-dependencies on the unsupported features. Purple nodes have direct dependencies on unsupported features while nodes colored orange have indirect dependencies on unsupported features.
+The view in Figurefig:1 shows an example of represents a coloring of dependencies on the unsupported features. Nodes colored orange have indirect dependencies on unsupported features while purple nodes have direct dependencies on unsupported features.
 
 figure[h]
 		figures/1.png
@@ -1164,7 +1145,7 @@ figure
 
 NDepend
 
-NDepend is a static analysis tool for .NET managed code. The tool supports a large number of code metrics, allowing to visualize dependencies using directed graphs and dependency matrix.  
+NDepend is a static analysis tool for .NET managed code. The tool supports a big number of code metrics, allowing to visualize dependencies using directed graphs and dependency matrix.  
 
 NDepend computes a lot of size-related metrics: number of lines of code, number of assemblies, number of types, number of methods, etc. For measuring complexity, NDepend uses Cyclomatic Complexity. This metric measures the complexity of a type or a method by calculating the number of branching points in the code.
 NDepend has two metrics for cohesion. Relational Cohesion is an assembly level metric that measures the average number of internal relationships per type. Lack of Cohesion Of Methods (LCOM) measures the cohesiveness of a type. A type is maximally cohesive if all methods use all instance fields.

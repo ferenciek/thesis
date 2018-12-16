@@ -78,13 +78,13 @@ The view in Figure\ref{fig:1} shows an example of represents a coloring of depen
 
 \section{NDepend}
 
-NDepend is a static analysis tool for .NET managed code. The tool supports a big number of code metrics, allowing to visualize dependencies using directed graphs and dependency matrix.  
+NDepend is a static analysis tool for .NET managed code. The tool can measure a large number of code metrics, allowing to visualize dependencies using directed graphs and dependency matrix.  
 
-NDepend computes a lot of size-related metrics: number of lines of code, number of assemblies, number of types, number of methods, etc. For measuring complexity, NDepend uses Cyclomatic Complexity. This metric measures the complexity of a type or a method by calculating the number of branching points in the code.
-NDepend has two metrics for cohesion. Relational Cohesion is an assembly level metric that measures the average number of internal relationships per type. Lack of Cohesion Of Methods (LCOM) measures the cohesiveness of a type. A type is maximally cohesive if all methods use all instance fields.
+NDepend computes many size-related metrics: number of lines of code, number of assemblies, number of types, number of methods, etc. For measuring complexity, NDepend uses Cyclomatic Complexity. This metric calculates the complexity of a method or a type by calculating how many branching points it contains in the code.
 
-NDepend uses a visualization tool called a Treemap.
-NDepend comes with a dashboard to quickly visualize all application metrics s shown in Figure\ref{fig:dash}. The dashboard is available both in the Visual Studio extension. For each metric, the dashboard shows the diff since baseline. It also shows if the metric value gets better (in green) or wort (in red). 
+NDepend has two metrics for cohesion. Relational Cohesion is an assembly level metric that calculates the average number of internal relationships for each type. Lack of Cohesion Of Methods (LCOM) measures a type cohesiveness. A type is maximally cohesive if every method use all instance fields.
+
+NDepend has a tool for visualization called a Treemap. Also, NDepend has a dashboard for quick visualization of all application metrics. It's shown in Figure\ref{fig:dash}. The dashboard is available as the extension for Visual Studio. The dashboard shows the diff since baseline for every metric. It also displays if the metric value becomes better (in green) or worse (in red). 
 
 \begin{figure}[h]
 	\centering

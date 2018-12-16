@@ -222,19 +222,18 @@ tool, they basically count the variants of the lines of code(LOC) metric. The sp
 
 \subsection{CCCC}
 
-It is a little command-line tool that generates metrics from the source code of a C or C++ project. The output of the tool is a simple HTML website with information about all your sources. It generates reports on various metrics including lines of code (LOC) and metrics proposed by Chidamber\&Kemererand Henry\&Kafura. CCCC has been developed as freeware and is released in source code form. Users are encouraged to compile the program themselves and to modify the source to reflect their preferences and interests.
+It is a small command-line tool which generates metrics from C or C++ project's source code. The tool outputs a simple HTML website with information about all your sources. It generates reports on different metrics, for example, lines of code (LOC) and metrics suggested by Chidamber\&Kemererand Henry\&Kafura. CCCC is distributed as a freeware and is released in the form of source code. Users have to compile the program on their own and to modify the source code to reflect their interests and preferences.
 
-CCCC will process each of the files specified on the command line (using standard wildcard processing were appropriate. For each file, named, CCCC will examine the extension of the filename, and if the extension is recognized as indicating a supported language, the appropriate parser will run on the file. As each file is parsed, recognition of certain constructs will cause records to be written into an internal database. When all files have been processed, a report on the contents of the internal database
-will be generated in HTML format. By default the main summary HTML report is generated to the file cccc.htm in a subdirectory called .cccc of the current working directory, with detailed reports on each module (i.e. C++ or Java class) identified by the analysis run).
+CCCC can process every file which was provided via the command line. It is possible to use standard wildcard process. For every file, CCCC will check the filename's extension, and if the extension is recognized as one from supported languages, the particular parser will parse this file. As every file is parsed, certain constructs recognition will cause records to be inserted into an internal database. After all files have been processed, the software will generate the report in HTML format. This report is depended on on the contents of the internal database. By default settings the main HTML report is produced to the file cccc.htm in a subfolder called .cccc of the current working folder. It includes detailed reports on every module (for example, C++ or Java class) detected by the analysis run.
 
-In addition to the summary and detailed HTML reports, the run will cause generation of corresponding summary and detailed reports in XML format, and a further file called cccc.db to be created. cccc.db will contain a dump of the internal database of the program in a format delimited with the character '@' (chosen because it is one of the few characters which cannot legally appear in C/C++ non-comment source code).
+As an addition to HTML reports and summary, the run of the program will generate the corresponding summary and reports in XML format. Also, the file called cccc.db will be created. This file will represent a dump of the internal database of the software in a special format with '@' symbol as a delimiter. It is chosen because this symbol is one of the few which can not appear in C/C++ source code.
 
-The report contains a number of tables identifying the modules in the files submitted and covering:
+The report consists of a number of tables which identify the modules in the submitted files and covering:
 \begin{enumerate}
-	\item Measures of the number and type of the relationships each module is a party to either as a client or a supplier.
-	\item Measures of the procedural volume and complexity of each module and its functions. 
-	\item A summary report over the whole body of code processed of the measures identified above.
-	\item Identification of any parts of the source code submitted which the program failed to parse.
+	\item Measures the number and the relationships type.
+	\item Measures the procedural volume and complexity and functions of every module. 
+	\item A summary report over the whole codebase processed of the measures described above.
+	\item Identification of any parts of the source code submitted which the program can not parse.
 \end{enumerate}
 
 This tool can measure the following metrics:
