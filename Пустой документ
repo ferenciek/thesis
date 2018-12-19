@@ -1,0 +1,65 @@
+My comments:
+
+  - it would be great to find somebody who can read the thesis and fix
+the grammar formulation. I'm not a native speaker, but it seemed to me
+that the English could be improved
+
+  - missing spaces: I found places, where the spaces are missing, for
+example before parenthesis, or after comma in the abstract.
+
+- don't use apostrophe-based abbreviation like: don't, can't ,
+project's, it's, we're etc
+
+- check overfull \hboxes in the latex compilation log. That mark the
+overfull lines in the text. An example of that is the title of Section 3.3.
+
+- format the code in the text: for example on page 19, the min/1, max/1
+are plain text, use texttt or verb.
+
+- citations are insufficient, for example:
+
+     - chapter 1: put citation to RefactorErl and Erlang in the second
+paragraph
+
+     - it is not clear that where the characterization you present in
+section 2.1 is defined?
+
+     - what is the source of the classification presented on page 6:
+obejctive, subjective?
+
+     - have you drawn the figure 2.1, or it is from the web? in latter
+case please mark the source in footenote.
+
+     - in 2.3 there is a double quoted part "a reliable..."- you have to
+mark the source of this
+
+     - 2.3. Chidamber and ... - cite it
+
+     - 2.3.3 - cite mcabe
+
+     - 2.4 - put citation to all tools, if there is no paper than cite a
+documentation or a homepage
+
+-2.5 schould be improved, please provide an overview of metrics from the
+papers I've sent to you
+
+- 2.5 - OTP used is not a functional metric, it is specific to erlang,
+
+- 3.1 - the description in the variables paragraph does not seem to
+belong there
+
+- 3.1 data types/6 - the opening and closing curly bracket is missing,
+type \{...\} in latex
+
+- 3.1 data types/10, delete the "which are the ..." part
+
+-3.1 - use verb or texttt for code fragments
+
+-3.2.1 - the cite 12 is not good for the metric query language, cite
+here the metric paper
+
+- 3.3.2 - citation is needed for the used tools and techiques like NVD3,
+angualer, DETS
+
+The bibliography should be unified, sometimes you have full names like
+Leo Sartre, but sometimes De.K.P.Yadav.
