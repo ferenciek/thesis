@@ -223,9 +223,9 @@ tool, they basically count the variants of the lines of code (LOC) metric. The s
 
 \subsection{CCCC}
 
-CCCC is a small command-line tool which generates metrics from C or C++ project's source code ~\cite{cccc}. The tool outputs a simple HTML website with information about all your sources. It generates reports on different metrics, for example, lines of code (LOC) and metrics suggested by Chidamber\&Kemererand Henry\&Kafura. CCCC is distributed as a freeware and is released in the form of source code. Users have to compile the program on their own and to modify the source code to reflect their interests and preferences.
+CCCC is a small command-line tool which generates metrics from source code of C or C++ project ~\cite{cccc}. The tool outputs a simple HTML website with information about all your sources. It generates reports on different metrics, for example, lines of code (LOC) and metrics suggested by Chidamber\&Kemererand Henry\&Kafura. CCCC is distributed as a freeware and is released in the form of source code. Users have to compile the program on their own and to modify the source code to reflect their interests and preferences.
 
-CCCC can process every file which was provided via the command line. It is possible to use standard wildcard process. For every file, CCCC will check the filename's extension, and if the extension is recognized as one from supported languages, the particular parser will parse this file. As every file is parsed, certain constructs recognition will cause records to be inserted into an internal database. After all files have been processed, the software will generate the report in HTML format. This report is depended on on the contents of the internal database. By default settings the main HTML report is produced to the file cccc.htm in a subfolder called .cccc of the current working folder. It includes detailed reports on every module (for example, C++ or Java class) detected by the analysis run.
+CCCC can process every file which was provided via the command line. It is possible to use standard wildcard process. For every file, CCCC will check the extension of the filename, and if the extension is recognized as one from supported languages, the particular parser will parse this file. As every file is parsed, certain constructs recognition will cause records to be inserted into an internal database. After all files have been processed, the software will generate the report in HTML format. This report is depended on on the contents of the internal database. By default settings the main HTML report is produced to the file cccc.htm in a subfolder called .cccc of the current working folder. It includes detailed reports on every module (for example, C++ or Java class) detected by the analysis run.
 
 As an addition to HTML reports and summary, the run of the program will generate the corresponding summary and reports in XML format. Also, the file called cccc.db will be created. This file will represent a dump of the internal database of the software in a special format with '@' symbol as a delimiter. It is chosen because this symbol is one of the few which can not appear in C/C++ source code.
 
@@ -249,7 +249,7 @@ This tool can measure the following metrics:
 
 \subsection{Chidamber\&Kemerer}
 
-The program counts Chidamber and Kemerer object-oriented metrics by introspection the bytecode of compiled Java files ~\cite{ck1}. It is an open source command line tool. The program counts the following six metrics for each class, and displays them on its standard output, following the class's name.
+The program counts Chidamber and Kemerer object-oriented metrics by introspection the bytecode of compiled Java files ~\cite{ck1}. It is an open source command line tool. The program counts the following six metrics for each class, and displays them on its standard output with the name of the class.
 
 This tool can measure the following metrics:
 
