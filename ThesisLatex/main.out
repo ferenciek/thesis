@@ -1,38 +1,7 @@
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
 \BOOKMARK [0][-]{chapter.2}{Software metrics}{}% 2
-\BOOKMARK [1][-]{section.2.1}{Definition of Software Metrics}{chapter.2}% 3
-\BOOKMARK [1][-]{section.2.2}{Classification of software metrics}{chapter.2}% 4
-\BOOKMARK [1][-]{section.2.3}{Types Of Software Metrics}{chapter.2}% 5
-\BOOKMARK [2][-]{subsection.2.3.1}{Size-Oriented metrics}{section.2.3}% 6
-\BOOKMARK [2][-]{subsection.2.3.2}{Object-oriented metrics}{section.2.3}% 7
-\BOOKMARK [2][-]{subsection.2.3.3}{Complexity metrics}{section.2.3}% 8
-\BOOKMARK [2][-]{subsection.2.3.4}{Structural Metrics}{section.2.3}% 9
-\BOOKMARK [2][-]{subsection.2.3.5}{Cohesion metrics}{section.2.3}% 10
-\BOOKMARK [1][-]{section.2.4}{Software Metric Tools}{chapter.2}% 11
-\BOOKMARK [2][-]{subsection.2.4.1}{CCCC}{section.2.4}% 12
-\BOOKMARK [2][-]{subsection.2.4.2}{Chidamber\046Kemerer}{section.2.4}% 13
-\BOOKMARK [2][-]{subsection.2.4.3}{Analyst4j}{section.2.4}% 14
-\BOOKMARK [2][-]{subsection.2.4.4}{OOMeter}{section.2.4}% 15
-\BOOKMARK [2][-]{subsection.2.4.5}{Eclipse Metrics plugin 1.3.6}{section.2.4}% 16
-\BOOKMARK [2][-]{subsection.2.4.6}{Eclipse Metrics plugin 3.4}{section.2.4}% 17
-\BOOKMARK [2][-]{subsection.2.4.7}{Semmle}{section.2.4}% 18
-\BOOKMARK [1][-]{section.2.5}{Measuring functional languages}{chapter.2}% 19
-\BOOKMARK [0][-]{chapter.3}{Software metrics in Erlang}{}% 20
-\BOOKMARK [1][-]{section.3.1}{An introductory glimpse at the Erlang programming language}{chapter.3}% 21
-\BOOKMARK [1][-]{section.3.2}{The RefactorErl static analysis tool}{chapter.3}% 22
-\BOOKMARK [2][-]{subsection.3.2.1}{Metrics in the RefactorErl}{section.3.2}% 23
-\BOOKMARK [1][-]{section.3.3}{Metric visualisation module for WEB2 interface of RefactorErl}{chapter.3}% 24
-\BOOKMARK [2][-]{subsection.3.3.1}{Description of the software}{section.3.3}% 25
-\BOOKMARK [2][-]{subsection.3.3.2}{Used tools}{section.3.3}% 26
-\BOOKMARK [2][-]{subsection.3.3.3}{The typical workflow}{section.3.3}% 27
-\BOOKMARK [0][-]{chapter.4}{Measurements and findings}{}% 28
-\BOOKMARK [1][-]{section.4.1}{Iron}{chapter.4}% 29
-\BOOKMARK [1][-]{section.4.2}{Erlang chat }{chapter.4}% 30
-\BOOKMARK [1][-]{section.4.3}{prx}{chapter.4}% 31
-\BOOKMARK [0][-]{chapter.5}{Related work}{}% 32
-\BOOKMARK [1][-]{section.5.1}{Open Source tool "METRIX"}{chapter.5}% 33
-\BOOKMARK [1][-]{section.5.2}{Sextant}{chapter.5}% 34
-\BOOKMARK [1][-]{section.5.3}{NDepend}{chapter.5}% 35
-\BOOKMARK [1][-]{section.5.4}{PVS-Studio}{chapter.5}% 36
-\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 37
-\BOOKMARK [0][-]{chapter.6}{Bibliography}{}% 38
+\BOOKMARK [0][-]{chapter.3}{Software metrics in Erlang}{}% 3
+\BOOKMARK [0][-]{chapter.4}{Measurements and findings}{}% 4
+\BOOKMARK [0][-]{chapter.5}{Related work}{}% 5
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 6
+\BOOKMARK [0][-]{chapter.6}{Bibliography}{}% 7
