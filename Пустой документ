@@ -7,12 +7,6 @@ that the English could be improved
   - missing spaces: I found places, where the spaces are missing, for
 example before parenthesis, or after comma in the abstract.
 
-- don't use apostrophe-based abbreviation like: don't, can't ,
-project's, it's, we're etc
-
-- check overfull \hboxes in the latex compilation log. That mark the
-overfull lines in the text. An example of that is the title of Section 3.3.
-
 - format the code in the text: for example on page 19, the min/1, max/1
 are plain text, use texttt or verb.
 
@@ -29,21 +23,6 @@ obejctive, subjective?
 
      - have you drawn the figure 2.1, or it is from the web? in latter
 case please mark the source in footenote.
-
-
-
-     - in 2.3 there is a double quoted part "a reliable..."- you have to
-mark the source of this                                             +++++++++
-
-     - 2.3. Chidamber and ... - cite it ++++++++++++++++++++++++=
-
-     - 2.3.3 - cite mcabe              +++++++++++++++++++++++++++++
-
-     - 2.4 - put citation to all tools, if there is no paper than cite a
-documentation or a homepage  +++++++++++++++++++++++++++++++++++++++++++++++++++=
-
-
-
 
 
 -2.5 schould be improved, please provide an overview of metrics from the
