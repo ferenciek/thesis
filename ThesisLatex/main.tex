@@ -2,7 +2,7 @@
 %% Header section of Latex document %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[runningheads,a4paper]{report}
+\documentclass[a4paper]{report}
 %% @author Daniel Lukacs, dlukacs@caesar.elte.hu, 2017
 
 \usepackage[a4paper]{geometry}
@@ -48,7 +48,7 @@
 \def\maxheight#1{\ifdim\Gin@nat@height>#1 #1\else\Gin@nat@height\fi}
 \makeatother
 
-\usepackage{fancyvrb}
+%%\usepackage{fancyvrb}
 \usepackage{rotating}
 
 %%%%
@@ -164,8 +164,10 @@
 \newcommand{\ruleref}[1]{(\S\ref{#1})}
 \newcommand{\apxref}[1]{(Appendix \ref{#1}.)}
 \newcommand{\apxrefm}[3]{(Appendix \ref{#1}., \ref{#2}. és \ref{#3}.)}
+\renewcommand{\_}{\textunderscore\hspace{0pt}}
 
 
+\hyphenation{Re-fac-tor-Erl}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Body section of Latex document %%

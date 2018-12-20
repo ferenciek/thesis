@@ -20,7 +20,7 @@ This chapter presents the introduction to the software metrics as the important 
 
 Definition of Software Metrics
 
-Software metrics are the attributes of the software systems that deals with the measurements of the software product and process by which it is developed metrix.
+Software metrics are the attributes of the software systems that deals with the measurements of the software product and process by which it is developed  metrix.
  
 A software metric is a measure of characteristics of software which are countable or quantifiable. The importance of software metrics is valuable for many reasons, including planning work items, measuring software performance, measuring productivity, and many other uses.
 
@@ -70,16 +70,14 @@ figure
 
 Process metrics are numerical values that depict a software process such as the amount of time require to debug a module metrics2. They are measures of the software development process, such as: overall development time and type of methodology used. Process metrics are collected across all projects and over long periods of time. Their intent is to provide indicators that lead to longterm software process improvement.
 
-Product metrics are measures of software project and are used to monitor and control the project. These metrics measures the complexity of the software design size of the final program number of pages of documentation produced. They enable a software project manager to:
+Product metrics can be used to analyze and check the software project. These type of metrics calculates the complexity of the software design size of the final program number of pages of documentation produced. They allow a software project manager to do the following:
 
 itemize
-	[-] minimize the development time by making the adjustments necessary to avoid delays
-	and potential problems and risks.
-	[-] assess product quality on an ongoing basis and modify the technical approach to improve
-	quality.
+	[-] decrease the development time by making the necessary modifications to avoid delays and potential problems and risks.
+	[-] project quality assessment and change the technical approach to get better quality.
 itemize
 
-Product metrics are measures of the software product of any stage of its development,from requirements to installed system. Product metrics may measure: the complexity of the software design, the size of the final program, the number of pages of documentation produced.
+Product metrics are measures of the software product of any stage of its development,from requirements to installed system  metrics2. Product metrics may measure: the complexity of the software design, the size of the final program, the number of pages of documentation produced.
 Product metrics can be internal or external. External attributes of an entity can be measured only with respect to how the entity relates with the environment and therefore can be measured only indirectly. For example, reliability, an external attribute of a program, does not depend only on the program itself but also on the compiler, machine and user. Productivity, an external attribute of a person, clearly depends on many factors such as the kind of process and the quality of the software delivered. Internal product metrics can be measured only based on the entity and therefore the measures are direct. For example, size is an internal attribute of any software document.
 
 Internal product metrics are subdivided in two categories: cognitive
@@ -180,7 +178,7 @@ A large RFC is an indicator of more faults. Classes that have a high RFC are mor
 
 Complexity metrics
 
-Complexity is an important aspect for software quality assessment and must be appropriately addressed in service-oriented architecturecomplexity. One of the key aims of complexity  metrics is to predict modules that are fault-prone post-release complexity2. These metrics are one of the most difficult software metrics for understanding.
+Complexity is an important aspect for software quality assessment and must be appropriately addressed in service-oriented architecture  complexity. One of the key aims of complexity  metrics is to predict modules that are fault-prone post-release  complexity2. These metrics are one of the most difficult software metrics for understanding.
 
 McCabe's Cyclomatic Complexity (MVG)
 
@@ -198,16 +196,16 @@ description
 	[Fan-in] Is the number of modules that call a given module.
 description
 
-Fan-out and fan-in metrics reflect structure dependency fanin.
+Fan-out and fan-in metrics reflect structure dependency  fanin.
 These structural metrics were first defined by Henry.
 These metrics can be applied both at the module level and function level. These metrics just put a number on how complex is interlinking of different modules or functions. Unlike Cyclomatic complexity, you cannot put a number and say it cannot go beyond this number. This is used just to size up how difficult it will be to replace a function or module in your application and how changes to a function or module can impact other functions or modules. Sometimes you can put the restriction on the number of Fan-Out.
 
 
 
 Cohesion metrics
-Cohesion is an important software quality attribute and high cohesion is one of the characteristics of well-structured software design cohesion.
+Cohesion is an important software quality attribute and high cohesion is one of the characteristics of well-structured software design  cohesion.
 Cohesion metrics analyze the connection between the methods of a class.
-Module cohesion indicates relatedness in the functionality of a software module cohesion2.
+Module cohesion indicates relatedness in the functionality of a software module  cohesion2.
 
 Lack of Cohesion in Methods (LCOM)
 
@@ -240,19 +238,18 @@ tool, they basically count the variants of the lines of code(LOC) metric. The sp
 
 CCCC
 
-It is a little command-line tool that generates metrics from the source code of a C or C++ project. The output of the tool is a simple HTML website with information about all your sources. It generates reports on various metrics including lines of code (LOC) and metrics proposed by ChidamberKemererand HenryKafura. CCCC has been developed as freeware and is released in source code form. Users are encouraged to compile the program themselves and to modify the source to reflect their preferences and interests.
+It is a small command-line tool which generates metrics from C or C++ project's source code. The tool outputs a simple HTML website with information about all your sources. It generates reports on different metrics, for example, lines of code (LOC) and metrics suggested by ChidamberKemererand HenryKafura. CCCC is distributed as a freeware and is released in the form of source code. Users have to compile the program on their own and to modify the source code to reflect their interests and preferences.
 
-CCCC will process each of the files specified on the command line (using standard wildcard processing were appropriate. For each file, named, CCCC will examine the extension of the filename, and if the extension is recognized as indicating a supported language, the appropriate parser will run on the file. As each file is parsed, recognition of certain constructs will cause records to be written into an internal database. When all files have been processed, a report on the contents of the internal database
-will be generated in HTML format. By default the main summary HTML report is generated to the file cccc.htm in a subdirectory called .cccc of the current working directory, with detailed reports on each module (i.e. C++ or Java class) identified by the analysis run).
+CCCC can process every file which was provided via the command line. It is possible to use standard wildcard process. For every file, CCCC will check the filename's extension, and if the extension is recognized as one from supported languages, the particular parser will parse this file. As every file is parsed, certain constructs recognition will cause records to be inserted into an internal database. After all files have been processed, the software will generate the report in HTML format. This report is depended on on the contents of the internal database. By default settings the main HTML report is produced to the file cccc.htm in a subfolder called .cccc of the current working folder. It includes detailed reports on every module (for example, C++ or Java class) detected by the analysis run.
 
-In addition to the summary and detailed HTML reports, the run will cause generation of corresponding summary and detailed reports in XML format, and a further file called cccc.db to be created. cccc.db will contain a dump of the internal database of the program in a format delimited with the character '@' (chosen because it is one of the few characters which cannot legally appear in C/C++ non-comment source code).
+As an addition to HTML reports and summary, the run of the program will generate the corresponding summary and reports in XML format. Also, the file called cccc.db will be created. This file will represent a dump of the internal database of the software in a special format with '@' symbol as a delimiter. It is chosen because this symbol is one of the few which can not appear in C/C++ source code.
 
-The report contains a number of tables identifying the modules in the files submitted and covering:
+The report consists of a number of tables which identify the modules in the submitted files and covering:
 enumerate
-	Measures of the number and type of the relationships each module is a party to either as a client or a supplier.
-	Measures of the procedural volume and complexity of each module and its functions. 
-	A summary report over the whole body of code processed of the measures identified above.
-	Identification of any parts of the source code submitted which the program failed to parse.
+	Measures the number and the relationships type.
+	Measures the procedural volume and complexity and functions of every module. 
+	A summary report over the whole codebase processed of the measures described above.
+	Identification of any parts of the source code submitted which the program can not parse.
 enumerate
 
 This tool can measure the following metrics:
@@ -450,13 +447,13 @@ The functions min/1 and max/1 can’t have a default starting value. If the list
 
 The RefactorErl static analysis tool 
 
-RefactorErl refactorerl1, refactorerl2 is an open-source static source code analyzer and transformer tool for Erlang, developed by the Department of Programming Languages and Compilers at the Faculty of Informatics, Eötvös Loránd University, Budapest, Hungary. The phrase "refactoring" means a preserving source code transformation, so while you change the program structure you do not alter its behavior. RefactorErl was built to refactor Erlang programs.
+RefactorErl  refactorerl1, refactorerl2 is an open-source static source code analyzer and transformer tool for Erlang, developed by the Department of Programming Languages and Compilers at the Faculty of Informatics, Eötvös Loránd University, Budapest, Hungary. The phrase "refactoring" means a preserving source code transformation, so while you change the program structure you do not alter its behavior. RefactorErl was built to refactor Erlang programs.
 
-The main focus of RefactorErl is to support daily code comprehension tasks of Erlang developers refactorerl. It can analyze the structure of the refactored program - based on the syntactic rules of the underlying programming language - and it can also collect and use semantical information about the source code.
+The main focus of RefactorErl is to support daily code comprehension tasks of Erlang developers  refactorerl. It can analyze the structure of the refactored program - based on the syntactic rules of the underlying programming language - and it can also collect and use semantical information about the source code.
 
 Metrics in the RefactorErl
 
-A metric query language is incorporated into RefactorErl refactorerl. Metric queries can be executed from the console interface or can be used as properties in semantic query language which is available from every interface.
+A metric query language is incorporated into RefactorErl  refactorerl. Metric queries can be executed from the console interface or can be used as properties in semantic query language which is available from every interface.
 
 Table tab:metrics_ref shows all the implemented metrics in RefactorErl tool. There are two columns in this table: the first column gives the information about the name of the metric, and the second column shows the for which node the metric is available.
 
@@ -594,15 +591,15 @@ table[!htb]
 
 modulesum
 
-The sum of the chosen complexity structure metrics measured on the functions of the module. The proper metrics adjusted in a list can be implemented in the desired number and order refactorerlm.
+The sum of the chosen complexity structure metrics measured on the functions of the module. The proper metrics adjusted in a list can be implemented in the desired number and order  refactorerlm.
 
 lineofcode
 
-The number of lines of part of the text, function, or module. The number of empty lines is not included in the sum. As the number of lines can be measured on more functions, or modules and the system is capable of returning the sum of these, the number of lines of the whole loaded program text can be enquired refactorerlm.
+The number of lines of part of the text, function, or module. The number of empty lines is not included in the sum. As the number of lines can be measured on more functions, or modules and the system is capable of returning the sum of these, the number of lines of the whole loaded program text can be enquired  refactorerlm.
 
 charofcode
 
-The number of characters in a program script. This metric is capable of measuring both the codes of functions and modules and with the help of aggregating functions we can enquire the total and the average number of characters in a cluster, or in the whole source text refactorerlm.
+The number of characters in a program script. This metric is capable of measuring both the codes of functions and modules and with the help of aggregating functions we can enquire the total and the average number of characters in a cluster, or in the whole source text  refactorerlm.
 
 numberoffun
 
@@ -610,111 +607,111 @@ This metric gives the number of functions implemented in the concrete module, bu
 
 numberofmacros
 
-This metric gives the number of defined macros in the concrete module or modules. It is also possible to inquire the number of implemented macros in a module refactorerlm.
+This metric gives the number of defined macros in the concrete module or modules. It is also possible to inquire the number of implemented macros in a module  refactorerlm.
 
 numberofrecords
 
- This metric gives the number of defined records in a module. It is also possible to inquire the number of implemented records in a module refactorerlm.
+ This metric gives the number of defined records in a module. It is also possible to inquire the number of implemented records in a module  refactorerlm.
 
 includedfiles
 
-This metric gives the number of visible header files in a module refactorerlm.
+This metric gives the number of visible header files in a module  refactorerlm.
 
 importedmodules
 
-This metric gives the number of imported modules used in a concrete module. The metric does not contain the number of qualified calls (calls that have the following form: module:function) refactorerlm.
+This metric gives the number of imported modules used in a concrete module. The metric does not contain the number of qualified calls (calls that have the following form: module:function)  refactorerlm.
 
 numberoffunpath
 
-The total number of function paths in a module. The metric, besides the number of internal function links, also contains the number of external paths or the number of paths that lead outward from the module. It is very similar to the metric called cohesion refactorerlm.
+The total number of function paths in a module. The metric, besides the number of internal function links, also contains the number of external paths or the number of paths that lead outward from the module. It is very similar to the metric called cohesion  refactorerlm.
 
 functioncallsin
 
-Gives the number of function calls into a module from other modules. It can not be implemented to measure a concrete function. For that, we use the callsfor/1 function refactorerlm.
+Gives the number of function calls into a module from other modules. It can not be implemented to measure a concrete function. For that, we use the callsfor/1 function  refactorerlm.
 
 functioncallsout
 
-Gives the number of every function call from a module towards other modules. It can not be implemented to measure a concrete function. For that, we use the callsfrom/1 function refactorerlm.
+Gives the number of every function call from a module towards other modules. It can not be implemented to measure a concrete function. For that, we use the callsfrom/1 function  refactorerlm.
 
 cohesion
 
-The number of call-paths of functions that call each other. By call-path we mean that an f1 function calls f2 (e.g. f1()->f2().). If f2 also calls f1, then the two calls still count as one call-path refactorerlm.
+The number of call-paths of functions that call each other. By call-path we mean that an f1 function calls f2 (e.g. f1()->f2().). If f2 also calls f1, then the two calls still count as one call-path  refactorerlm.
 
 functionsum
 
-The sum calculated from the functions complexity metrics characterizes the complexity of the function. It can be calculated using various metrics together refactorerlm.
+The sum calculated from the functions complexity metrics characterizes the complexity of the function. It can be calculated using various metrics together  refactorerlm.
 	 
 maxdepthofcalling
 
-The length of function call-chains, namely the chain with the maximum depth refactorerlm.
+The length of function call-chains, namely the chain with the maximum depth  refactorerlm.
 	 
 maxdepthofcases
 
- Gives the maximum of case control structures embedded in case of a concrete function (how deeply are the case control structures embedded). In case of a module, it measures the same regarding all the functions in the module. Measuring does not break in case of case expressions, namely when the case is not embedded refactorerlm.
+ Gives the maximum of case control structures embedded in case of a concrete function (how deeply are the case control structures embedded). In case of a module, it measures the same regarding all the functions in the module. Measuring does not break in case of case expressions, namely when the case is not embedded  refactorerlm.
 
 mindepthofcases
 
- Gives the minimum of the maximums of case control structures embedded in case of a concrete function (how deeply are the case control structures embedded). In case of a module it measures the same regarding all the functions in the module. Measuring does not break in case of case expressions, namely when the case is not embedded into a case structure. However, the following embedding does not increase the sum refactorerlm.
+ Gives the minimum of the maximums of case control structures embedded in case of a concrete function (how deeply are the case control structures embedded). In case of a module it measures the same regarding all the functions in the module. Measuring does not break in case of case expressions, namely when the case is not embedded into a case structure. However, the following embedding does not increase the sum  refactorerlm.
 
 maxdepthofstructs
 
- Gives the maximum of structures embedded in function (how deeply are the block, case, fun, if, receive, try control structures embedded). In case of a module it measures the same regarding all the functions in the module refactorerlm.
+ Gives the maximum of structures embedded in function (how deeply are the block, case, fun, if, receive, try control structures embedded). In case of a module it measures the same regarding all the functions in the module  refactorerlm.
 
 numberoffunclauses
 
-Gives the number of functions clauses. Counts all distinct branches, but does not add the functions having the same name, but different arity, to the sum refactorerlm.
+Gives the number of functions clauses. Counts all distinct branches, but does not add the functions having the same name, but different arity, to the sum  refactorerlm.
 
 branchesofrecursion
 
-Gives the number of a certain function's branches, how many times a function calls itself, and not the number of clauses it has besides definition refactorerlm.
+Gives the number of a certain function's branches, how many times a function calls itself, and not the number of clauses it has besides definition  refactorerlm.
 
 callsforfunction
 
-This metric gives the number of calls for a concrete function. It is not equivalent to the number of other functions calling the function, because all of these other functions can refer to the measured one more than once refactorerlm.
+This metric gives the number of calls for a concrete function. It is not equivalent to the number of other functions calling the function, because all of these other functions can refer to the measured one more than once  refactorerlm.
 
 callsfromfunction
 
-This metric gives the number of calls from a certain function, namely how many times does a function refer to another one (the result includes recursive calls as well) refactorerlm.
+This metric gives the number of calls from a certain function, namely how many times does a function refer to another one (the result includes recursive calls as well)  refactorerlm.
 
 numberoffunexpr
 
-Gives the number of function expressions in a module. It does not measure the call of function expressions, only their initiation refactorerlm.
+Gives the number of function expressions in a module. It does not measure the call of function expressions, only their initiation  refactorerlm.
 
 numberofmesspass
 
-In the case of functions, it measures the number of code snippets implementing messages from a function, while in case of modules it measures the total number of messages in all of the modules functions refactorerlm.
+In the case of functions, it measures the number of code snippets implementing messages from a function, while in case of modules it measures the total number of messages in all of the modules functions  refactorerlm.
 
 funreturnpoints
 
-The metric gives the number of the functions possible return points (or the functions of the given module) refactorerlm.
+The metric gives the number of the functions possible return points (or the functions of the given module)  refactorerlm.
 
 averagesize
 
-The average value of the given complexity metrics (e.g. Average branchesofrecursion calculated from the functions of the given module) refactorerlm.
+The average value of the given complexity metrics (e.g. Average branchesofrecursion calculated from the functions of the given module)  refactorerlm.
 
 maxlengthofline
 
-It gives the length of the longest line of the given module or function refactorerlm.
+It gives the length of the longest line of the given module or function  refactorerlm.
 
 averagelengthofline
 
-It gives the average length of the lines within the given module or function refactorerlm.
+It gives the average length of the lines within the given module or function  refactorerlm.
 
 nospaceaftecomma
 
-It gives the number of cases when there are not any whitespaces after a comma or a semicolon in the given module's or function's text refactorerlm.
+It gives the number of cases when there are not any whitespaces after a comma or a semicolon in the given module's or function's text  refactorerlm.
 
 istailrecursive
 
-It returns with 1 if the given function is tail recursive; with 0, if it is recursive, but not tail recursive; and -1 if it is not a recursive function (direct and indirect recursions are also examined). If we use this metric from the semantic query language, the result is converted to tailrec, nontailrec or nonrec atom refactorerlm.
+It returns with 1 if the given function is tail recursive; with 0, if it is recursive, but not tail recursive; and -1 if it is not a recursive function (direct and indirect recursions are also examined). If we use this metric from the semantic query language, the result is converted to tailrec, nontailrec or nonrec atom  refactorerlm.
 
 mcCabe
 
-McCabe cyclomatic complexity metric. We define it based on the control flow graph of the functions with the number of different execution paths of a function, namely the number of different outputs of the function refactorerlm.
+McCabe cyclomatic complexity metric. We define it based on the control flow graph of the functions with the number of different execution paths of a function, namely the number of different outputs of the function  refactorerlm.
 
 otpused
 
-Gives the number of OTP callback modules used in modules refactorerlm.
+Gives the number of OTP callback modules used in modules  refactorerlm.
 
 Metric visualisation module for WEB2 interface of RefactorErl
 
@@ -756,7 +753,7 @@ DETS tables
 
 Data of calculated metrics for modules and functions stored in two different tables: modsmetrics and funsmetrics.
 
-DETS is Disk Erlang Term Storage. DETS tables store tuples, with access to the elements given through a  key field in the tuple. The tables are implemented using hash tables and binary trees, with different representations providing different kinds of collections erland_o'reilly.
+DETS is Disk Erlang Term Storage. DETS tables store tuples, with access to the elements given through a  key field in the tuple. The tables are implemented using hash tables and binary trees, with different representations providing different kinds of collections  erland_o'reilly.
 
 JSON
 
@@ -860,7 +857,7 @@ figure
 
 The Figure fig:mcCabe_iron shows an overview of the evolution of the overall McCabe cyclomatic complexity. We can observe that the complexity keeps increasing.
 
-There was a spike in 45th version, because some functions were called to an other module, however author removed changes in 46th version. There was also an insignificant drop in complexity in 28th version and a little increase in 29th version. The  complexity decreases  when  the  extracted  piece  of code occurred more than one time and the complexity of the function is more than one mcCabe. 
+There was a spike in 45th version, because some functions were called to an other module, however author removed changes in 46th version. There was also an insignificant drop in complexity in 28th version and a little increase in 29th version. The  complexity decreases  when  the  extracted  piece  of code occurred more than one time and the complexity of the function is more than one  mcCabe. 
 
 In Figure fig:max_depth_of_cases_iron we can see that the metric maxdepthofcases is 1, but before it was 0, therefore developer stopped using case inside another case for this version of the software. We can find the same trend on plot with mcCabe metric where it appears as decreasing of the program complexity.  
 
@@ -998,7 +995,7 @@ figure[h]
 	fig:line_of_code_prx
 figure
 
-Another important metric is cohesion metric. Modules with high cohesion tend to be preferable because high cohesion is associated with several desirable traits of software including robustness, reliability, reusability, and understandability. In contrast, low cohesion is associated with undesirable traits such as being difficult to maintain, test, reuse, or even understand. The Figure fig:cohesion_prx and shows the decreasing of the calculated metric. 
+Another important metric is cohesion metric. Modules with large cohesion number is preferable because high cohesion is associated with many desirable attributes of software such as robustness, reusability, reliability, and understandability. Otherwise, low cohesion is associated with undesirable attributes, for example, being difficult to reuse, maintain, test, or even understand. The Figure fig:cohesion_prx and shows the decreasing of the calculated metric. 
 
 figure[h]
 		figures/cohesion_prx.png
@@ -1073,7 +1070,7 @@ In this chapter will be described some tools for visualization of software quali
 
 Open Source tool "METRIX"
 
-This tool can compute different software quality metrics. METRIX is able to evaluate software written in C and ADA languages and many metrics can be considered for software evaluation (the different metrics will be described in detail in the next section metrix. 
+This tool can compute different software quality metrics. METRIX is able to evaluate software written in C and ADA languages and many metrics can be considered for software evaluation (the different metrics will be described in detail in the next section  metrix. 
 
 The user can use different types of diagrams for metrics visualization: histograms, scatter plots and line charts. 
 This tool allows to use two not common classes of diagrams: 
@@ -1083,12 +1080,12 @@ itemize
 	The second is the city map diagram.
 itemize
 
-One specific feature of METRIX is to use those two types of visualization for constructing signature and cartography of source codes metrix.
+One specific feature of METRIX is to use those two types of visualization for constructing signature and cartography of source codes  metrix.
  
 Kiviat diagrams
 The Kiviat diagram uses polar coordinates for visualization. The value which user wants to represent associated with the distance between the point and the origin. The angle between two points does not change because it is constant. This constant is calculated to uniformly distribute the different points. Linked together metric points make a plain polygon, which forms the data specifics of represented values. This type of diagram can be used only for visualization of more than three values of calculated metric. All values must be strictly positive. The user can merge data in one diagram. Also, this tool allows drawing the diagram for one or several metrics together. 
 
-In figurefig:metrix shows an example of two Kiviat diagrams. These diagrams represent different metric values for two functions. 
+In Figure fig:metrix shows an example of two Kiviat diagrams. These diagrams represent different metric values for two functions. 
 
 figure[h]
 		figures/metrix.png
@@ -1097,7 +1094,7 @@ figure[h]
 figure
 
 City map diagrams
-Usually this type of diagrams used for representing cities with buildings in three dimensions. City map diagrams also suit for visualization of software metrics of the project with a large number of source files, functions and variables. Source code metrics are represented by rectangles by using the treemap diagram. Some authors used variants of this class of visualization diagrams to represent  values with esthetic considerations. City map diagrams are indeed multi-parameters diagrams: each “building” is associated with an n-tuple of numeric values metrix.  
+Usually this type of diagrams used for representing cities with buildings in three dimensions. City map diagrams also suit for visualization of software metrics of the project with a large number of source files, functions and variables. Source code metrics are represented by rectangles by using the treemap diagram. Some authors used variants of this class of visualization diagrams to represent  values with esthetic considerations. City map diagrams are indeed multi-parameters diagrams: each “building” is associated with an n-tuple of numeric values  metrix.  
 
 This tool also has a graphical user interface with a single Window containing three tabs: “Calc”, “Csv” and “Plots”.
 
@@ -1107,11 +1104,11 @@ In the second “Csv” tab user can find a list of numeric values and chose whi
 
 In the third “Plots” tab the user can build the city map diagrams for the source code. The user can change the settings of the tool like the modification of placement of the buildings in the city map or make the data colored, etc.
 
-This tool supports making a report in the form of a LaTeX file where each function and each file make a section of this report. User can use PDF file for analisis. This report includes all the values measured on the project. Each file produces three views of the associated city map diagram, as well as different Kiviat diagrams for the different metrics measured on the functions of the file metrix. 
+This tool supports making a report in the form of a LaTeX file where each function and each file make a section of this report. User can use PDF file for analisis. This report includes all the values measured on the project. Each file produces three views of the associated city map diagram, as well as different Kiviat diagrams for the different metrics measured on the functions of the file  metrix. 
 
 Sextant
 
-Sextant is a Java source-code analysis tool under development at the University of Nebraska at Omaha (UNO) sextant. This software is a complex extension of the TL system (a general-purpose program transformation system) created particularly for the Java programming language domain.
+Sextant is a Java source-code analysis tool under development at the University of Nebraska at Omaha (UNO)  sextant. This software is a complex extension of the TL system (a general-purpose program transformation system) created particularly for the Java programming language domain.
 
 The main design goal of Sextant is providing a tool facilitating specification and visualization of custom analysis rules, which can be domain-specific or moreover application specific analysis rules.
 
@@ -1135,7 +1132,7 @@ Sextant is open-ended with respect to the definition of metrics – any source-c
 
 Sextant can do software models generation. These models can be visualized using other tools such as GraphViz, Cytoscape and TreeMap. Sextant can produce the CAG of the code base in a JavaScript object notation format (JSON). This JSON file can be loaded into Cytoscape, an open source platform which provides extensive and sophisticated capabilities for large complex networks visualization, for example, graph structures. The same way, metrics derived from sets and tables can be produced in CSV format and viewed with use of TreeMap. Parse trees can be output as dot-files and later viewed with use of GraphViz.
 
-The view in Figurefig:1 shows an example of represents a coloring of dependencies on the unsupported features. Nodes colored orange have indirect dependencies on unsupported features while purple nodes have direct dependencies on unsupported features.
+The view in Figure fig:1 shows an example of represents a coloring of dependencies on the unsupported features. Nodes colored orange have indirect dependencies on unsupported features while purple nodes have direct dependencies on unsupported features.
 
 figure[h]
 		figures/1.png
@@ -1145,13 +1142,13 @@ figure
 
 NDepend
 
-NDepend is a static analysis tool for .NET managed code. The tool supports a big number of code metrics, allowing to visualize dependencies using directed graphs and dependency matrix.  
+NDepend is a static analysis tool for .NET managed code. The tool can measure a large number of code metrics, allowing to visualize dependencies using directed graphs and dependency matrix.  
 
-NDepend computes a lot of size-related metrics: number of lines of code, number of assemblies, number of types, number of methods, etc. For measuring complexity, NDepend uses Cyclomatic Complexity. This metric measures the complexity of a type or a method by calculating the number of branching points in the code.
-NDepend has two metrics for cohesion. Relational Cohesion is an assembly level metric that measures the average number of internal relationships per type. Lack of Cohesion Of Methods (LCOM) measures the cohesiveness of a type. A type is maximally cohesive if all methods use all instance fields.
+NDepend computes many size-related metrics: number of lines of code, number of assemblies, number of types, number of methods, etc. For measuring complexity, NDepend uses Cyclomatic Complexity. This metric calculates the complexity of a method or a type by calculating how many branching points it contains in the code.
 
-NDepend uses a visualization tool called a Treemap.
-NDepend comes with a dashboard to quickly visualize all application metrics s shown in Figurefig:dash. The dashboard is available both in the Visual Studio extension. For each metric, the dashboard shows the diff since baseline. It also shows if the metric value gets better (in green) or wort (in red). 
+NDepend has two metrics for cohesion. Relational Cohesion is an assembly level metric that calculates the average number of internal relationships for each type. Lack of Cohesion Of Methods (LCOM) measures a type cohesiveness. A type is maximally cohesive if every method use all instance fields.
+
+NDepend has a tool for visualization called a Treemap. Also, NDepend has a dashboard for quick visualization of all application metrics. It's shown in Figure fig:dash. The dashboard is available as the extension for Visual Studio. The dashboard shows the diff since baseline for every metric. It also displays if the metric value becomes better (in green) or worse (in red). 
 
 figure[h]
 		figures/dash.png
@@ -1159,7 +1156,7 @@ figure[h]
 	fig:dash
 figure
 
-The Figurefig:tree shows metric visualization using the colored treemap.
+The Figure fig:tree shows metric visualization using the colored treemap.
 
 figure[h]
 		figures/tree.png
@@ -1177,15 +1174,19 @@ itemize
 
 PVS-Studio
 
-PVS-Studio is a tool for detecting bugs and security weaknesses in the source code of programs, written in C, C++, and C. It works in Windows, Linux, and macOS environment pvs.
+PVS-Studio is a tool for detecting bugs and security weaknesses in the source code of programs, written in C, C++, and C. It works in Windows, Linux, and macOS environment  pvs. The user can use online reference manual concerning all the diagnostics methods available in the program and  on the website.
 
-This tool executes static code analysis and after that creates a report for helping developers to find and fix bugs. PVS-Studio has wide range check methods. It helps to find misprints and Copy-Paste errors. The main value of static analysis is in its regular use so that errors are identified and fixed at the earliest stages pvs. 
+This tool executes static code analysis. The generated report helps developers in debugging. PVS-Studio has large number of methods for checking. These methods help to find typing and copy-paste mistakes. The main value of static analysis is in its regular use so that errors are identified and fixed at the earliest stages  pvs. 	
 
-PVS-Studio runs from the command line. The analysis results can be saved as HTML with full source code navigation. It is possible to not include files from the analysis by name, folder or mask; to run the analysis on the files modified during the last N days. Error statistics can be viewed in Excel pvs. 
+PVS-Studio can work on a Linux environment on Windows. It can be run from the command or can be integrated into Visual Studio development environment. The results of the analysis are presented in the HTML document which allows full navigation through the source code. The Figure fig:pvs shows an example of an HTML-report.
 
-This tool has an online reference guide concerning all the diagnostics available in the program, on the website and documentation. 
+figure[h]
+		figures/pvs.png
+	Main page of an HTML-report.
+	fig:pvs
+figure
 
-PVS-Studio has an integration with open source platform SonarQube designed for continuous analysis and measurement of code quality.The main goal of this thesis, as stated at the beginning of this work, is to analyze the quality of programs written in the Erlang programing language by using RefactorErl tool. To accomplish that goal, it became necessary to provide a general overview of Erlang, RefactorErl static analysis tool and developed metrics. In this thesis, the software quality, software metrics and some of the tools for measuring software quality metrics have been studied and analyzed.
+It is possible to not include files from the analysis by name, folder or mask; to run the analysis on the files modified during the last N days  pvs. PVS-Studio has an integration with open source platform SonarQube. This platform was designed for uninterrupted analysis and evaluation of the quality of code.The main goal of this thesis, as stated at the beginning of this work, is to analyze the quality of programs written in the Erlang programing language by using RefactorErl tool. To accomplish that goal, it became necessary to provide a general overview of Erlang, RefactorErl static analysis tool and developed metrics. In this thesis, the software quality, software metrics and some of the tools for measuring software quality metrics have been studied and analyzed.
 
 Erlang is a functional language designed for highly parallel, scalable applications requiring high uptime. RefactorErl is a static source code analysis and transformation tool for Erlang providing several software metrics. The tool is developed by the Department of Programming Languages and Compilers at the Faculty of Informatics, Eötvös Loránd University, Budapest, Hungary. Among the features of RefactorErl is included a metric query language which can support Erlang developers in everyday tasks such as program comprehension, debugging, finding relationships among program parts, etc.
 

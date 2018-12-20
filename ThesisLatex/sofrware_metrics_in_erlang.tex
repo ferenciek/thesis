@@ -24,7 +24,7 @@ Erlang has:
 
 Figure \ref{fig:example_erlang} features the source of a small Erlang program
 called example that demonstrated recursive list manipulation.
-\begin{figure}[h]
+\begin{figure}[ht]
 	\begin{lstlisting}[extendedchars=true, language=Erlang, basicstyle=\footnotesize\ttfamily, keywordstyle=\color{red}]
 	-module(example). 
 	-export([max/1, min/1, sum/1]).
@@ -393,7 +393,7 @@ For using the component WEB2 interface should be run. It can be done with this c
 This command will run WEB2 interface available on localhost:8001 by default. After loginning the component can be accessed in the metrics tab as shown in Figure \ref{fig:interface}.
 
 \begin{figure}[ht]
-	\includegraphics[height=80mm]{figures/metrics.png}
+	\includegraphics[width=\textwidth]{figures/metrics.png}
 	\caption{Component interface.}
 	\label{fig:interface}
 \end{figure}
@@ -401,7 +401,7 @@ This command will run WEB2 interface available on localhost:8001 by default. Aft
 The path to git repository should be provided in "Git repository path" input. After clicking the "Check repository" button the folder will be analyzed. If it is not valid the alert Figure \ref{fig:metrics_alert} will be shown.  
 
 \begin{figure}[ht]
-	\includegraphics[height=80mm]{figures/alert.png}
+	\includegraphics[width=\textwidth]{figures/alert.png}
 	\caption{Alert showed because the provided folder is not a valid repository.}
 	\label{fig:metrics_alert}
 \end{figure}
@@ -409,7 +409,7 @@ The path to git repository should be provided in "Git repository path" input. Af
 In another case, the folder tree will be available where separate files can be chosen for future analyzing as shown in Figure \ref{fig:metrics_files}. Also, there is a possibility to delete some files chosen by mistake.
 
 \begin{figure}[ht]
-	\includegraphics[height=80mm]{figures/files.png}
+	\includegraphics[width=\textwidth]{figures/files.png}
 	\caption{Repository tree.}
 	\label{fig:metrics_files}
 \end{figure}
@@ -417,7 +417,7 @@ In another case, the folder tree will be available where separate files can be c
 The final step is pressing the "Analyze" button. It will start calculating metrics for all versions of the repository and progress will be shown on screen Figure \ref{fig:metrics_analyze}. 
 
 \begin{figure}[ht]
-	\includegraphics[height=80mm]{figures/analyze.png}
+	\includegraphics[width=\textwidth]{figures/analyze.png}
 	\caption{The process of repository analyzing.}
 	\label{fig:metrics_analyze}
 \end{figure}
@@ -431,7 +431,7 @@ For functions: line of code, char of code, function sum, max depth of calling, m
 After the plot is shown the "Save" button appears which can be pressed to save SVG plot in a PNG file. 
 
 \begin{figure}[ht]
-	\includegraphics[height=80mm]{figures/plot.png}
+	\includegraphics[width=\textwidth]{figures/plot.png}
 	\caption{The example of plot.}
 	\label{fig:metrics_plot}
 \end{figure}

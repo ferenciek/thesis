@@ -29,11 +29,11 @@
 \contentsline {section}{\numberline {4.1}Iron}{30}{section.4.1}
 \contentsline {section}{\numberline {4.2}Erlang chat }{34}{section.4.2}
 \contentsline {section}{\numberline {4.3}prx}{38}{section.4.3}
-\contentsline {chapter}{\numberline {5}Related work}{43}{chapter.5}
-\contentsline {section}{\numberline {5.1}Open Source tool "METRIX"}{43}{section.5.1}
-\contentsline {section}{\numberline {5.2}Sextant}{45}{section.5.2}
+\contentsline {chapter}{\numberline {5}Related work}{42}{chapter.5}
+\contentsline {section}{\numberline {5.1}Open Source tool "METRIX"}{42}{section.5.1}
+\contentsline {section}{\numberline {5.2}Sextant}{44}{section.5.2}
 \contentsline {section}{\numberline {5.3}NDepend}{46}{section.5.3}
-\contentsline {section}{\numberline {5.4}PVS-Studio}{48}{section.5.4}
+\contentsline {section}{\numberline {5.4}PVS-Studio}{49}{section.5.4}
 \contentsline {chapter}{\numberline {6}Conclusion}{50}{chapter.6}
 \contentsline {chapter}{Bibliography}{50}{chapter.6}
 \global \c@tocdepth 0\relax 
