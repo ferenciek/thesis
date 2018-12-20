@@ -1,33 +1,33 @@
 \begin{thebibliography}{10}
 
 \bibitem{erlang_o'reilly}
-Li~Xinke Francesco~Cesarini.
+F.~Cesarini and L.~Xinke.
 \newblock Erlang programming.
 \newblock Journal of Shanghai University (English Edition), Volume 11, Issue 5,
   pp 474–479, Oknober 2007.
 
 \bibitem{refactorerl2}
-I.~Bozó, D.~Horpácsi, Z.~Horváth, R.~Kitlei, J.~Köszegi, Tejfel. M., and
-  M~Tóth.
+I.~Bozó, D.~Horpácsi, Z.~Horváth, R.~Kitlei, J.~Köszegi, M.~Tejfel, and
+  M.~Tóth.
 \newblock Refactorerl - source code analysis and refactoring in erlang.
 \newblock In {\em Proceedings of the 12th Symposium on Programming Languages
   and Software Tools, ISBN 978-9949-23-178-2}, pages 138--148, Tallin, Estonia,
   October 2011.
 
 \bibitem{metrix}
-Léo~Sartre Antoine~Varet, Nicolas~Larrieu.
+A.~Varet, N.~Larrieu, and N.~Sartre.
 \newblock Metrix: a new tool to evaluate the quality of software source codes.
 \newblock AIAA Infotech@Aerospace Conference, 2013.
 
 \bibitem{metrics2}
-Nenad~Medvidovic André van~der Hoek, Ebru~Dincel.
+A.~Hoek, E.~Dincel, and N.~Medvidovic.
 \newblock Using service utilization metrics to assess and improve product line
   architectures.
 \newblock Proceedings of the 9th International Symposium on Software Metrics,
   2003.
 
 \bibitem{symons}
-C~Symons.
+C.~Symons.
 \newblock Management : measure for measure's sake.
 \newblock Computer Weekly, pp. 16, July 1992.
 
@@ -37,13 +37,13 @@ S.R. Chidamber and C.F. Kemerer.
 \newblock EEE Transactions on Software Engineering 20,6(1994), 1992.
 
 \bibitem{complexity}
-Simon~Thompson Zhang~Qingqing.
+Z.~Qingqing and S.~Thompson.
 \newblock Complexity metrics for service-oriented systems.
 \newblock Second International Symposium on Knowledge Acquisition and Modeling,
   2009.
 
 \bibitem{complexity2}
-Martin~Neil Norman E~Fenton.
+N.~Fenton and M.~Neil.
 \newblock Software metrics: Roadmap.
 \newblock The Future of Software Engineering. ACM Press, New York, 2000.
 
@@ -58,18 +58,18 @@ T.J. McCabe.
 \newblock IEEE Transactions on Software Engineering, 2(4), 1976.
 
 \bibitem{fanin}
-LI~Qing-shan WANG Yu-ying.
+W.~Yu-ying and L.~Qing-shan.
 \newblock Dynamic fan-in and fan-out metrics for program comprehension.
 \newblock O’Reilly Media, Inc., 1005 Gravenstein Highway North, Sebastopol,
   CA 95472, August 2009.
 
 \bibitem{cohesion}
-Maryam~Hooshyar Habib~Izadkhah.
+H.~Izadkhah and M.~Hooshyar.
 \newblock Class cohesion metrics for software engineering: A critical review.
 \newblock Computer Science Journal of Moldova, vol. 25, no.1(73), 2017.
 
 \bibitem{cohesion2}
-R.~S. Pressman.
+R.S. Pressman.
 \newblock Software engineering: a practitioner’s approach.
 \newblock Palgrave Macmillan, 2005.
 
@@ -86,7 +86,7 @@ Analyst4j.
 \newblock \url{http://www.codeswat.com.}
 
 \bibitem{meter}
-S.M.~Khan J.S.~Alghamdi, R.A.~Rufai.
+J.S. Alghamdi, R.A. Rufai, and S.M. Khan.
 \newblock Oometer: A software quality assurance tool.
 \newblock Ninth European Conference on Software Maintenance and Reengineering,
   March 2005.
@@ -108,13 +108,13 @@ Semmle.
 \newblock \url{https://semmle.com/.}
 
 \bibitem{fp}
-Dr.K.Krishnamoorthy V.Thangadurai, Dr.K.P.Yadav.
+V.~Thangadurai, Dr.K.P. Yadav, and Dr.K. Krishnamoorthy.
 \newblock A study of software functional programming and measurement.
 \newblock International Journal of Innovative Research in Science, Engineering
   and Technology, ISSN: 2319-8753, November 2012.
 
 \bibitem{metrics3}
-Robert~Kitlei Roland~Kiraly.
+R.~Kiraly and R.~Kitlei.
 \newblock Application of complexity metrics in functional languages.
 \newblock STUDIA UNIV. BABEŞ–BOLYAI, INFORMATICA, Volume LV, Number 1, 2010.
 
@@ -131,7 +131,7 @@ Refactorerl homepage.
 \newblock \url{http://plc.inf.elte.hu/erlang/.}
 
 \bibitem{refactorerlimp}
-Péter~Tömösközi Roland~Király, Róbert~Kitlei.
+R.~Király, R.~Kitlei, and P.~Tömösközi.
 \newblock Implementing structural complexity metrics in erlang.
 \newblock Proceedings of the 8th International Conference on Applied
   Informatics, ol. 2. pp. 173–180, January 2010.
@@ -157,18 +157,18 @@ savesvgaspng.
 \newblock \url{https://github.com/exupero/saveSvgAsPng.}
 
 \bibitem{mcCabe}
-Serge~Demeyer Quinten David~Soetens.
+Q.D. Soetens and S.~Demeyer.
 \newblock Studying the effect of refactorings:a complexity metrics perspective.
 \newblock 2010 Seventh International Conference on the Quality of Information
   and Communications Technology, December 2010.
 
 \bibitem{tail}
-Paul~E. Black.
+P.E. Black.
 \newblock Dictionary of algorithms and data structures.
 \newblock https://xlinux.nist.gov/dads/, August 2008.
 
 \bibitem{sextant}
-Jonathan~Guerrero Victor~Winter, Carl~Reinke.
+V.~Winter, C.~Reinke, and J.~Guerrero.
 \newblock Sextant: A tool to specify and visualize software metrics for java
   source-code.
 \newblock International Workshop on Emerging Trends in Software Metric, 2013.
