@@ -1,5 +1,19 @@
 \begin{thebibliography}{10}
 
+\bibitem{erlang_o'reilly}
+Li~Xinke Francesco~Cesarini.
+\newblock Erlang programming.
+\newblock Journal of Shanghai University (English Edition), Volume 11, Issue 5,
+  pp 474–479, Oknober 2007.
+
+\bibitem{refactorerl2}
+I.~Bozó, D.~Horpácsi, Z.~Horváth, R.~Kitlei, J.~Köszegi, Tejfel. M., and
+  M~Tóth.
+\newblock Refactorerl - source code analysis and refactoring in erlang.
+\newblock In {\em Proceedings of the 12th Symposium on Programming Languages
+  and Software Tools, ISBN 978-9949-23-178-2}, pages 138--148, Tallin, Estonia,
+  October 2011.
+
 \bibitem{metrix}
 Léo~Sartre Antoine~Varet, Nicolas~Larrieu.
 \newblock Metrix: a new tool to evaluate the quality of software source codes.
@@ -79,7 +93,7 @@ S.M.~Khan J.S.~Alghamdi, R.A.~Rufai.
 
 \bibitem{meter2}
 Oometer software metrics tool.
-\newblock \url{www.ccse.kfupm.edu.sa/~oometer/oometer.}
+\newblock \url{http://www.ccse.kfupm.edu.sa/~oometer/oometer/.}
 
 \bibitem{ecl}
 Eclipse metrics plugin 1.3.6.
@@ -112,27 +126,35 @@ M.~Tóth and I.~Bozó.
   Computer Science (LNCS), Vol. 7241, pp. 451-514, Springer-Verlag, ISSN:
   0302-9743, 2012.
 
-\bibitem{refactorerl2}
-I.~Bozó, D.~Horpácsi, Z.~Horváth, R.~Kitlei, J.~Köszegi, Tejfel. M., and
-  M~Tóth.
-\newblock Refactorerl - source code analysis and refactoring in erlang.
-\newblock In {\em Proceedings of the 12th Symposium on Programming Languages
-  and Software Tools, ISBN 978-9949-23-178-2}, pages 138--148, Tallin, Estonia,
-  October 2011.
-
 \bibitem{refactorerl}
 Refactorerl homepage.
 \newblock \url{http://plc.inf.elte.hu/erlang/.}
+
+\bibitem{refactorerlimp}
+Péter~Tömösközi Roland~Király, Róbert~Kitlei.
+\newblock Implementing structural complexity metrics in erlang.
+\newblock Proceedings of the 8th International Conference on Applied
+  Informatics, ol. 2. pp. 173–180, January 2010.
 
 \bibitem{refactorerlm}
 Metric queries.
 \newblock \url{http://pnyf.inf.elte.hu/trac/refactorerl/wiki/MetricQuery.}
 
-\bibitem{erland_o'reilly}
-Li~Xinke Francesco~Cesarini.
-\newblock Erlang programming.
-\newblock Journal of Shanghai University (English Edition), Volume 11, Issue 5,
-  pp 474–479, Oknober 2007.
+\bibitem{nv}
+Nvd3.
+\newblock \url{http://nvd3.org/.}
+
+\bibitem{angular}
+Angularjs.
+\newblock \url{https://angularjs.org/.}
+
+\bibitem{json}
+Introducing json.
+\newblock \url{https://www.json.org/.}
+
+\bibitem{saveSvgAsPng}
+savesvgaspng.
+\newblock \url{https://github.com/exupero/saveSvgAsPng.}
 
 \bibitem{mcCabe}
 Serge~Demeyer Quinten David~Soetens.

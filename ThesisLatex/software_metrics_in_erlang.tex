@@ -15,11 +15,11 @@ Erlang has:
 	\item Strings, placed within double quotes: "It is some string.".
 	\item Atoms. An atom is an element by itself. It starts with a lowercase letter and is built of letters, digits, and underscores, or it is any string placed within single quotes: atom1, 'Atom 2'.
 	\item Lists are a comma-separated sequence of some values placed within brackets: [abc, 123, "It is some string"]. 
-	\item Tuples are a comma-separated sequence of some values placed within braces: {abc, 123, "It is some string"}.
+	\item Tuples are a comma-separated sequence of some values placed within braces: \{abc, 123, "It is some string"\}.
 	\item Records are not a separate data type but are just tuples with keys associated with each value. They are declared in a file and defined (given specific values) in the program.
 	\item Binaries are placed within double angle brackets: <<0, 128, 128, 255>>, <<"It is some string">>, <<X:7, Y:5, Z:1>>. Binaries are series of bits; the number of bits in a binary has to be a multiple of 8.
 	\item References are globally unique values.
-	\item Pids stand for process identifiers which are the "names" of processes.
+	\item Pids stand for process identifiers.
 \end{enumerate}
 
 Figure \ref{fig:example_erlang} features the source of a small Erlang program
@@ -66,7 +66,7 @@ The main focus of RefactorErl is to support daily code comprehension tasks of Er
 
 \subsection{Metrics in the RefactorErl}
 
-A metric query language is incorporated into RefactorErl ~\cite{refactorerl}. Metric queries can be executed from the console interface or can be used as properties in semantic query language which is available from every interface.
+A metric query language is incorporated into RefactorErl ~\cite{refactorerlimp}. Metric queries can be executed from the console interface or can be used as properties in semantic query language which is available from every interface.
 
 Table \ref{tab:metrics_ref} shows all the implemented metrics in RefactorErl tool. There are two columns in this table: the first column gives the information about the name of the metric, and the second column shows the for which node the metric is available.
 
@@ -350,7 +350,7 @@ The interface of the program is the AngularJS component which uses NVD3 library 
 
 \textbf{NVD3}
 
-This library currently under development of a team of software engineers at Novus Partners company. NVD3 is the D3 based JavaScript library. It allows creating beautiful and reusable charts in web applications.
+This library currently under development of a team of software engineers at Novus Partners company ~\cite{nv}. NVD3 is the D3 based JavaScript library. It allows creating beautiful and reusable charts in web applications.
 
 It has wonderful features for data visualization with nice-looking charts such as the usual box-plot, line and bar charts and fancier candlestick and sunburst charts. If you need a lot of functionality in a JavaScript chart plotting library, NVD3 is the very nice option for your project.
 
@@ -358,7 +358,7 @@ It has wonderful features for data visualization with nice-looking charts such a
 
 The new component was created for the existing system using this javascript web framework.
 
-AngularJS (also written as Angular.js) is an open-source JavaScript-based front-end web application framework mainly developed by Google and by a community of individuals and corporations to solve many of the challenges which can be observed in the development of single-page applications.
+AngularJS (also written as Angular.js) is an open-source JavaScript-based front-end web application framework mainly developed by Google and by a community of individuals and corporations to solve many of the challenges which can be observed in the development of single-page applications ~\cite{angular}.
 
 The AngularJS framework starts his work by reading the Hypertext Markup Language (HTML) page, which has extra tag attributes embedded into it. Angular transforms these attributes as directives to bind input or output parts of the page to a model that is defined by standard JavaScript variables. The values of these JavaScript variables can be manually set in the code, or fetched from static or dynamic JSON resources. 
 
@@ -366,21 +366,21 @@ The AngularJS framework starts his work by reading the Hypertext Markup Language
 
 Data of calculated metrics for modules and functions stored in two different tables: mods\_metrics and funs\_metrics.
 
-DETS is Disk Erlang Term Storage. DETS tables store tuples, with access to the elements given through a  key field in the tuple. The tables are implemented using hash tables and binary trees, with different representations providing different kinds of collections ~\cite{erland_o'reilly}.
+DETS is Disk Erlang Term Storage. DETS tables store tuples, with access to the elements given through a  key field in the tuple. The tables are implemented using hash tables and binary trees, with different representations providing different kinds of collections ~\cite{erlang_o'reilly}.
 
 \textbf{JSON}
 
-Data, which stored in Dets tables, transforms into JSON objects when Erlang code interact with JavaScript code. JSON (JavaScript Object Notation) is a simple format of data-interchange. It is a text format that is absolutely language independent but it uses a convention that is familiar to programmers of the C-family of languages which includes C, C++, C\#, Java, JavaScript, Python, Perl, and others. This property makes JSON an ideal language of data-interchange.
+Data, which stored in Dets tables, transforms into JSON objects when Erlang code interact with JavaScript code. JSON (JavaScript Object Notation) is a simple format of data-interchange ~\cite{json}. It is a text format that is absolutely language independent but it uses a convention that is familiar to programmers of the C-family of languages which includes C, C++, C\#, Java, JavaScript, Python, Perl, and others. This property makes JSON an ideal language of data-interchange.
 
 JSON is built on two data structures:
 \begin{itemize}
-	\item A collection of name/value pairs. In various languages, this is realized as an object, struct, record, hash table, dictionary, associative array or keyed list.
-	\item An ordered list of values. Usually, this is realized as an array, list, vector, or sequence.
+	\item Key/value pairs collection. In various languages, this is realized as an object, struct, record, hash table, dictionary, associative array or keyed list ~\cite{json}.
+	\item An ordered list of values. Usually, this is realized as an array, list, vector, or sequence ~\cite{json}.
 \end{itemize}
 
 \textbf{saveSvgAsPng}
 
-This small library is used for saving SVG plots as PNG pictures. Despite its small size, it has a lot of different options such a choosing particular background, font, scale etc. 
+This small library is used for saving SVG plots as PNG pictures ~\cite{saveSvgAsPng}. Despite its small size, it has a lot of different options such a choosing particular background, font, scale etc. 
 
 \subsection{The typical workflow}
 

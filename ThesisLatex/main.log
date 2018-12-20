@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.12.4)  20 DEC 2018 03:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.12.4)  20 DEC 2018 13:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1598,7 +1598,7 @@ Chapter 2.
 (./software_metrics.tex [4
 
 ]
-<figures/classification.png, id=140, 847.165pt x 455.7025pt>
+<figures/classification.png, id=144, 847.165pt x 455.7025pt>
 File: figures/classification.png Graphic file (type png)
 
 <use figures/classification.png>
@@ -1607,7 +1607,7 @@ Package pdftex.def Info: figures/classification.png used on input line 50.
  [5] [6 <./figures/classification.png>]
 [7] [8] [9] [10] [11] [12] [13] [14] [15]) [16]
 Chapter 3.
-(./sofrware_metrics_in_erlang.tex [17
+(./software_metrics_in_erlang.tex [17
 
 ]
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 28.
@@ -1619,33 +1619,33 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 390.
 
-<figures/metrics.png, id=361, 1371.1225pt x 743.77875pt>
+<figures/metrics.png, id=372, 1371.1225pt x 743.77875pt>
 File: figures/metrics.png Graphic file (type png)
 
 <use figures/metrics.png>
 Package pdftex.def Info: figures/metrics.png used on input line 396.
 (pdftex.def)             Requested size: 418.25368pt x 226.88055pt.
  [25]
-<figures/alert.png, id=374, 1371.1225pt x 743.77875pt>
+<figures/alert.png, id=386, 1371.1225pt x 743.77875pt>
 File: figures/alert.png Graphic file (type png)
  <use figures/alert.png>
 Package pdftex.def Info: figures/alert.png used on input line 404.
 (pdftex.def)             Requested size: 418.25368pt x 226.88055pt.
 
-<figures/files.png, id=376, 1371.1225pt x 743.77875pt>
+<figures/files.png, id=388, 1371.1225pt x 743.77875pt>
 File: figures/files.png Graphic file (type png)
  <use figures/files.png>
 Package pdftex.def Info: figures/files.png used on input line 412.
 (pdftex.def)             Requested size: 418.25368pt x 226.88055pt.
 
-<figures/analyze.png, id=378, 1371.1225pt x 743.77875pt>
+<figures/analyze.png, id=390, 1371.1225pt x 743.77875pt>
 File: figures/analyze.png Graphic file (type png)
 
 <use figures/analyze.png>
 Package pdftex.def Info: figures/analyze.png used on input line 420.
 (pdftex.def)             Requested size: 418.25368pt x 226.88055pt.
  [26 <./figures/metrics.png>]
-<figures/plot.png, id=389, 1371.1225pt x 743.77875pt>
+<figures/plot.png, id=402, 1371.1225pt x 743.77875pt>
 File: figures/plot.png Graphic file (type png)
  <use figures/plot.png>
 Package pdftex.def Info: figures/plot.png used on input line 434.
@@ -1655,21 +1655,21 @@ Package pdftex.def Info: figures/plot.png used on input line 434.
 [29 <./figures/plot.png>]
 Chapter 4.
 (./measurements_and_findings.tex
-<figures/loc_iron.png, id=410, 1047.915pt x 301.125pt>
+<figures/loc_iron.png, id=424, 1047.915pt x 301.125pt>
 File: figures/loc_iron.png Graphic file (type png)
 
 <use figures/loc_iron.png>
 Package pdftex.def Info: figures/loc_iron.png used on input line 17.
 (pdftex.def)             Requested size: 418.25368pt x 120.18596pt.
 
-<figures/char_iron.png, id=411, 1063.975pt x 301.125pt>
+<figures/char_iron.png, id=425, 1063.975pt x 301.125pt>
 File: figures/char_iron.png Graphic file (type png)
 
 <use figures/char_iron.png>
 Package pdftex.def Info: figures/char_iron.png used on input line 24.
 (pdftex.def)             Requested size: 418.25368pt x 118.371pt.
 
-<figures/otp_iron.png, id=413, 1049.9225pt x 301.125pt>
+<figures/otp_iron.png, id=427, 1049.9225pt x 301.125pt>
 File: figures/otp_iron.png Graphic file (type png)
 
 <use figures/otp_iron.png>
@@ -1678,14 +1678,14 @@ Package pdftex.def Info: figures/otp_iron.png used on input line 33.
  [30
 
 ]
-<figures/mcCabe_iron.png, id=426, 1047.915pt x 301.125pt>
+<figures/mcCabe_iron.png, id=439, 1047.915pt x 301.125pt>
 File: figures/mcCabe_iron.png Graphic file (type png)
 
 <use figures/mcCabe_iron.png>
 Package pdftex.def Info: figures/mcCabe_iron.png used on input line 46.
 (pdftex.def)             Requested size: 418.25368pt x 120.18596pt.
 
-<figures/max_depth_of_cases_iron.png, id=427, 1047.915pt x 301.125pt>
+<figures/max_depth_of_cases_iron.png, id=440, 1047.915pt x 301.125pt>
 File: figures/max_depth_of_cases_iron.png Graphic file (type png)
 
 <use figures/max_depth_of_cases_iron.png>
@@ -1693,7 +1693,7 @@ Package pdftex.def Info: figures/max_depth_of_cases_iron.png used on input line
  53.
 (pdftex.def)             Requested size: 418.25368pt x 120.18596pt.
 
-<figures/average_length_of_line_iron.png, id=429, 1076.02pt x 301.125pt>
+<figures/average_length_of_line_iron.png, id=442, 1076.02pt x 301.125pt>
 File: figures/average_length_of_line_iron.png Graphic file (type png)
 
 <use figures/average_length_of_line_iron.png>
@@ -1701,7 +1701,7 @@ Package pdftex.def Info: figures/average_length_of_line_iron.png used on input
 line 62.
 (pdftex.def)             Requested size: 418.25368pt x 117.04771pt.
 
-<figures/number_of_macros_iron.png, id=432, 1076.02pt x 301.125pt>
+<figures/number_of_macros_iron.png, id=445, 1076.02pt x 301.125pt>
 File: figures/number_of_macros_iron.png Graphic file (type png)
 
 <use figures/number_of_macros_iron.png>
@@ -1709,7 +1709,7 @@ Package pdftex.def Info: figures/number_of_macros_iron.png used on input line 7
 1.
 (pdftex.def)             Requested size: 418.25368pt x 117.04771pt.
 
-<figures/number_of_records_iron.png, id=433, 1076.02pt x 301.125pt>
+<figures/number_of_records_iron.png, id=446, 1076.02pt x 301.125pt>
 File: figures/number_of_records_iron.png Graphic file (type png)
 
 <use figures/number_of_records_iron.png>
@@ -1719,7 +1719,7 @@ Package pdftex.def Info: figures/number_of_records_iron.png used on input line
  [31 <./figures/loc_iron.png> <./figures/char_iron.png>] [32 <./figures/otp_iro
 n.png> <./figures/mcCabe_iron.png> <./figures/max_depth_of_cases_iron.png> <./f
 igures/average_length_of_line_iron.png>] [33 <./figures/number_of_macros_iron.p
-ng> <./figures/number_of_records_iron.png>] <figures/loc_chat.png, id=462, 1033
+ng> <./figures/number_of_records_iron.png>] <figures/loc_chat.png, id=475, 1033
 .8625pt x 301.125pt>
 File: figures/loc_chat.png Graphic file (type png)
 
@@ -1727,26 +1727,26 @@ File: figures/loc_chat.png Graphic file (type png)
 Package pdftex.def Info: figures/loc_chat.png used on input line 94.
 (pdftex.def)             Requested size: 418.25368pt x 121.8217pt.
 
-<figures/char_of_code_chat.png, id=463, 1047.915pt x 301.125pt>
+<figures/char_of_code_chat.png, id=476, 1047.915pt x 301.125pt>
 File: figures/char_of_code_chat.png Graphic file (type png)
 
 <use figures/char_of_code_chat.png>
 Package pdftex.def Info: figures/char_of_code_chat.png used on input line 101.
 (pdftex.def)             Requested size: 418.25368pt x 120.18596pt.
 
-<figures/chat.png, id=465, 1033.8625pt x 301.125pt>
+<figures/chat.png, id=478, 1033.8625pt x 301.125pt>
 File: figures/chat.png Graphic file (type png)
  <use figures/chat.png>
 Package pdftex.def Info: figures/chat.png used on input line 110.
 (pdftex.def)             Requested size: 418.25368pt x 121.8217pt.
 
-<figures/chat5.png, id=467, 1047.915pt x 301.125pt>
+<figures/chat5.png, id=480, 1047.915pt x 301.125pt>
 File: figures/chat5.png Graphic file (type png)
  <use figures/chat5.png>
 Package pdftex.def Info: figures/chat5.png used on input line 118.
 (pdftex.def)             Requested size: 418.25368pt x 120.18596pt.
 
-<figures/mcCabe.png, id=469, 1047.915pt x 301.125pt>
+<figures/mcCabe.png, id=482, 1047.915pt x 301.125pt>
 File: figures/mcCabe.png Graphic file (type png)
  <use figures/mcCabe.png>
 Package pdftex.def Info: figures/mcCabe.png used on input line 127.
@@ -1755,19 +1755,19 @@ Package pdftex.def Info: figures/mcCabe.png used on input line 127.
 [34
 
  <./figures/loc_chat.png> <./figures/char_of_code_chat.png>]
-<figures/chat2.png, id=482, 1047.915pt x 301.125pt>
+<figures/chat2.png, id=495, 1047.915pt x 301.125pt>
 File: figures/chat2.png Graphic file (type png)
  <use figures/chat2.png>
 Package pdftex.def Info: figures/chat2.png used on input line 137.
 (pdftex.def)             Requested size: 418.25368pt x 120.18596pt.
 
-<figures/chat3.png, id=484, 1033.8625pt x 301.125pt>
+<figures/chat3.png, id=497, 1033.8625pt x 301.125pt>
 File: figures/chat3.png Graphic file (type png)
  <use figures/chat3.png>
 Package pdftex.def Info: figures/chat3.png used on input line 146.
 (pdftex.def)             Requested size: 418.25368pt x 121.8217pt.
 
-<figures/chat4.png, id=486, 1047.915pt x 301.125pt>
+<figures/chat4.png, id=499, 1047.915pt x 301.125pt>
 File: figures/chat4.png Graphic file (type png)
  <use figures/chat4.png>
 Package pdftex.def Info: figures/chat4.png used on input line 155.
@@ -1775,27 +1775,27 @@ Package pdftex.def Info: figures/chat4.png used on input line 155.
 
 [35 <./figures/chat.png> <./figures/chat5.png>] [36 <./figures/mcCabe.png> <./f
 igures/chat2.png> <./figures/chat3.png>] [37 <./figures/chat4.png>]
-<figures/line_of_code_prx.png, id=511, 1045.9075pt x 301.125pt>
+<figures/line_of_code_prx.png, id=524, 1045.9075pt x 301.125pt>
 File: figures/line_of_code_prx.png Graphic file (type png)
 
 <use figures/line_of_code_prx.png>
 Package pdftex.def Info: figures/line_of_code_prx.png used on input line 187.
 (pdftex.def)             Requested size: 418.25368pt x 120.42029pt.
 
-<figures/cohesion_prx.png, id=513, 1045.9075pt x 301.125pt>
+<figures/cohesion_prx.png, id=526, 1045.9075pt x 301.125pt>
 File: figures/cohesion_prx.png Graphic file (type png)
 
 <use figures/cohesion_prx.png>
 Package pdftex.def Info: figures/cohesion_prx.png used on input line 196.
 (pdftex.def)             Requested size: 418.25368pt x 120.42029pt.
 
-<figures/mccabe.png, id=516, 1045.9075pt x 301.125pt>
+<figures/mccabe.png, id=529, 1045.9075pt x 301.125pt>
 File: figures/mccabe.png Graphic file (type png)
  <use figures/mccabe.png>
 Package pdftex.def Info: figures/mccabe.png used on input line 206.
 (pdftex.def)             Requested size: 418.25368pt x 120.42029pt.
 
-<figures/otp_prx.png, id=517, 1045.9075pt x 301.125pt>
+<figures/otp_prx.png, id=530, 1045.9075pt x 301.125pt>
 File: figures/otp_prx.png Graphic file (type png)
 
 <use figures/otp_prx.png>
@@ -1804,27 +1804,27 @@ Package pdftex.def Info: figures/otp_prx.png used on input line 215.
  [38
 
  <./figures/line_of_code_prx.png>]
-<figures/find2.png, id=528, 1112.155pt x 301.125pt>
+<figures/find2.png, id=541, 1112.155pt x 301.125pt>
 File: figures/find2.png Graphic file (type png)
  <use figures/find2.png>
 Package pdftex.def Info: figures/find2.png used on input line 224.
 (pdftex.def)             Requested size: 418.25368pt x 113.24782pt.
 
 [39 <./figures/cohesion_prx.png> <./figures/mccabe.png> <./figures/otp_prx.png>
-] <figures/filter2.png, id=540, 1112.155pt x 301.125pt>
+] <figures/filter2.png, id=553, 1112.155pt x 301.125pt>
 File: figures/filter2.png Graphic file (type png)
 
 <use figures/filter2.png>
 Package pdftex.def Info: figures/filter2.png used on input line 234.
 (pdftex.def)             Requested size: 418.25368pt x 113.24782pt.
- <figures/br.png, id=542, 1045.9075pt x 301.125pt>
+ <figures/br.png, id=555, 1045.9075pt x 301.125pt>
 File: figures/br.png Graphic file (type png)
 
 <use figures/br.png>
 Package pdftex.def Info: figures/br.png used on input line 243.
 (pdftex.def)             Requested size: 418.25368pt x 120.42029pt.
  [40 <./figures/find2.png> <./figures/filter2.png> <./figures/br.png>] <figures
-/function_sum_task4.png, id=555, 1098.1025pt x 301.125pt>
+/function_sum_task4.png, id=568, 1098.1025pt x 301.125pt>
 File: figures/function_sum_task4.png Graphic file (type png)
 
 <use figures/function_sum_task4.png>
@@ -1832,7 +1832,7 @@ Package pdftex.def Info: figures/function_sum_task4.png used on input line 253.
 
 (pdftex.def)             Requested size: 418.25368pt x 114.69518pt.
 
-<figures/calls_from_function_task4.png, id=556, 1098.1025pt x 301.125pt>
+<figures/calls_from_function_task4.png, id=569, 1098.1025pt x 301.125pt>
 File: figures/calls_from_function_task4.png Graphic file (type png)
 
 <use figures/calls_from_function_task4.png>
@@ -1840,7 +1840,7 @@ Package pdftex.def Info: figures/calls_from_function_task4.png used on input li
 ne 260.
 (pdftex.def)             Requested size: 418.25368pt x 114.69518pt.
 
-<figures/task4.png, id=557, 1112.155pt x 301.125pt>
+<figures/task4.png, id=570, 1112.155pt x 301.125pt>
 File: figures/task4.png Graphic file (type png)
  <use figures/task4.png>
 Package pdftex.def Info: figures/task4.png used on input line 267.
@@ -1852,32 +1852,32 @@ Chapter 5.
 (./related_work.tex [42
 
 ]
-<figures/metrix.png, id=576, 759.83875pt x 372.39125pt>
+<figures/metrix.png, id=590, 759.83875pt x 372.39125pt>
 File: figures/metrix.png Graphic file (type png)
 
 <use figures/metrix.png>
 Package pdftex.def Info: figures/metrix.png used on input line 26.
 (pdftex.def)             Requested size: 418.25368pt x 204.98628pt.
  [43 <./figures/metrix.png>] [44]
-<figures/1.png, id=594, 574.145pt x 437.635pt>
+<figures/1.png, id=607, 574.145pt x 437.635pt>
 File: figures/1.png Graphic file (type png)
  <use figures/1.png>
 Package pdftex.def Info: figures/1.png used on input line 74.
 (pdftex.def)             Requested size: 418.25368pt x 318.81647pt.
- [45 <./figures/1.png>] <figures/dash.png, id=602, 578.91281pt x 446.41782pt>
+ [45 <./figures/1.png>] <figures/dash.png, id=615, 578.91281pt x 446.41782pt>
 File: figures/dash.png Graphic file (type png)
 
 <use figures/dash.png>
 Package pdftex.def Info: figures/dash.png used on input line 91.
 (pdftex.def)             Requested size: 418.25368pt x 322.5309pt.
- <figures/tree.png, id=604, 660.21657pt x 499.8675pt>
+ <figures/tree.png, id=617, 660.21657pt x 499.8675pt>
 File: figures/tree.png Graphic file (type png)
 
 <use figures/tree.png>
 Package pdftex.def Info: figures/tree.png used on input line 100.
 (pdftex.def)             Requested size: 418.25368pt x 316.6801pt.
  [46] [47 <./figures/dash.png>] [48 <./figures/tree.png>] <figures/pvs.png, id=
-624, 966.61125pt x 330.48468pt>
+637, 966.61125pt x 330.48468pt>
 File: figures/pvs.png Graphic file (type png)
  <use figures/pvs.png>
 Package pdftex.def Info: figures/pvs.png used on input line 123.
@@ -1901,10 +1901,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 69C0293B523EC12D373883D3B0F13C9F;358.
  ) 
 Here is how much of TeX's memory you used:
- 30734 strings out of 493029
- 575055 string characters out of 6136234
- 630955 words of memory out of 5000000
- 33469 multiletter control sequences out of 15000+600000
+ 30744 strings out of 493029
+ 575168 string characters out of 6136234
+ 630110 words of memory out of 5000000
+ 33474 multiletter control sequences out of 15000+600000
  75437 words of font info for 65 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  61i,9n,82p,10454b,1449s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1918,10 +1918,10 @@ type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb><
 /usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/
 public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb></usr/sh
 are/texmf/fonts/type1/public/lm/lmtti10.pfb>
-Output written on main.pdf (54 pages, 1779623 bytes).
+Output written on main.pdf (54 pages, 1829613 bytes).
 PDF statistics:
- 747 PDF objects out of 1000 (max. 8388607)
- 598 compressed objects within 6 object streams
- 200 named destinations out of 1000 (max. 500000)
+ 768 PDF objects out of 1000 (max. 8388607)
+ 618 compressed objects within 7 object streams
+ 205 named destinations out of 1000 (max. 500000)
  259 words of extra memory for PDF output out of 10000 (max. 10000000)
 
