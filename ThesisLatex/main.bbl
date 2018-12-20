@@ -12,6 +12,16 @@ Nenad~Medvidovic André van~der Hoek, Ebru~Dincel.
 \newblock Proceedings of the 9th International Symposium on Software Metrics,
   2003.
 
+\bibitem{symons}
+C~Symons.
+\newblock Management : measure for measure's sake.
+\newblock Computer Weekly, pp. 16, July 1992.
+
+\bibitem{ck}
+S.R. Chidamber and C.F. Kemerer.
+\newblock A metrics suite for object-oriented design.
+\newblock EEE Transactions on Software Engineering 20,6(1994), 1992.
+
 \bibitem{complexity}
 Simon~Thompson Zhang~Qingqing.
 \newblock Complexity metrics for service-oriented systems.
@@ -23,8 +33,18 @@ Martin~Neil Norman E~Fenton.
 \newblock Software metrics: Roadmap.
 \newblock The Future of Software Engineering. ACM Press, New York, 2000.
 
+\bibitem{shepperd}
+M.~Shepperd.
+\newblock A critique of cyclomatic complexity as a software metric.
+\newblock Software Engineering Journal, pp. 30 - 36, March 1988.
+
+\bibitem{mc}
+T.J. McCabe.
+\newblock A complexity measure.
+\newblock IEEE Transactions on Software Engineering, 2(4), 1976.
+
 \bibitem{fanin}
-CHEN Ping REN Chun-de WANG Yu-ying, LI Qing-shan.
+LI~Qing-shan WANG Yu-ying.
 \newblock Dynamic fan-in and fan-out metrics for program comprehension.
 \newblock O’Reilly Media, Inc., 1005 Gravenstein Highway North, Sebastopol,
   CA 95472, August 2009.
@@ -36,7 +56,42 @@ Maryam~Hooshyar Habib~Izadkhah.
 
 \bibitem{cohesion2}
 R.~S. Pressman.
-\newblock Software engineering: a practitioner’s approach., 2005.
+\newblock Software engineering: a practitioner’s approach.
+\newblock Palgrave Macmillan, 2005.
+
+\bibitem{cccc}
+C and c++ code counter.
+\newblock \url{http://sourceforge.net/projects/cccc.}
+
+\bibitem{ck1}
+A tool for calculating chidamber and kemerer java metrics.
+\newblock \url{https://www.spinellis.gr/sw/ckjm/doc/indexw.html.}
+
+\bibitem{analyst4j}
+Analyst4j.
+\newblock \url{http://www.codeswat.com.}
+
+\bibitem{meter}
+S.M.~Khan J.S.~Alghamdi, R.A.~Rufai.
+\newblock Oometer: A software quality assurance tool.
+\newblock Ninth European Conference on Software Maintenance and Reengineering,
+  March 2005.
+
+\bibitem{meter2}
+Oometer software metrics tool.
+\newblock \url{www.ccse.kfupm.edu.sa/~oometer/oometer.}
+
+\bibitem{ecl}
+Eclipse metrics plugin 1.3.6.
+\newblock \url{http://www.easyeclipse.org/site/plugins/metrics.html.}
+
+\bibitem{ecl1}
+Eclipse metrics plugin 3.4.
+\newblock \url{http://eclipse-metrics.sourceforge.net/.}
+
+\bibitem{semmle}
+Semmle.
+\newblock \url{https://semmle.com/.}
 
 \bibitem{fp}
 Dr.K.Krishnamoorthy V.Thangadurai, Dr.K.P.Yadav.
